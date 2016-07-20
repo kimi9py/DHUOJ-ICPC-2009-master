@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">1</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MC0CFHATtqU53v1S054KsjOlQQltrj4GAhUAj1c78W9sveQA1Dp/wrTweUs/ZrU=</Signature><PaperReference><![CDATA[1]]></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="true">
+            <Title>Hello,东华!</Title>
+            <Author>ZhuXingYin</Author>
+            <Problem contentType="html">
+                <Description xml:space="preserve">给你一个字符串S，输出Hello,S!</Description>
+                <InputSpec xml:space="preserve">你的程序需要从标准输入设备（通常为键盘）中读入多组测试数据。每组输入数据占一行，其中仅有一个字符串S；S的长度不会超过100位数；每行的行首和行尾都没有多余的空格。在所有数据的前后，以及两组数据之间都没有多余的空行。</InputSpec>
+                <OutputSpec xml:space="preserve">对每组测试数据，你的程序需要向标准输出设备（通常为启动该程序的终端）依次输出一组对应的答案。每组答案占一行，Hello,S!</OutputSpec>
+            </Problem>
+            <TestData>
+                <TimeLimit>1</TimeLimit>
+                <InputFile />
+                <OutputFile />
+                <InputFormat inputType="eof">
+                    <Terminator xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </InputFormat>
+                <OutputFormat>
+                    <Header xml:space="preserve" />
+                    <Footer xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </OutputFormat>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve">Zhuxingyin
+</TestInput>
+                    <TestOutput xml:space="preserve">Hello,Zhuxingyin!
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="sample">
+                    <TestInput xml:space="preserve">Donghua
+</TestInput>
+                    <TestOutput xml:space="preserve">Hello,Donghua!
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="sample">
+                    <TestInput xml:space="preserve">Shanghai
+</TestInput>
+                    <TestOutput xml:space="preserve">Hello,Shanghai!
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+</TestInput>
+                    <TestOutput xml:space="preserve">Hello,aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa!
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">bb
+</TestInput>
+                    <TestOutput xml:space="preserve">Hello,bb!
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve">1234
+</TestInput>
+                    <TestOutput xml:space="preserve">Hello,1234!
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">bbb
+</TestInput>
+                    <TestOutput xml:space="preserve">Hello,bbb!
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">1010101
+</TestInput>
+                    <TestOutput xml:space="preserve">Hello,1010101!
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">101
+</TestInput>
+                    <TestOutput xml:space="preserve">Hello,101!
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">99999999999999999999999999999
+</TestInput>
+                    <TestOutput xml:space="preserve">Hello,99999999999999999999999999999!
+</TestOutput>
+                </TestCase>
+            </TestData>
+            <Solution xml:space="preserve" language="cpp" filename="test">#include &lt;iostream&gt;
+
+using namespace std;
+
+int main() {
+    char line[100];
+    while (cin &gt;&gt; line) {
+       cout&lt;&lt;"Hello,"&lt;&lt;line&lt;&lt;"!"&lt;&lt;endl;
+    }
+    return 0;
+}
+</Solution>
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

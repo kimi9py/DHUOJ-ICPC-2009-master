@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">1</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MCwCFG5MhL8zHxYVDaQnzallJdupGhWTAhQQ6B/hs55znWzqv1Ul1rG3yGm/6A==</Signature><PaperReference><![CDATA[1]]></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="true">
+            <Title>数字之和</Title>
+            <Author>ZhuXingyin</Author>
+            <Problem contentType="html">
+                <Description xml:space="preserve">输入一个正整数，求这个正整数的各位数字之和，如果得到的正整数的位数大于等于两位，则继续对这个数进行各位数字求和运算，直到这个正整数只有一位。</Description>
+                <InputSpec xml:space="preserve">你的程序需要从标准输入设备（通常为键盘）中读入多组测试数据。每组测试数据为正整数，每行一个N，N小于20000，程序输入以0结束。                 </InputSpec>
+                <OutputSpec xml:space="preserve">对每组测试数据，你的程序需要向标准输出文件（通常为启动该程序的文本终端）依次输出一组对应的答案：输出一个个位数，所有数据前后没有多余的空行，两组数据之间也没有多余的空行。</OutputSpec>
+            </Problem>
+            <TestData>
+                <TimeLimit>1</TimeLimit>
+                <InputFile />
+                <OutputFile />
+                <InputFormat inputType="zero">
+                    <Terminator xml:space="preserve">0</Terminator>
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </InputFormat>
+                <OutputFormat>
+                    <Header xml:space="preserve" />
+                    <Footer xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </OutputFormat>
+                <TestCase difficulty="sample">
+                    <TestInput xml:space="preserve">10
+</TestInput>
+                    <TestOutput xml:space="preserve">1
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="sample">
+                    <TestInput xml:space="preserve">99
+</TestInput>
+                    <TestOutput xml:space="preserve">9
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">100
+</TestInput>
+                    <TestOutput xml:space="preserve">1
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve">1234
+</TestInput>
+                    <TestOutput xml:space="preserve">1
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">2000
+</TestInput>
+                    <TestOutput xml:space="preserve">2
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">2500
+</TestInput>
+                    <TestOutput xml:space="preserve">7
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">19876
+</TestInput>
+                    <TestOutput xml:space="preserve">4
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">246
+</TestInput>
+                    <TestOutput xml:space="preserve">3
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve">6
+</TestInput>
+                    <TestOutput xml:space="preserve">6
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">77
+</TestInput>
+                    <TestOutput xml:space="preserve">5
+</TestOutput>
+                </TestCase>
+            </TestData>
+            <Solution xml:space="preserve" language="cpp" filename="test">#include &lt;iostream&gt;
+using namespace std;
+int main()
+{
+	int n;
+	while(cin&gt;&gt;n &amp;&amp; n)
+	{
+		int sum = n;
+		while(sum / 10 &gt; 0)
+		{
+			sum = 0;			
+			while(n)			
+			{
+				sum += n % 10;
+				n /= 10;
+			}
+			n = sum;	
+		}
+		cout&lt;&lt;sum&lt;&lt;endl;
+	}
+}
+</Solution>
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

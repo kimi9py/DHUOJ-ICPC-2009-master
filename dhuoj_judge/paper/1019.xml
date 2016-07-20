@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">1</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MCwCFFcRbClyKmvk9ogwiGoUHqV5ZS3kAhQYhF0sZs6gdDLuLRt15wwWMWf3pQ==</Signature><PaperReference><![CDATA[1]]></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="true">
+            <Title>函数求值</Title>
+            <Author>ZhuXingyin</Author>
+            <Problem contentType="html">
+                <Description xml:space="preserve">根据如下所示的函数，输入相应的x值，求出对应的y值。&lt;br&gt;&lt;IMG SRC="function1.jpg"&gt;</Description>
+                <InputSpec xml:space="preserve">你的程序需要从标准输入设备（通常为键盘）中读入多组测试数据。每组输入数据由一行组成，每行一个，为一系列函数自变量X的值（X为实数，X不等于2）。
+在行首和行尾没有多余的空格。</InputSpec>
+                <OutputSpec xml:space="preserve">对应每一个输入的自变量X，输出对应的函数值Y，每行一个。Y的值保留小数点后6位，所有数据前后没有多余的空行，两组数据之间也没有多余的空行。</OutputSpec>
+                <Figure filename="function1.jpg">
+                    <Text />
+                    <Image xml:space="preserve">/9j/4AAQSkZJRgABAQEBLAEsAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCADSAesDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKA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T6XFZ+IBJdoEHmpBcTQRSt8pJKI/IyoIDFsevegDxvwZfa74H+J8LeJII4IfGaC5ZY43Cw3EjlkQ7l3B1ZyhXOF80FicV9BjoK5TXfh74Z8Tm0OtWM96LSLyoPNvZ/kX14f5mOBljljgZJxXT28K29tFAhcpGgRTJI0jEAY5ZiSx9yST3oAkrEv9Iv7q7lmh8S6rZRtjEMEdqUTAA4Lws3J55PXpxW3RjnPegDAg0TUYZ45ZPFesTojhmieK0CuAeQ22AHHrgg+nNb/aiigBjEcnjjmuEnnm+ItxJY2UskXhKFjHeXkZKvqjA4aGJhgiEEYeQY34Krxuau7I5Pqa4IfBP4ekf8i//wCTlx/8XQBveEfEWkeItPuxoceyx067fT12qgjby1XBj2Ejy8FdvTjtXCeMoW8WfGzwpoloY8aEp1W7mWQMUG9CEZcggkxx+pxKDjA59C0nw3p/hrQ5NK8O20NjH87oCrSDzGB+Z8sGft1bOBgEYGI/DXhyLw/BPK1w9/qd64lv9QlUCS5kAIB44VAOFQcKOBySSAbw6ClpB0FLQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUU0HOP8KdQAUUUUAFFFFABRRRQAUUUUAFFFFABXI3ralpXxFivTZSXGj6pZRWLy28TSPb3EbyMhcD7sTLKw3YIBAztHJ66igBg3e/1p46UUUAFFFFABgelFFFABiiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAMD0owPSiigAxRRRQAUUUUAFFFFABgelFFFABgelGB6UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFACYGaWiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/2Q==</Image>
+                </Figure>
+            </Problem>
+            <TestData>
+                <TimeLimit>1</TimeLimit>
+                <InputFile />
+                <OutputFile />
+                <InputFormat inputType="eof">
+                    <Terminator xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </InputFormat>
+                <OutputFormat>
+                    <Header xml:space="preserve" />
+                    <Footer xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </OutputFormat>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve">1.0
+</TestInput>
+                    <TestOutput xml:space="preserve">-1.000000
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve">2.0
+</TestInput>
+                    <TestOutput xml:space="preserve">2.000000
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="sample">
+                    <TestInput xml:space="preserve">3.0
+</TestInput>
+                    <TestOutput xml:space="preserve">1.000000
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="sample">
+                    <TestInput xml:space="preserve">4.0
+</TestInput>
+                    <TestOutput xml:space="preserve">0.500000
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">5.0
+</TestInput>
+                    <TestOutput xml:space="preserve">0.333333
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">6.0
+</TestInput>
+                    <TestOutput xml:space="preserve">0.250000
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">7.0
+</TestInput>
+                    <TestOutput xml:space="preserve">0.200000
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">8.0
+</TestInput>
+                    <TestOutput xml:space="preserve">0.166667
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">1.99999
+</TestInput>
+                    <TestOutput xml:space="preserve">-99999.999999
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">2.00001
+</TestInput>
+                    <TestOutput xml:space="preserve">99999.999999
+</TestOutput>
+                </TestCase>
+            </TestData>
+            <Solution xml:space="preserve" language="cpp" filename="test">#include&lt;cstdio&gt;
+
+using namespace std;
+
+int main() {
+    double x;
+    while (scanf("%lf", &amp;x) == 1) {
+        if (x == 2.0)
+            printf("%.6lf\n", x);
+        else
+            printf("%.6f\n", 1.0 / (x - 2.0));
+    }
+    return 0;
+}
+</Solution>
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

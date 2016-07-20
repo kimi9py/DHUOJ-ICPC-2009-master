@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">5</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MCwCFFOFKnHtNDWaUhbZFX6zXiJePIJ5AhQQUPCmZrDQexSdtyz4j2bINLycYQ==</Signature><PaperReference><![CDATA[1]]></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="false">
+            <Title>Graph of Black and White</Title>
+    <Author />
+    <Problem contentType="html">
+        <Description xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US&gt;Once upon a time, there was a graph. Actually, it was an
+undirected forest, i.e., an undirected graph without circles. There were &lt;b
+style='mso-bidi-font-weight:normal'&gt;N&lt;/b&gt; nodes in this forest, numbered from 1
+to &lt;b style='mso-bidi-font-weight:normal'&gt;N&lt;/b&gt; inclusively, with each node
+colored black or white. Elves had been living in the forest for many years.
+Their homes were inside the nodes, and sometimes they would move their homes or
+visit other elves living in another node. However, they could only move between
+nodes that were connected by an edge or a path formed by several end-to-end
+connected edges. In other words, they could only move in the same tree. If two
+nodes were not connected, the elves could not travel between them. When they
+were passing a node, including the starting and the ending ones, they should
+use black or white magic power according to the color of the node. Waste is
+criminal, so during a journey the elves never pass a node twice. &lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;The structure of the forest might change, when no elves
+were travelling. Two disconnected nodes might be connected by a new edge
+between them, or an existing edge might disappear, or the color of a node might
+change. Anyway, there would never be circles in the forest, so the forest
+remained a forest. &lt;b style='mso-bidi-font-weight:normal'&gt;THUS HARMONY LONG
+LASTS!&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;Elves were intelligent. They knew everything happening in
+the forest. And they knew how much black and white magic power was used when
+they travel. Why? &lt;span class=GramE&gt;Because YY, the most intelligent one elf,
+simulated everything and told them.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+</Description>
+        <InputSpec xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US&gt;Input contains several test cases.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;For each test case, the first line contains two positive
+integers, &lt;b style='mso-bidi-font-weight:normal'&gt;N&lt;/b&gt; (&lt;b style='mso-bidi-font-weight:
+normal'&gt;N&lt;/b&gt; &lt;/span&gt;&lt;span style='font-family:SimSun;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'&gt;&amp;#8804;&lt;/span&gt;&lt;span
+lang=EN-US&gt; 10000) and &lt;b style='mso-bidi-font-weight:normal'&gt;M&lt;/b&gt; (&lt;b
+style='mso-bidi-font-weight:normal'&gt;M&lt;/b&gt; &lt;/span&gt;&lt;span style='font-family:SimSun;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'&gt;&amp;#8804;&lt;/span&gt;&lt;span
+lang=EN-US&gt; 100000), indicating the number of nodes in the graph and the number
+of operations that YY should simulate. At the beginning of his simulation,
+there were not any ed&lt;span class=GramE&gt;ge&lt;/span&gt; in the forest.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;The following lines contains &lt;b style='mso-bidi-font-weight:
+normal'&gt;N&lt;/b&gt; space separated characters, each being &amp;#8216;B&amp;#8217; or
+&amp;#8216;W&amp;#8217; (quotes for clarity), the &lt;span class=SpellE&gt;i&lt;sup&gt;th&lt;/sup&gt;&lt;/span&gt;
+of which indicates the color of the node numbered &lt;span class=SpellE&gt;i&lt;/span&gt;,
+black or white.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;b style='mso-bidi-font-weight:normal'&gt;&lt;span lang=EN-US&gt;M&lt;/span&gt;&lt;/b&gt;&lt;span
+lang=EN-US&gt; lines follow, indicating the &lt;b style='mso-bidi-font-weight:normal'&gt;M&lt;/b&gt;
+operations to simulate. For each line, it will be one of the four types:&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='margin-left:10.5pt;mso-para-margin-left:1.0gd'&gt;&lt;span class=GramE&gt;&lt;b
+style='mso-bidi-font-weight:normal'&gt;&lt;span lang=EN-US&gt;add&lt;/span&gt;&lt;/b&gt;&lt;/span&gt;&lt;b
+style='mso-bidi-font-weight:normal'&gt;&lt;span lang=EN-US&gt; u v&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+ 
+&lt;p style='margin-left:10.5pt;mso-para-margin-left:1.0gd'&gt;&lt;span lang=EN-US&gt;The
+two nodes numbered &lt;b style='mso-bidi-font-weight:normal'&gt;u&lt;/b&gt; and &lt;b
+style='mso-bidi-font-weight:normal'&gt;v&lt;/b&gt; (1&lt;/span&gt;&lt;span style='font-family:
+SimSun;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'&gt;&amp;#8804;&lt;/span&gt;&lt;b
+style='mso-bidi-font-weight:normal'&gt;&lt;span lang=EN-US&gt;u&lt;/span&gt;&lt;/b&gt;&lt;span
+lang=EN-US&gt;, &lt;b style='mso-bidi-font-weight:normal'&gt;v&lt;/b&gt;&lt;/span&gt;&lt;span
+style='font-family:SimSun;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'&gt;&amp;#8804;&lt;/span&gt;&lt;b style='mso-bidi-font-weight:normal'&gt;&lt;span
+lang=EN-US&gt;N&lt;/span&gt;&lt;/b&gt;&lt;span lang=EN-US&gt;, and &lt;b style='mso-bidi-font-weight:
+normal'&gt;u&lt;/b&gt;&lt;/span&gt;&lt;span style='font-family:SimSun;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'&gt;&amp;#8800;&lt;/span&gt;&lt;b style='mso-bidi-font-weight:
+normal'&gt;&lt;span lang=EN-US&gt;v&lt;/span&gt;&lt;/b&gt;&lt;span lang=EN-US&gt;) are connected by a new
+edge. It is guaranteed that these two nodes are not connected before this
+operation.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='margin-left:10.5pt;mso-para-margin-left:1.0gd'&gt;&lt;span lang=EN-US&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='margin-left:10.5pt;mso-para-margin-left:1.0gd'&gt;&lt;st1:State w:st="on"&gt;&lt;st1:place
+ w:st="on"&gt;&lt;span class=GramE&gt;&lt;b style='mso-bidi-font-weight:normal'&gt;&lt;span
+  lang=EN-US&gt;del&lt;/span&gt;&lt;/b&gt;&lt;/span&gt;&lt;/st1:place&gt;&lt;/st1:State&gt;&lt;b style='mso-bidi-font-weight:
+normal'&gt;&lt;span lang=EN-US&gt; u v&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+ 
+&lt;p style='margin-left:10.5pt;mso-para-margin-left:1.0gd'&gt;&lt;span lang=EN-US&gt;The
+edge between the two nodes numbered &lt;b style='mso-bidi-font-weight:normal'&gt;u&lt;/b&gt;
+and &lt;b style='mso-bidi-font-weight:normal'&gt;v&lt;/b&gt; (1&lt;/span&gt;&lt;span
+style='font-family:SimSun;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'&gt;&amp;#8804;&lt;/span&gt;&lt;b style='mso-bidi-font-weight:normal'&gt;&lt;span
+lang=EN-US&gt;u&lt;/span&gt;&lt;/b&gt;&lt;span lang=EN-US&gt;, &lt;b style='mso-bidi-font-weight:normal'&gt;v&lt;/b&gt;&lt;/span&gt;&lt;span
+style='font-family:SimSun;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'&gt;&amp;#8804;&lt;/span&gt;&lt;b style='mso-bidi-font-weight:normal'&gt;&lt;span
+lang=EN-US&gt;N&lt;/span&gt;&lt;/b&gt;&lt;span lang=EN-US&gt;, and &lt;b style='mso-bidi-font-weight:
+normal'&gt;u&lt;/b&gt;&lt;/span&gt;&lt;span style='font-family:SimSun;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman"'&gt;&amp;#8800;&lt;/span&gt;&lt;b style='mso-bidi-font-weight:
+normal'&gt;&lt;span lang=EN-US&gt;v&lt;/span&gt;&lt;/b&gt;&lt;span lang=EN-US&gt;) disappears. It is
+guaranteed that this edge exists before this operation.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='margin-left:10.5pt;mso-para-margin-left:1.0gd'&gt;&lt;span lang=EN-US&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='margin-left:10.5pt;mso-para-margin-left:1.0gd'&gt;&lt;span class=GramE&gt;&lt;b
+style='mso-bidi-font-weight:normal'&gt;&lt;span lang=EN-US&gt;set&lt;/span&gt;&lt;/b&gt;&lt;/span&gt;&lt;b
+style='mso-bidi-font-weight:normal'&gt;&lt;span lang=EN-US&gt; u c&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+ 
+&lt;p style='margin-left:10.5pt;mso-para-margin-left:1.0gd'&gt;&lt;span lang=EN-US&gt;The
+color of the node numbered &lt;b style='mso-bidi-font-weight:normal'&gt;u&lt;/b&gt; (1&lt;/span&gt;&lt;span
+style='font-family:SimSun;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'&gt;&amp;#8804;&lt;/span&gt;&lt;b style='mso-bidi-font-weight:normal'&gt;&lt;span
+lang=EN-US&gt;u&lt;/span&gt;&lt;/b&gt;&lt;span style='font-family:SimSun;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'&gt;&amp;#8804;&lt;/span&gt;&lt;b
+style='mso-bidi-font-weight:normal'&gt;&lt;span lang=EN-US&gt;N&lt;/span&gt;&lt;/b&gt;&lt;span
+lang=EN-US&gt;) is set to c (c=&amp;#8216;B&amp;#8217; or &amp;#8216;W&amp;#8217;, quotes for
+clarity).&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='margin-left:10.5pt;mso-para-margin-left:1.0gd'&gt;&lt;span lang=EN-US&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='margin-left:10.5pt;mso-para-margin-left:1.0gd'&gt;&lt;span class=GramE&gt;&lt;b
+style='mso-bidi-font-weight:normal'&gt;&lt;span lang=EN-US&gt;query&lt;/span&gt;&lt;/b&gt;&lt;/span&gt;&lt;b
+style='mso-bidi-font-weight:normal'&gt;&lt;span lang=EN-US&gt; u v&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+ 
+&lt;p style='margin-left:10.5pt;mso-para-margin-left:1.0gd'&gt;&lt;span lang=EN-US&gt;Now
+YY tells the elves the number of black and white nodes that have to be passed
+when travelling between nodes numbered &lt;b style='mso-bidi-font-weight:normal'&gt;u&lt;/b&gt;
+and &lt;b style='mso-bidi-font-weight:normal'&gt;v&lt;/b&gt; (1&lt;/span&gt;&lt;span
+style='font-family:SimSun;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'&gt;&amp;#8804;&lt;/span&gt;&lt;b style='mso-bidi-font-weight:normal'&gt;&lt;span
+lang=EN-US&gt;u&lt;/span&gt;&lt;/b&gt;&lt;span lang=EN-US&gt;, &lt;b style='mso-bidi-font-weight:normal'&gt;v&lt;/b&gt;&lt;/span&gt;&lt;span
+style='font-family:SimSun;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'&gt;&amp;#8804;&lt;/span&gt;&lt;b style='mso-bidi-font-weight:normal'&gt;&lt;span
+lang=EN-US&gt;N&lt;/span&gt;&lt;/b&gt;&lt;span lang=EN-US&gt;) inclusively, or tells them the
+journey is impossible. &lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;Input ends with &lt;b style='mso-bidi-font-weight:normal'&gt;N&lt;/b&gt;=&lt;b
+style='mso-bidi-font-weight:normal'&gt;M&lt;/b&gt;=0.&lt;/span&gt;&lt;/p&gt;
+</InputSpec>
+        <OutputSpec xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US&gt;For each query in each test case, if such a journey is possible,
+output one line with two space-separated integers, the number of black and
+white nodes on the path between the two nodes. If it is impossible, just output
+one line containing the number -1.&lt;/span&gt;&lt;/p&gt;
+</OutputSpec>
+    </Problem>
+            <TestData>
+                <TimeLimit>10</TimeLimit>
+                <InputFile />
+                <OutputFile />
+                <InputFormat inputType="eof">
+                    <Terminator xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </InputFormat>
+                <OutputFormat>
+                    <Header xml:space="preserve" />
+                    <Footer xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </OutputFormat>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve" filename="1092.in">
+            </TestInput>
+                    <TestOutput xml:space="preserve" filename="1092.out">
+            </TestOutput>
+                </TestCase>
+            </TestData>
+            <Solution xml:space="preserve" language="cpp" filename="" />
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

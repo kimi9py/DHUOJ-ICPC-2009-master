@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">5</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MCwCFFOFKnHtNDWaUhbZFX6zXiJePIJ5AhQQUPCmZrDQexSdtyz4j2bINLycYQ==</Signature><PaperReference><![CDATA[1]]></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="false">
+            <Title>Boring Work</Title>
+    <Author />
+    <Problem contentType="html">
+        <Description xml:space="preserve">&lt;p class=MsoNormal style='text-indent:21.0pt'&gt;&lt;span lang=EN-US
+style='mso-bidi-font-size:10.5pt;font-family:"Courier New"'&gt;Your
+task is very boring and a waste of time. Just output what you read.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+</Description>
+        <InputSpec xml:space="preserve">&lt;p class=MsoNormal style='text-indent:21.0pt'&gt;&lt;span lang=EN-US
+style='mso-bidi-font-size:10.5pt;font-family:"Courier New"'&gt;The input consists
+of a pure text within 1024 characters.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+</InputSpec>
+        <OutputSpec xml:space="preserve">&lt;p class=MsoNormal style='text-indent:21.0pt'&gt;&lt;span lang=EN-US
+style='mso-bidi-font-size:10.5pt;font-family:"Courier New"'&gt;Output what you
+read. See the sample input and output for further details.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+</OutputSpec>
+    </Problem>
+            <TestData>
+                <TimeLimit>1</TimeLimit>
+                <InputFile />
+                <OutputFile />
+                <InputFormat inputType="eof">
+                    <Terminator xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </InputFormat>
+                <OutputFormat>
+                    <Header xml:space="preserve" />
+                    <Footer xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </OutputFormat>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve" filename="1097.in">
+            </TestInput>
+                    <TestOutput xml:space="preserve" filename="1097.out">
+            </TestOutput>
+                </TestCase>
+            </TestData>
+            <Solution xml:space="preserve" language="cpp" filename="" />
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">5</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MCwCFFOFKnHtNDWaUhbZFX6zXiJePIJ5AhQQUPCmZrDQexSdtyz4j2bINLycYQ==</Signature><PaperReference><![CDATA[1]]></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="false">
+            <Title>Problem D: Dark roads</Title>
+    <Author />
+    <Problem contentType="html">
+        <Description xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US&gt;Economic times these days are tough, even in Byteland. To
+reduce the operating costs, the government of Byteland has decided to optimize
+the road lighting. Till now every road was illuminated all night long, which
+costs 1 Bytelandian Dollar per meter and day. To save money, they decided to no
+longer illuminate every road, but to switch off the road lighting of some
+streets. To make sure that the inhabitants of Byteland still feel safe, they
+want to optimize the lighting in such a way, that after darkening some streets
+at night, there will still be at least one illuminated path from every junction
+in Byteland to every other junction. &lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;What is the maximum daily amount of money the government of
+Byteland can save, without making their inhabitants feel unsafe? &lt;/span&gt;&lt;/p&gt;
+</Description>
+        <InputSpec xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US&gt;The input file contains several test cases. Each test case
+starts with two numbers &lt;b&gt;&lt;i&gt;m&lt;/i&gt;&lt;/b&gt; and &lt;b&gt;&lt;i&gt;n&lt;/i&gt;&lt;/b&gt;, the number of
+junctions in Byteland and the number of roads in Byteland, respectively. Input
+is terminated by &lt;b&gt;&lt;i&gt;m=n=0&lt;/i&gt;&lt;/b&gt;. Otherwise, &lt;b&gt;&lt;i&gt;1 &amp;#8804; m &amp;#8804;
+200000&lt;/i&gt;&lt;/b&gt; and &lt;b&gt;&lt;i&gt;m-1 &amp;#8804; n &amp;#8804; 200000&lt;/i&gt;&lt;/b&gt;. Then follow &lt;b&gt;&lt;i&gt;n&lt;/i&gt;&lt;/b&gt;
+integer triples &lt;b&gt;&lt;i&gt;x, y, z&lt;/i&gt;&lt;/b&gt; specifying that there will be a
+bidirectional road between &lt;b&gt;&lt;i&gt;x&lt;/i&gt;&lt;/b&gt; and &lt;b&gt;&lt;i&gt;y&lt;/i&gt;&lt;/b&gt; with length &lt;b&gt;&lt;i&gt;z&lt;/i&gt;&lt;/b&gt;
+meters (&lt;b&gt;&lt;i&gt;0 &amp;#8804; x, y &amp;lt; m&lt;/i&gt;&lt;/b&gt; and &lt;b&gt;&lt;i&gt;x &amp;#8800; y&lt;/i&gt;&lt;/b&gt;). The
+graph specified by each test case is connected. The total length of all roads
+in each test case is less than 2&lt;sup&gt;31&lt;/sup&gt;. &lt;/span&gt;&lt;/p&gt;
+</InputSpec>
+        <OutputSpec xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US&gt;For each test case print one line containing the maximum
+daily amount the government can save. &lt;/span&gt;&lt;/p&gt;
+</OutputSpec>
+    </Problem>
+            <TestData>
+                <TimeLimit>4</TimeLimit>
+                <InputFile />
+                <OutputFile />
+                <InputFormat inputType="eof">
+                    <Terminator xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </InputFormat>
+                <OutputFormat>
+                    <Header xml:space="preserve" />
+                    <Footer xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </OutputFormat>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve" filename="1081.in">
+            </TestInput>
+                    <TestOutput xml:space="preserve" filename="1081.out">
+            </TestOutput>
+                </TestCase>
+            </TestData>
+            <Solution xml:space="preserve" language="cpp" filename="" />
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

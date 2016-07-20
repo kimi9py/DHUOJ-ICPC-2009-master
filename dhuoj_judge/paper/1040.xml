@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">5</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MCwCFFkP33t8XSHRaqNUbX9A8+rG1IX8AhRvJJnNIpUCaldsTfUw8W6ce7y8TQ==</Signature><PaperReference><![CDATA[1]]></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="false">
+            <Title>Build a Fence</Title>
+            <Author />
+            <Problem contentType="html">
+                <Description xml:space="preserve">There is a wall in your backyard. It is so long that you can't see its endpoints. You want to build a fence of length L such that the area enclosed between the wall and the fence is maximized. The fence can be of arbitrary shape, but only its two endpoints may touch the wall.&lt;BR&gt;
+&lt;IMG SRC="b.jpg"&gt;</Description>
+                <InputSpec xml:space="preserve">The input consists of several test cases.&lt;BR&gt;
+For every test case, there is only one integer L (1≤L≤100), indicating the length of the fence.&lt;BR&gt;
+The input ends with L=0.</InputSpec>
+                <OutputSpec xml:space="preserve">For each test case, output one line containing the largest area. Your answer should be rounded to 2 digits after the decimal point.</OutputSpec>
+                <Figure filename="b.jpg">
+                    <Text />
+                    <Image xml:space="preserve">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</Image>
+                </Figure>
+            </Problem>
+            <TestData>
+                <TimeLimit>10</TimeLimit>
+                <InputFile />
+                <OutputFile />
+                <InputFormat inputType="eof">
+                    <Terminator xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </InputFormat>
+                <OutputFormat>
+                    <Header xml:space="preserve" />
+                    <Footer xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </OutputFormat>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve">3
+6
+10
+15
+21
+28
+36
+45
+55
+66
+78
+91
+0
+</TestInput>
+                    <TestOutput xml:space="preserve">1.43
+5.73
+15.92
+35.81
+70.19
+124.78
+206.26
+322.29
+481.44
+693.28
+968.30
+1317.96
+</TestOutput>
+                </TestCase>
+            </TestData>
+            <Solution xml:space="preserve" language="cpp" filename="" />
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

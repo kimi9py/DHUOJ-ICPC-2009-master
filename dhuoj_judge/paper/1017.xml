@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">1</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MCwCFHHKZlClhIdAdgfUWx3tRzi/jplVAhQNqUjx9y/VmRy/hBji8VXwQKpFjQ==</Signature><PaperReference><![CDATA[1]]></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="false">
+            <Title>幼儿园分班问题</Title>
+            <Author>ZhuXingyin</Author>
+            <Problem contentType="html">
+                <Description xml:space="preserve">某幼儿园只招收3至7岁的小孩。3、4岁入小班，5、6岁入中班，7岁入大班。给出一个孩子的年龄，请问他应该被分到什么班。</Description>
+                <InputSpec xml:space="preserve">你的程序需要从标准输入设备（通常为键盘）中读入多组测试数据。每组输入数据占一行，其中只包含一个整数i（1≤i≤10），表示一个孩子的年龄，程序输入以0结束。在行首和行尾没有多余的空格。</InputSpec>
+                <OutputSpec xml:space="preserve">对每组测试数据，你的程序需要向标准输出设备（通常为启动该程序的文本终端，例如你在Windows中启动该程序所用的命令行终端）依次输出一组对应的答案。每组答案占一行，其中包含这个孩子应该进入的班级。如果是小班，则输出“One.”；如果是中班，则输出：“Two.”；如果是大班，则输出：“Three.”；如果该孩子的年龄不能进入幼儿园，则输出：“No.”。在行首和行尾不要输出多余的空格；在所有数据前后不要输出多余的空行；两组数据之间也不要输出多余的空行。</OutputSpec>
+            </Problem>
+            <TestData>
+                <TimeLimit>1</TimeLimit>
+                <InputFile />
+                <OutputFile />
+                <InputFormat inputType="zero">
+                    <Terminator xml:space="preserve">0</Terminator>
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </InputFormat>
+                <OutputFormat>
+                    <Header xml:space="preserve" />
+                    <Footer xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </OutputFormat>
+                <TestCase difficulty="sample">
+                    <TestInput xml:space="preserve">3
+</TestInput>
+                    <TestOutput xml:space="preserve">One.
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">4
+</TestInput>
+                    <TestOutput xml:space="preserve">One.
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">5
+</TestInput>
+                    <TestOutput xml:space="preserve">Two.
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="sample">
+                    <TestInput xml:space="preserve">7
+</TestInput>
+                    <TestOutput xml:space="preserve">Three.
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">6
+</TestInput>
+                    <TestOutput xml:space="preserve">Two.
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">8
+</TestInput>
+                    <TestOutput xml:space="preserve">No.
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">9
+</TestInput>
+                    <TestOutput xml:space="preserve">No.
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">1
+</TestInput>
+                    <TestOutput xml:space="preserve">No.
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve">10
+</TestInput>
+                    <TestOutput xml:space="preserve">No.
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">9
+</TestInput>
+                    <TestOutput xml:space="preserve">No.
+</TestOutput>
+                </TestCase>
+            </TestData>
+            <Solution xml:space="preserve" language="cpp" filename="test">#include&lt;iostream&gt;
+using namespace std;
+int main(){
+	int n;
+	while (cin&gt;&gt;n &amp;&amp; n){
+		switch (n){
+			case 3: 
+			case 4: cout&lt;&lt;"One."&lt;&lt;endl; break;
+			case 5: 
+			case 6: cout&lt;&lt;"Two."&lt;&lt;endl; break;
+			case 7: cout&lt;&lt;"Three."&lt;&lt;endl; break;
+			default: cout&lt;&lt;"No."&lt;&lt;endl; break;
+		}
+	}
+	return 0;
+}</Solution>
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">1</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MCwCFBdf9aMWIxqlNHk93wpuco5JYD6YAhR1PkF+jOhwCA3Z4LEuW0uqB0BEbw==</Signature><PaperReference><![CDATA[1]]></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="true">
+            <Title>Kindergarten Counting Game</Title>
+            <Author>Hu, Yongjian</Author>
+            <Problem contentType="html">
+                <Description xml:space="preserve">Everybody sit down in a circle. Ok. Listen to me carefully. &lt;BR&gt;
+"Woooooo, you scwewy wabbit!" &lt;BR&gt;
+Now, could someone tell me how many words I just said? </Description>
+                <InputSpec xml:space="preserve">Input to your program will consist of a series of lines, each line containing multiple words (at least one). A "word" is defined as a consecutive sequence of letters (upper and/or lower case). 
+</InputSpec>
+                <OutputSpec xml:space="preserve">Your program should output a word count for each line of input. Each word count should be printed on a separate line.</OutputSpec>
+            </Problem>
+            <TestData>
+                <TimeLimit>1</TimeLimit>
+                <InputFile />
+                <OutputFile />
+                <InputFormat inputType="eof">
+                    <Terminator xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </InputFormat>
+                <OutputFormat>
+                    <Header xml:space="preserve" />
+                    <Footer xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </OutputFormat>
+                <TestCase difficulty="sample">
+                    <TestInput xml:space="preserve">Meep Meep!
+</TestInput>
+                    <TestOutput xml:space="preserve">2
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="sample">
+                    <TestInput xml:space="preserve">I tot I taw a putty tat.
+</TestInput>
+                    <TestOutput xml:space="preserve">7
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">I did! I did! I did taw a putty tat.
+</TestInput>
+                    <TestOutput xml:space="preserve">10
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">Shsssssssssh ... I am hunting wabbits. Heh Heh Heh Heh ...
+</TestInput>
+                    <TestOutput xml:space="preserve">9
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">Everybody sit down in a circle. Ok. Listen to me carefully. 
+</TestInput>
+                    <TestOutput xml:space="preserve">11
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">``Woooooo, you scwewy wabbit!'' 
+</TestInput>
+                    <TestOutput xml:space="preserve">4
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">Now, could someone tell me how many words I just said? 
+</TestInput>
+                    <TestOutput xml:space="preserve">11
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">Input to your program will consist of a series of lines, each line 
+</TestInput>
+                    <TestOutput xml:space="preserve">13
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="sample">
+                    <TestInput xml:space="preserve">abc######def###    gh i
+</TestInput>
+                    <TestOutput xml:space="preserve">4
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve">A
+</TestInput>
+                    <TestOutput xml:space="preserve">1
+</TestOutput>
+                </TestCase>
+            </TestData>
+            <Solution xml:space="preserve" language="cpp" filename="kinder">#include &lt;cstdio&gt;
+#include &lt;iostream&gt;
+#include &lt;cstring&gt;
+#include &lt;cctype&gt;
+#define MAXL 1000
+using namespace std;
+
+int main()
+{
+    char line[MAXL+1];
+    int i,len,cnt;
+    while(gets(line)!=NULL)
+    {
+        cnt=0;
+        len=strlen(line);
+        for(i=0;i&lt;len;i++)
+        {
+            if((isalpha(line[i]))&amp;&amp;(!isalpha(line[i+1])))
+            {
+                cnt++;
+            }
+        }
+        printf("%d\n",cnt);
+    }
+    return 0;
+}
+</Solution>
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

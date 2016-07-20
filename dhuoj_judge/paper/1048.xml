@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">5</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MCwCFFXUtUNc4MF5cU2tvyqi7Opum/QVAhRIOxXW2sBvUIHaPFNO9ps8SokK/Q==</Signature><PaperReference><![CDATA[1]]></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="false">
+            <Title>Jumping Hands</Title>
+            <Author />
+            <Problem contentType="html">
+                <Description xml:space="preserve">In Shanghai, there are some famous clock towers built more than 100 years ago, such as the office building of Shanghai Customs, Xujiahui Church, etc. Every clock tower's clock-face consists of three hands: an hour hand, a minute hand, and a second hand. The hands do not move smoothly as time passing. When a second passes, the hands jump to the next place clockwise: the second hand moves 1/60 ring, the minute hand moves 1/3600 ring and the hour hand moves 1/43200 ring.&lt;BR&gt;&lt;BR&gt;
+
+We assume that every hand's mass is evenly distributed, and its thickness can be ignored. In other words, every hand's centre of gravity is at the middle position of the respective hand. Suppose p1, p2 and p3 are, respectively, the position of the centre of gravity of the hour hand, that of the minute hand, and that of the second hand. The position of all three hands'centre of gravity, P, is the average of p1, p2 and p3 weighted by the hands' mass.&lt;BR&gt;&lt;BR&gt;
+
+Suppose P1 and P2 are the positions of the three hands'centre of gravity at the start time and at the end time, respectively. Your task is to calculate the length of the path from P1 to P2. That is, if P3 is the position of the three hands'centre of gravity on the clock-face at a point of time between start time and end time, X is the length of the path from P1 to P3, and Y is the length of the path from P3 to P2, the length of the path from P1 to P2 is X+Y.</Description>
+                <InputSpec xml:space="preserve">Input consists of one or more lines, each line describing one data set. Each line begins with 6 integers: L1, L2, L3, M1, M2, M3, followed by start time and end time. L1, L2 and L3 indicate the lengths of hour hand, minute hand and second hand respectively, where 1≤L1&amp;lt;L2&amp;lt;L3≤100. M1, M2 and M3 indicate the weights of hour hand, minute hand and second hand respectively, where 1≤M1, M2, M3≤100. The format of start time and end time is hh:mm:ss, where 0≤hh≤23, 0≤mm≤59, and 0≤ss≤59. Start time and end time should be in the same day.&lt;BR&gt;&lt;BR&gt;
+
+End of input is indicated by a line consisting of -1.</InputSpec>
+                <OutputSpec xml:space="preserve">For each data set, output a single line. Each line should give the length of the path for the positions of three hands'centre of gravity at the start time and at the end time. The precision should be 10&lt;SUP&gt;-2&lt;/SUP&gt;.</OutputSpec>
+            </Problem>
+            <TestData>
+                <TimeLimit>10</TimeLimit>
+                <InputFile />
+                <OutputFile />
+                <InputFormat inputType="eof">
+                    <Terminator xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </InputFormat>
+                <OutputFormat>
+                    <Header xml:space="preserve" />
+                    <Footer xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </OutputFormat>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve">60 80 100 65 81 100 09:11:47 14:57:12
+1 10 100 100 10 1 03:01:05 21:02:10
+1 9 100 1 11 100 00:00:00 01:00:00
+98 99 100 100 10 1 00:00:00 23:44:30
+98 99 100 98 99 100 00:00:00 23:59:59
+98 99 100 1 25 100 00:00:00 23:59:59
+1 10 100 1 1 100 00:00:00 23:59:59
+98 99 100 1 1 100 00:00:00 23:59:59
+34 58 92 95 14 27 14:40:33 16:21:56
+34 58 92 95 14 27 21:40:33 23:21:56
+-1
+</TestInput>
+                    <TestOutput xml:space="preserve">44093.60
+3058.57
+16822.27
+4075.79
+152258.49
+358872.49
+443311.20
+443311.21
+5814.79
+5814.83
+</TestOutput>
+                </TestCase>
+            </TestData>
+            <Solution xml:space="preserve" language="cpp" filename="" />
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

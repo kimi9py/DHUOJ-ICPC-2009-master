@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">5</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MCwCFFOFKnHtNDWaUhbZFX6zXiJePIJ5AhQQUPCmZrDQexSdtyz4j2bINLycYQ==</Signature><PaperReference><![CDATA[1]]></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="false">
+            <Title>Acceptable Matching</Title>
+    <Author />
+    <Problem contentType="html">
+        <Description xml:space="preserve">&lt;p class=MsoNormal&gt;&lt;b style='mso-bidi-font-weight:normal'&gt;&lt;span lang=EN-US
+style='mso-bidi-font-size:10.5pt;font-family:"Courier New"'&gt;&lt;span
+style='mso-tab-count:1'&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/b&gt;&lt;span lang=EN-US
+style='mso-bidi-font-size:10.5pt;font-family:"Courier New"'&gt;Given a bipartite
+graph G with &lt;b style='mso-bidi-font-weight:normal'&gt;N&lt;/b&gt; vertices on each side,
+one can easily come up with the maximum matching for this graph. A matching is
+acceptable if and only if it satisfy:&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p class=MsoNormal style='margin-left:39.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2;
+tab-stops:list 39.0pt'&gt;&lt;![if !supportLists]&gt;&lt;span lang=EN-US style='mso-bidi-font-size:
+10.5pt;font-family:"Courier New";mso-fareast-font-family:"Courier New"'&gt;&lt;span
+style='mso-list:Ignore'&gt;a)&lt;span style='font:7.0pt "Times New Roman"'&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;![endif]&gt;&lt;span lang=EN-US style='mso-bidi-font-size:10.5pt;
+font-family:"Courier New"'&gt;It&amp;#8217;s a complete matching. In the other words,
+all vertices are in the matching.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p class=MsoNormal style='margin-left:39.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2;
+tab-stops:list 39.0pt'&gt;&lt;![if !supportLists]&gt;&lt;span lang=EN-US style='mso-bidi-font-size:
+10.5pt;font-family:"Courier New";mso-fareast-font-family:"Courier New"'&gt;&lt;span
+style='mso-list:Ignore'&gt;b)&lt;span style='font:7.0pt "Times New Roman"'&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;![endif]&gt;&lt;span lang=EN-US style='mso-bidi-font-size:10.5pt;
+font-family:"Courier New"'&gt;Among all complete matching, it ordered lexicographically
+first. That is, the first vertex in the left section matches the minimum
+ordered vertex in the right section, then the second vertex in the left section
+matches the minimum ordered vertex in the right section, and so on.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p class=MsoNormal style='text-indent:21.0pt;mso-char-indent-count:2.0'&gt;&lt;span
+lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"Courier New"'&gt;Your
+task is to calculate the acceptable matching for the given graph.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+
+</Description>
+        <InputSpec xml:space="preserve">&lt;p class=MsoNormal style='text-indent:21.0pt'&gt;&lt;span lang=EN-US
+style='mso-bidi-font-size:10.5pt;font-family:"Courier New"'&gt;There are multiple
+test cases.&lt;b style='mso-bidi-font-weight:normal'&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p class=MsoNormal style='text-indent:21.0pt'&gt;&lt;span lang=EN-US
+style='mso-bidi-font-size:10.5pt;font-family:"Courier New"'&gt;The first line of
+the input contains an integer &lt;b style='mso-bidi-font-weight:normal'&gt;T&lt;/b&gt;,
+meaning the number of the test cases.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p class=MsoNormal style='text-indent:21.0pt'&gt;&lt;span lang=EN-US
+style='mso-bidi-font-size:10.5pt;font-family:"Courier New"'&gt;For each test case,
+the first line of input contains two integers &lt;b style='mso-bidi-font-weight:
+normal'&gt;N&lt;/b&gt; and &lt;b style='mso-bidi-font-weight:normal'&gt;M &lt;/b&gt;(1&amp;#8804;&lt;b
+style='mso-bidi-font-weight:normal'&gt;N&lt;/b&gt;&amp;#8804;10, &lt;b style='mso-bidi-font-weight:
+normal'&gt;N&lt;/b&gt;&amp;#8804;&lt;b style='mso-bidi-font-weight:normal'&gt;M&lt;/b&gt;&amp;#8804;&lt;b
+style='mso-bidi-font-weight:normal'&gt;N*N&lt;/b&gt;), meaning the number of vertices on
+one side and number of edges in the graph. Next &lt;b style='mso-bidi-font-weight:
+normal'&gt;M&lt;/b&gt; lines, each line contains two integers &lt;b style='mso-bidi-font-weight:
+normal'&gt;A&lt;/b&gt; and &lt;b style='mso-bidi-font-weight:normal'&gt;B &lt;/b&gt;(1&amp;#8804;&lt;b
+style='mso-bidi-font-weight:normal'&gt;A&lt;/b&gt;,&lt;b style='mso-bidi-font-weight:normal'&gt;B&lt;/b&gt;&amp;#8804;&lt;b
+style='mso-bidi-font-weight:normal'&gt;N&lt;/b&gt;), meaning the A-th vertex in the left
+section could match the B-th vertex in the right section in the graph.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p class=MsoNormal style='text-indent:21.0pt'&gt;&lt;span lang=EN-US
+style='mso-bidi-font-size:10.5pt;font-family:"Courier New"'&gt;See further details
+in the input sample.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+</InputSpec>
+        <OutputSpec xml:space="preserve">&lt;p class=MsoNormal style='text-indent:21.0pt'&gt;&lt;span lang=EN-US
+style='mso-bidi-font-size:10.5pt;font-family:"Courier New"'&gt;For each test case,
+output case number first, and then &lt;b style='mso-bidi-font-weight:normal'&gt;N&lt;/b&gt;
+numbers in a line meaning for every vertex in the left section, which vertex it
+matched in the acceptable matching. You can assume the acceptable matching
+always exist.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+</OutputSpec>
+    </Problem>
+            <TestData>
+                <TimeLimit>1</TimeLimit>
+                <InputFile />
+                <OutputFile />
+                <InputFormat inputType="eof">
+                    <Terminator xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </InputFormat>
+                <OutputFormat>
+                    <Header xml:space="preserve" />
+                    <Footer xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </OutputFormat>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve" filename="1096.in">
+            </TestInput>
+                    <TestOutput xml:space="preserve" filename="1096.out">
+            </TestOutput>
+                </TestCase>
+            </TestData>
+            <Solution xml:space="preserve" language="cpp" filename="" />
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

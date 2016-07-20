@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="false">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">1</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>10</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MC0CFBEQOUnmWSbNxRC2v71jKAbNJUDNAhUAkWEHhovWe7LXknd1JXPKBDdIo+s=</Signature><PaperReference></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="false">
+    <Title>A · Sixth Grade Math</Title>
+    <Author />
+    <Problem contentType="html">
+        <Description xml:space="preserve">In sixth grade, students are presented with different ways to calculate the Least Common Multiple 
+(LCM) and the Greatest Common Factor (GCF) of two integers.   The LCM of two integers a and b is 
+the smallest positive integer that is a multiple of both a and b.  The GCF of two non-zero integers a 
+and b is the largest positive integer that divides both a and b without remainder. &lt;BR&gt;&lt;BR&gt;
+ 
+For this problem you will write a program that determines both the LCM and GCF for positive 
+integers.</Description>
+        <InputSpec xml:space="preserve">The first line of input contains a single integer N, (1 &amp;lt;= N &amp;lt;= 1000) which is the number of data sets that 
+follow.  Each data set consists of a single line of input containing two positive integers, a and b,  
+(1 &amp;lt;= a,b  &amp;lt;= 1000) separated by a space.</InputSpec>
+        <OutputSpec xml:space="preserve">For each data set, you should generate one line of output with the following values:  The data set 
+number as a decimal integer (start counting at one), a space, the LCM, a space, and the GCF. </OutputSpec>
+    </Problem>
+    <TestData>
+        <TimeLimit>1</TimeLimit>
+        <InputFile />
+        <OutputFile />
+        <InputFormat inputType="eof">
+            <Terminator xml:space="preserve"></Terminator>
+            <Seperator xml:space="preserve" layout="bottom"></Seperator>
+        </InputFormat>
+        <OutputFormat>
+            <Header xml:space="preserve"></Header>
+            <Footer xml:space="preserve"></Footer>
+            <Seperator xml:space="preserve" layout="bottom"></Seperator>
+        </OutputFormat>
+        <TestCase difficulty="special">
+                    <TestInput xml:space="preserve" filename="1049.in">
+            </TestInput>
+                    <TestOutput xml:space="preserve" filename="1049.out">
+            </TestOutput>
+                </TestCase>
+        
+    </TestData>
+    <Solution xml:space="preserve" language="cpp" filename=""></Solution>
+</ProblemArchive>
+
+
+    </ProblemList>
+</PaperSetter>
+

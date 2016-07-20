@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>2014年东华大学ACM校内友谊赛</PaperVersion><PaperID>2014年东华大学ACM校内友谊赛</PaperID><PaperName>2014年东华大学ACM校内友谊赛（程序设计语言组）</PaperName><PaperAuthor>东华大学ACM大学生协会</PaperAuthor><PaperTotalTime unit="hour">3</PaperTotalTime><PaperStartTime zone="+8">20141216 13:00</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEAtUGAhZ90uQl4aS4HchUIaS4Xzh/5285VYulMaTKeV4MauchrT0/Zo/iQYijfA+6B2hjP+KGXlX6jycg6A+uKgA==</PublicKey><Signature>MC0CFQCMKov9wiwjfr90up/i8XYsxxPFyQIUNPIWNAg9QeOFa5mYljWMmpOiXxg=</Signature><PaperReference><![CDATA[2014年东华大学ACM校内友谊赛]]></PaperReference><PaperDescribe><![CDATA[2014年东华大学ACM校内友谊赛
+
+活动背景
+       ACM国际大学生程序设计竞赛（简称ACM/ICPC）是由国际计算机界历史最悠久、最具权威性的组织ACM（Association for Computing Machinery）主办，是世界上公认的规模最大、水平最高、参与人数最多的国际大学生程序设计竞赛，其目的旨在使大学生运用计算机来充分展示分析问题和解决问题的能力。该项竞赛从1970年举办至今已历37届，因历届竞赛都荟萃了世界各大洲的精英，云集了计算机界的“希望之星”，而受到国际各知名大学的重视，并受到全世界各著名计算机公司如Microsoft、IBM、Google、Facebook等公司的高度关注，成为世界各国大学生最具影响力的国际级计算机类的赛事，此项竞赛所颁发的获奖证书也为世界各著名计算机公司、各知名大学所认可。近年来国内越来越多的知名高校在计算机学科研究生复试中开始采用ACM试题作为上机考试内容。
+
+竞赛宗旨
+       本次友谊赛旨在培养我校大学生的程序设计能力。在程序设计过程中激发创新意识，促进我校大学生程序设计的整体水平，并选拔优秀选手参加ACM新手入门训练。
+
+
+友谊赛比赛规则
+
+友谊赛采用ACM/ICPC规则与方式, 均为个人赛,无团队组别。
+比赛规则与传统ACM比赛规则略有不同，请参赛人员认真阅读比赛规则。
+      
+       1.  竞赛时，允许参赛选手携带源代码参考书、手册、字典等纸质参考资料以及草稿纸，严禁使用任何电子存储工具或通讯设备。
+      
+       2.  参赛选手可以针对题目描述中的不明确或错误的部分提问。如果评委确认题目中确实存在不明确或错误的部分，将会通告所有参赛选手进行声明或更正。
+      
+       3.  本大赛将进行现场实时排名，对成绩有疑问的选手可以当场向组委会投诉，投诉截止时间为比赛结束后30分钟，在截止时间以后的投诉均视为无效。
+      
+       4.  竞赛所用编程语言为C和C++，操作系统为Windows，比赛系统所用编译器为gcc和g++，不使用vc++。数据结构组竞赛试题全部采用英语描述，程序设计语言组竞赛试题全部采用中文描述。      
+ 
+       5.  所有选手使用的计算机具有完全相同的规格配置。
+ 
+       6.  在竞赛中，参赛队员不得和其他选手以及竞赛组委会指定工作人员以外的人交谈；系统支持人员可以回答和系统相关的问题，例如解释系统错误信。]]></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="2">
+        <ProblemArchive version="1.0" checked="true">
+            <Title>Problem 8 数字的频率</Title>
+            <Author>Zhuping Zang</Author>
+            <Problem contentType="html">
+                <Description xml:space="preserve">给你一个数字串，里面有若干个数，输出这个数字串中出现次数最多的数，如果有多个数出现次数一样，则按数的大小降序输出。</Description>
+                <InputSpec xml:space="preserve">你写的程序要求从标准输入设备中读入测试数据作为你所写程序的输入数据。标准输入设备中有多组测试数据，每组测试数据占一行，每一行有若干个正整数（数都大于等于1且小于等于200），每个数之间用一个空格隔开，之后，有一个数0，它表示这组数据结束，不参与统计。测试数据之间没有任何空行，第一组测试数据前面以及最后一组测试数据后面也都没有任何空行。</InputSpec>
+                <OutputSpec xml:space="preserve">对于每一组测试数据，你写的程序要求计算出一组相应的运算结果，并将这一组运算结果作为你所写程序的输出数据依次写入到标准输出设备中。每组运算结果为一行整数，即所要求的数字串中出现次数最多的那些数 (每个数之间用一个空格隔开,且由大到小)。每组运算结果单独形成一行数据，其行首和行尾都没有任何空格，每组运算结果与其后一组运算结果之间没有任何空行，第一组运算结果前面以及最后一组运算结果后面也都没有任何空行。</OutputSpec>
+            </Problem>
+            <EncryptedData xmlns="http://w2c.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Element">
+                <EncryptionMethod xmlns="" Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
+                <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                    <KeyName xmlns="">s14vjGtJc2c=</KeyName>
+                </ds:KeyInfo>
+                <CipherData xmlns="">
+                    <CipherValue>S4aPb5GRF9knN+RYnwZ3y1E4VAhJ9aEYkhyR9b4kq2+yTIsLhvziH+x93dnWz+/cS0bdombqxrBJY/uCb2NhCCAtRxvC0SiN/ErX3w6yv5nDSkbCBbZGPiAtRxvC0SiNkpD3NYFSr+/5tpTtYG/LnY88z0NMyLHNqhiwZ39QcAM6dCB3I8x7c/xh8Ni/XyuHVZsX+ZecP8SbFEeLav36+swl+e33/hj394ozI6p5hmlSX0ooq5SSyFK/Ban3tXsEfcG5CYH3gyKvZG+7UPlg+GoNHgF8wLnQ5zGvzWCfvC57t+78+PYzLZmQqO6MGx/PE7ItmckcvYlO2ZHtKcHlfROyLZnJHL2J4BLZ8exWfYffqNBpxx39GdYOIMUqsi5zj86Jcl6pOYyS4QSgsfgARIAsel3p285/hZyO+YfYWwWWpNfTJFbJ12fAWOcW1XGcag0eAXzAudBtoojDDtCFAB8hb8pgMCvdhXMBZW4ZSLq6MXBx1mx0LeVUOJcTtmzywyYIlzBWro6FcwFlbhlIuqUV26ynxzA5hXMBZW4ZSLqO+Cl2WF/u5kgucUkL+WUChXMBZW4ZSLrbFNNL0cvz2yrZwddkErcjhXMBZW4ZSLoLoa9MVMWjdmfAWOcW1XGcdpW8QFaWsz8EDwikKJAbo6VPVoo6AoHuDduhqg/1UNAX/khMmxwH8YVzAWVuGUi61a0H/JUxbEx0h027kdmUwj3hGftkO7Qu9DBce/htnj2FcwFlbhlIuoVzAWVuGUi6sWb7h6pne4xa1xYOVwT2b+Obzpw2mLxihXMBZW4ZSLqFcwFlbhlIukR420Gho50Dza4sgwGlPkqFcwFlbhlIuoVzAWVuGUi6KkiV59uAZVFnwFjnFtVxnJh8mJCnCvdCXNlAEVc3SllnwFjnFtVxnIQbNofxCwKOBq+964yJAZC8wcmYhIokRo248uWuc9K7PFxHxwEH3MoBaGwTZ8EMMw38/In6UGYe</CipherValue>
+                </CipherData>
+            </EncryptedData>
+            <EncryptedData xmlns="http://w2c.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Element">
+                <EncryptionMethod xmlns="" Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
+                <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                    <KeyName xmlns="">C+bj08eG8Vg=</KeyName>
+                </ds:KeyInfo>
+                <CipherData xmlns="">
+                    <CipherValue>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</CipherValue>
+                </CipherData>
+            </EncryptedData>
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

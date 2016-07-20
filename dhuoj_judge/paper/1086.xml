@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">5</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MCwCFFOFKnHtNDWaUhbZFX6zXiJePIJ5AhQQUPCmZrDQexSdtyz4j2bINLycYQ==</Signature><PaperReference><![CDATA[1]]></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="false">
+            <Title>Another Door Repairing Problem</Title>
+    <Author />
+    <Problem contentType="html">
+        <Description xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US&gt;Maybe you have already solved the &lt;i style='mso-bidi-font-style:
+normal'&gt;Door Repairing Problem&lt;/i&gt; for YY, who is the officer of the
+accommodation building B37, in a famous university called &lt;st1:place w:st="on"&gt;&lt;st1:PlaceName
+ w:st="on"&gt;Famous&lt;/st1:PlaceName&gt; &lt;st1:PlaceType w:st="on"&gt;University&lt;/st1:PlaceType&gt;&lt;/st1:place&gt;.
+Maybe you have not, but it does not matter because the new term is coming. So
+here comes the &lt;i style='mso-bidi-font-style:normal'&gt;Another Door Repairing
+Problem&lt;/i&gt;!&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;As is described in &lt;i style='mso-bidi-font-style:normal'&gt;Door
+Repairing Problem&lt;/i&gt;, many students live in B37. The building is old, so
+sometimes a careless student such as LMY may open the door of the building too
+vigorously, and break it as a result. However, when a student opens the door
+and finds it already broken, he will report it to the headmaster, and YY will
+be punished as a result&lt;/span&gt;&lt;span style='font-family:SimSun;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman"'&gt;&amp;#8230;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;More precisely, the door is fine at the beginning of the
+term. The term has a length of &lt;span class=SpellE&gt;&lt;b style='mso-bidi-font-weight:
+normal'&gt;T&lt;sub&gt;term&lt;/sub&gt;&lt;/b&gt;&lt;/span&gt;. During the term, the door will be opened
+many times, which can be regarded as a Poisson process, i.e., in any period of
+length &lt;b style='mso-bidi-font-weight:normal'&gt;T&lt;/b&gt;, the probability that the
+door will be opened &lt;b style='mso-bidi-font-weight:normal'&gt;k&lt;/b&gt; times is&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p align=center style='text-align:center'&gt;
+&lt;IMG SRC="a1.jpg"&gt;
+&lt;span
+lang=EN-US style='font-size:15.0pt'&gt;, &lt;b style='mso-bidi-font-weight:normal'&gt;where
+&lt;/b&gt;&lt;/span&gt;&lt;b style='mso-bidi-font-weight:normal'&gt;&lt;span style='font-size:15.0pt;
+font-family:SimSun;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'&gt;&amp;#955;&lt;/span&gt;&lt;/b&gt;&lt;b style='mso-bidi-font-weight:normal'&gt;&lt;span
+lang=EN-US style='font-size:15.0pt'&gt; is a positive real constant&lt;/span&gt;&lt;/b&gt;&lt;span
+lang=EN-US style='font-size:15.0pt'&gt;.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;Note that for any non-negative real T, &lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p align=center style='text-align:center'&gt;
+&lt;IMG SRC="a2.jpg"&gt;
+&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;When the door is fine and is opened by some student, the
+probability that he carelessly breaks the door is &lt;b style='mso-bidi-font-weight:
+normal'&gt;p&lt;/b&gt;. (0&amp;lt;&lt;b style='mso-bidi-font-weight:normal'&gt;p&lt;/b&gt;&amp;lt;=1) When
+the door is broken, YY can repair it anytime he likes.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;Both repairing the door and being punished cost a lot. YY
+has thought for many days trying to make a best strategy when to repair the
+door, so that his expense can be minimized in expectation. He failed, so he is
+going to try the simplest ways. Given the length of the term &lt;span
+class=SpellE&gt;&lt;b style='mso-bidi-font-weight:normal'&gt;T&lt;sub&gt;term&lt;/sub&gt;&lt;/b&gt;&lt;/span&gt;,
+the constant &lt;/span&gt;&lt;b style='mso-bidi-font-weight:normal'&gt;&lt;span
+style='font-family:SimSun;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'&gt;&amp;#955;&lt;/span&gt;&lt;/b&gt;&lt;span lang=EN-US&gt;, the probability &lt;b
+style='mso-bidi-font-weight:normal'&gt;p&lt;/b&gt;, and the question type &lt;b
+style='mso-bidi-font-weight:normal'&gt;Q&lt;/b&gt;, you are to solve the &lt;i
+style='mso-bidi-font-style:normal'&gt;Another Door Repairing Problem&lt;/i&gt;:&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;When &lt;b style='mso-bidi-font-weight:normal'&gt;Q&lt;/b&gt;=1, tell
+the expected number of times YY has to repair the door, if he always repairs it
+immediately after it is broken.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;When &lt;b style='mso-bidi-font-weight:normal'&gt;Q&lt;/b&gt;=2, tell
+the expected number of times YY will be punished, if he never repairs the door.&lt;/span&gt;&lt;/p&gt;
+</Description>
+        <InputSpec xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US&gt;Input contains multiple test cases.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;A test case consists of a single line containing four
+numbers. The first is an integer &lt;b style='mso-bidi-font-weight:normal'&gt;Q&lt;/b&gt;,
+where &lt;b style='mso-bidi-font-weight:normal'&gt;Q&lt;/b&gt;=1 or &lt;b style='mso-bidi-font-weight:
+normal'&gt;Q&lt;/b&gt;=2 holds, indicating the type of the problem that you should
+solve. Three positive real numbers &lt;/span&gt;&lt;b style='mso-bidi-font-weight:normal'&gt;&lt;span
+style='font-family:SimSun;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman"'&gt;&amp;#955;&lt;/span&gt;&lt;/b&gt;&lt;span lang=EN-US&gt;, &lt;span class=SpellE&gt;&lt;b
+style='mso-bidi-font-weight:normal'&gt;T&lt;sub&gt;term&lt;/sub&gt;&lt;/b&gt;&lt;/span&gt; and &lt;b
+style='mso-bidi-font-weight:normal'&gt;p&lt;/b&gt; follow. The real numbers may be given
+in fixed-point or scientific e notations. All real numbers can be store in a &lt;b
+style='mso-bidi-font-weight:normal'&gt;double&lt;/b&gt; data type of C/C++, with a
+sufficiently small error rate. See the sample input for details.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;Input ends with a line containing four space-separated 0s.&lt;/span&gt;&lt;/p&gt;
+</InputSpec>
+        <OutputSpec xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US&gt;For each test case, output one line containing your
+solution to the specified problem. Your solution should be written in
+scientific notation: first output a real number, the coefficient part of your
+solution with two digits after the floating point; then output one space; then
+output an integer, the exponential part of your solution. You may assume that
+the absolute value of the exponential part is less than 100. See sample output
+for details.&lt;/span&gt;&lt;/p&gt;
+&lt;BR&gt;
+&lt;B&gt;Hint&lt;/B&gt;
+&lt;BR&gt;
+&lt;p&gt;&lt;span lang=EN-US&gt;The solution to sample input is 0.5, 1.0 and 0.213,
+respectively. &lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;Don't worry about inputting real numbers in
+scientific e notations. A simple &lt;span class=SpellE&gt;scanf&lt;/span&gt; or &lt;span
+class=SpellE&gt;cin&lt;/span&gt; as if it is fixed-point is OK.&lt;/span&gt;&lt;/p&gt;
+</OutputSpec>
+        <Figure filename="a1.jpg">
+            <Text />
+            <Image xml:space="preserve">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</Image>
+        </Figure>
+        <Figure filename="a2.jpg">
+            <Text />
+            <Image xml:space="preserve">/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCABIAMwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+s/XdT/sTw9qereT532G0lufK3bd+xC23ODjOMZwa0K5/wD4Tvwf/wBDXof/AIMYf/iqAM/+0/EkviH/AIR5NR0OG+gtPtksz2kj+fG77UMcPnArtKyB8uw/1RB+cqvQaFqf9t+HtM1byfJ+3WkVz5W7ds3oG25wM4zjOBXL/b/hZ/Z39nfa/Bv2HzfP+zeZa+X5mNu/b03Y4z1xWx/wnfg//oa9D/8ABjD/APFUAdBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFeF+KLNvg148tvFej28ieFdTcQajYQSqAJSHI2oRgAD51weCHXKKwFe6VT1XSrHXNLuNM1O2jubO4TZLE/Rh/MEHBBHIIBGCKALEE8N1bxXFvLHNBKgeOSNgyupGQQRwQRzmsPxt4Yt/F3hLUNImgglmkiY2rTZAinCny3yORgnnHYkYIJB8z+H+p33wz8Y/wDCtvEEkc1pdubjSr4S4GGzhSrN8oZkYBRyJCfvBww9soAKKK4u18Xa9qPizX9BsNC01n0d4Q80+qPGJFlUuhAEDYO0cjsehPWgDtKKw/CviWHxPpctwtvJa3drcPZ31q5DG3uExvTcOHAyCGHBBHQ5A3KACis/SrvUbv7b/aOl/YPJu5Irf/SFl+0QjG2Xj7u7n5TyMVoUAFFFFABRRRQAUVzdrrt9rfiC+stIS0TT9MuEgur6VvN86XAaSGNFYbSqsuZGPDZXY2CRX8CeItS8Q2+uLqgtPP0zWLjTle1iaNZFjC/MVZmIJJPf0oA6yiiuP8S+L9U0XUdShsdCgvbXTNKGp3VxNf8Ak4BMgEaqI2JYiJiDwOOSOMgHYUVxeg+Lta1y4sbebRrTT01TR21Kxu1vDcqDmMbHj2RnI81CcHB6A9SNTRtfuJ9cvvD+rQQQanaRR3EbwygpeQNlfNRCdyYdWDIc7cr8zZBoA6CiiigAoorL1vXrTQrffNFd3M7I7RWllbvPPLtHO1FBOMlRuOFBZQSMigDUorD8IeJYfF/hi1123t5LeC5eURxyEFtqSMgJxwCQucc4zjJxmtygAoorm/GfiWbw9paR6Zbx3uvXz+TptgSczycbmOOiIpLMSQABgsuQaAOT+IOnWfxA8Uaf4KTT/N+yYvNQ1VMFtPjYHES88SSbQMNkBSG2tjK+oVz/AIO8KW/g/Q/sEVzPeXE0rXN5dzsS9xO2N8hyTjOBx7cknJO5PPDa28txcSxwwRIXkkkYKqKBkkk8AAc5oAkry/RYdYl+L3xA/sm+sbXH9neZ9rs3uN3+jnGNsqY79c5yOmOfTIJ4bq3iuLeWOaCVA8ckbBldSMggjggjnNZen+F9J0vXL/WrSGdL/UMfapHu5XEmOmVZiox0GB8o4GBxQB5/4q0H/hF/C+iaLHezz/8ACQeJYI9bnz5bXvnljNwuPLVtoG1MfKMZOSToX9hZ+Fviv4Qt9AtINNt9XivYb+C0jEcc6xRh4yUHy7lZm+YDdgkZxxXearpVjrml3GmanbR3NncJslifow/mCDggjkEAjBFU9M8L6TpGoy6jbQzyX0sQga5u7uW5kEYJYIGlZiq5OcDAJxnoKAPL9C0H+1Ph/wDEPQdOvYNI8/xLdWtu+fLjX5olWLjGFfiPAzw2MHobmj2GmxazrNle6ZaeDfFEehTxtc6a6i0ktWYD7Wu3bsKyISAxVgpGScfL2i/Dzwwuj6npJsZ5LHU5VnvIpb6d/NkDBt+WckMSASQQTgZzirEXgrQY/txe1nuJL60NlcTXd5NPI0BzmMPI5ZVO4nCkc4PUCgDz/wAJ6FZ+HvFXhrSPEPh2x03XbSKUabqulsDFqe2ErKJV2hgwR1OXHLKxBAO1qeh6VY658D9Q8X6lbR3HiSa3vL86o3Fwk8TP5TJIMGML5SAKuFAGMYJz6ZpfgrQdIvLS6tbWdprKJobQ3N5NcC2QgAiNZHYJkKB8oHHHSo7nwF4bvLi5lmsJCl1cC6ubZbqZbeeUFTveAOI2JKqTlTkjJzQB5/ewQ+IvFPwkvNVijuLjUdMuGvJNoQz/AOio+19uMpuZ8p90hmBGGIO58P7G30f4j/EDSNOj+z6bDLZTRWqMfLjeWFmcqvRcnHTsAOgAHYah4X0nVNcsNau4Z3v9Pz9lkS7lQR564VWCnPQ5HzDg5HFGn+F9J0vXL/WrSGdL/UMfapHu5XEmOmVZiox0GB8o4GBxQBy/wV/efC3TbyT57q7luJ7mZuXmkM7gu7dWbAAyeeBXBwTr9g8TWGs2Ub+Fr3xxNDqV0k7LJCN6su4YCpFvWINIXzhmAGSDXpHh2ym8GapqOkGxu20O8vftGmzwAzJbmXG+3MaLmFFcMwbHlgPywbroW3gPw9aaXqmmw212LTVXL3qHULhjMx+8SxfILdGII3DhsigDcsbCz0yzjs7C0gtLWPOyGCMRouSScKOBkkn8ax/Hf/JPPEv/AGCrr/0U1U9E8EWmjeKv7Xt2kigttMTSrK3895cQh/NLMz5bO47VXJCqnXkKnQarpdprWl3Gm36SPaXKbJUSV4yy9xuQg4PQjPIyDwTQBl+BP+SeeGv+wVa/+ilrn/E/+j/GPwFLD+7kuotQguHTgyxrErqjEfeUN8wB4B5612FjY2XhzQ47S0jnWxsoiI4w0lw6oMnaudztgcBRnsAOgrn9M0u41rxzL4p1CyntrW0tBaaTDcuCxDEtLceWRmJmBRACQ+1WDAZAAB2Fef8A9nf9Sv45/wDCj/8Au6vQKKAOf8MW/wBn+1f8SvXLHds/5Cupfa9/X7n7+Xbjv93OR1xx0FFU9S0yDVbdYLiS7RFcODa3ctu2cEctGykjnpnHT0FAHF/BL/kkOhf9vH/pRJXoFYegeEdH8LosWjx3cECoUWBr6eWJAW3HbG7lQc85AzyfU1uUARzzLbW8s7iQpGhdhHGzsQBnhVBLH2AJPavA9P8AHPjCDxbf+Jb74Y65d388QtLYIk0SW1qG3CMDyTvYt8xcnnsFHB+gK4vw7rbafZ2GmNb6lqMtzqeo28cgmWVoYorqRQ0jSSbyirtG75v4R1ZQwByf/C3/ABh/0SbXPzm/+MVl+JPiV421zw1qWkwfC/WbV723e3MzxzShFcbWO0RLk7Scc8HB56H1ifxZp1tcSwPbayXjcoxj0W8dSQccMsRDD3BIPas/VfF5+3+H9K0tJIbzXXnEE99ZyKsCwoWcvExjck8AD5eu7OAAwBoeC4JrXwL4et7iKSGeLTLZJI5FKsjCJQQQeQQeMVuVz/g/xC/iHR5nulgTUrC7lsL9LcsY1nibDbCwBKkbWHXAbBJINdBQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFed2/w21KwvU1bTvEkdjrBvZbm6lt7Jlt72N3d/LnhMp3lWkcK+4EKQOoDAooA6ifwnp1zcSzvc6yHkcuwj1q8RQSc8KsoCj2AAHaqeqeDxPPod5pl35F/o0sz289/517lJUZZEbdKrNnKkEscbABxxRRQBoeGdATw5o4tPP8AtN1LLJc3l2Ylja5nkYs8hCjAyTgDnChRk4rYoooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/Z</Image>
+        </Figure>
+    </Problem>
+            <TestData>
+                <TimeLimit>1</TimeLimit>
+                <InputFile />
+                <OutputFile />
+                <InputFormat inputType="eof">
+                    <Terminator xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </InputFormat>
+                <OutputFormat>
+                    <Header xml:space="preserve" />
+                    <Footer xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </OutputFormat>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve" filename="1086.in">
+            </TestInput>
+                    <TestOutput xml:space="preserve" filename="1086.out">
+            </TestOutput>
+                </TestCase>
+            </TestData>
+            <Solution xml:space="preserve" language="cpp" filename="" />
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

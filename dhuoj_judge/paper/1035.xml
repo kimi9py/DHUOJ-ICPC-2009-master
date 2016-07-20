@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">1</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MCwCFHa3Fcvf4unZ/v6uU3Zth+4adlBrAhQbzWL5S9VpiFn5jey7UNC+667VoQ==</Signature><PaperReference><![CDATA[1]]></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="true">
+            <Title>Peg Game</Title>
+            <Author>try</Author>
+            <Problem contentType="html">
+                <Description xml:space="preserve">You are given a 7-by-7 board of holes. Some holes are filled with pegs, and some are not. You may jump a peg over an adjacent peg, as long as the hole the jumping peg lands in is unoccupied. The jumped peg is removed. Your goal is to leave the board with only one peg in it, and the peg must end up in the specified location. &lt;BR&gt;
+The board is specified as a 7-by-7 array of characters, with the following meanings: &lt;BR&gt;
+x : this hole may never be occupied by a peg &lt;BR&gt;
+e : this hole is initially empty &lt;BR&gt;
+o : this hole is initially occupied by a peg &lt;BR&gt;
+E : this hole is initially empty, and the last peg should end here &lt;BR&gt;
+O : this hole is initially occupied, and the last peg should end here &lt;BR&gt;
+For example, consider the following board: &lt;BR&gt;
+x x e e e x x &lt;BR&gt;
+x x o e e x x &lt;BR&gt;
+e e o e e e e &lt;BR&gt;
+e e o O e e e &lt;BR&gt;
+e e e e e e e &lt;BR&gt;
+x x e e e x x &lt;BR&gt;
+x x e e e x x &lt;BR&gt;
+You can see that there are initially 4 pegs in the board, and the last peg should end up in the middle of the board. &lt;BR&gt;
+The winning sequence of moves is: &lt;BR&gt;
+1. (4, 4) to (2, 4) &lt;BR&gt;
+2. (3, 2) to (3, 4) &lt;BR&gt;
+3. (2, 4) to (4, 4) &lt;BR&gt;
+Where coordinates are given as (x, y).&lt;BR&gt;
+</Description>
+                <InputSpec xml:space="preserve">The first line of input is the number of datasets to follow. Each dataset should be processed the same. &lt;BR&gt;&lt;BR&gt;
+
+The input for each dataset consists of 7 lines; each line consists of 7 characters from the set {x, e, o, E, O} with blanks between them. You are guaranteed that exactly one 'E' or 'O' will appear, and that two or more 'o' or 'O' will appear.&lt;BR&gt;
+
+</InputSpec>
+                <OutputSpec xml:space="preserve">The output for each dataset begins with a line containing "Dataset i:", where i is the number of the dataset starting at 1. &lt;BR&gt;&lt;BR&gt;
+
+If a sequence of valid moves exists that leaves only one peg on the board, and leaves that peg in the desired location, print out the sequence of moves, as shown in the above example. If no sequence exists, print "No solution".Terminate the output for each dataset with a single blank line.&lt;BR&gt;
+
+</OutputSpec>
+            </Problem>
+            <TestData>
+                <TimeLimit>1</TimeLimit>
+                <InputFile />
+                <OutputFile />
+                <InputFormat inputType="num">
+                    <Terminator xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="top">
+</Seperator>
+                </InputFormat>
+                <OutputFormat>
+                    <Header xml:space="preserve" />
+                    <Footer xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom">
+</Seperator>
+                </OutputFormat>
+                <TestCase difficulty="sample">
+                    <TestInput xml:space="preserve">x x e E e e e
+x e e e e e e
+e e e o o e e
+e e e x e e e
+e e e e e e e
+e e e e e e e
+e e e e e e e
+</TestInput>
+                    <TestOutput xml:space="preserve">Dataset 1:
+No solution.
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="sample">
+                    <TestInput xml:space="preserve">x x e e e x x
+x x o e e x x
+e e o e e e e
+e e o O e e e
+e e e e e e e
+x x e e e x x
+x x e e e x x
+</TestInput>
+                    <TestOutput xml:space="preserve">Dataset 2:
+1. (4, 4) to (2, 4)
+2. (3, 2) to (3, 4)
+3. (2, 4) to (4, 4)
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">x x e e e x x
+x x e o e x x
+e e o e o e e
+e o e E o e e
+e e e e e e e
+x x e e e x x
+x x e e e x x
+</TestInput>
+                    <TestOutput xml:space="preserve">Dataset 3:
+1. (5, 4) to (5, 2)
+2. (5, 2) to (3, 2)
+3. (3, 2) to (3, 4)
+4. (2, 4) to (4, 4)
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">x x e e e x x
+x x o o e x x
+e e o o e e e
+e e o E e e e
+e e e e e e e
+x x e e e x x
+x x e e e x x
+</TestInput>
+                    <TestOutput xml:space="preserve">Dataset 4:
+1. (4, 2) to (4, 4)
+2. (4, 4) to (2, 4)
+3. (3, 2) to (3, 4)
+4. (2, 4) to (4, 4)
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">x x o o e x x
+x x o o e x x
+e e e e e e e
+e e e E o o e
+e e e e e e e
+x x o o e x x
+x x e e e x x
+</TestInput>
+                    <TestOutput xml:space="preserve">Dataset 5:
+1. (3, 1) to (5, 1)
+2. (3, 2) to (5, 2)
+3. (5, 1) to (5, 3)
+4. (5, 3) to (5, 5)
+5. (3, 6) to (5, 6)
+6. (5, 6) to (5, 4)
+7. (6, 4) to (4, 4)
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve">x x o O o x x
+x e o o o e x
+e e e o e e e
+e e e x e e e
+e e e e e e e
+x e e e e e x
+x x e e e x x
+</TestInput>
+                    <TestOutput xml:space="preserve">Dataset 6:
+No solution.
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve">x x e E e x x
+x e e e e e x
+e e e e o o e
+e o o x o o e
+e o e o o e e
+x e e e e e x
+x x e e e x x
+</TestInput>
+                    <TestOutput xml:space="preserve">Dataset 7:
+1. (5, 4) to (5, 2)
+2. (6, 4) to (6, 2)
+3. (6, 2) to (4, 2)
+4. (2, 5) to (2, 3)
+5. (5, 5) to (3, 5)
+6. (3, 5) to (3, 3)
+7. (2, 3) to (4, 3)
+8. (4, 3) to (4, 1)
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve">e e e x E e o
+e e e o o e e
+e e e o o e e
+e e e e e e e
+e e e e e e e
+e e e e e e e
+e e e e e e e
+</TestInput>
+                    <TestOutput xml:space="preserve">Dataset 8:
+1. (4, 2) to (6, 2)
+2. (4, 3) to (6, 3)
+3. (6, 3) to (6, 1)
+4. (7, 1) to (5, 1)
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve">e e e e E e o
+e e e o o x e
+e e e o o e e
+e e e e e e e
+e e e e e e e
+e e e e e e e
+e e e e e e e
+</TestInput>
+                    <TestOutput xml:space="preserve">Dataset 9:
+1. (4, 3) to (4, 1)
+2. (5, 3) to (5, 1)
+3. (4, 1) to (6, 1)
+4. (7, 1) to (5, 1)
+</TestOutput>
+                </TestCase>
+            </TestData>
+            <Solution xml:space="preserve" language="cpp" filename="game">#include &lt;cstdio&gt;
+#include &lt;iostream&gt;
+#include &lt;cctype&gt;
+#define SIZE 7
+#define MAXM 49
+using namespace std;
+
+const int dx[4]={-1,0,0,1};
+const int dy[4]={0,-1,1,0};
+
+struct Point
+{
+    int x;
+    int y;
+};
+
+struct Move
+{
+    int x1,y1;
+    int x2,y2;
+};
+
+Point e;
+Move move[MAXM+1];
+char board[SIZE+1][SIZE+1];
+int m;
+
+bool backtrack(int k)
+{
+    int i,j,d,nx1,ny1,nx2,ny2;
+    if(k==m)
+    {
+        if(board[e.x][e.y]=='o')
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    for(i=1;i&lt;=SIZE;i++)
+    {
+        for(j=1;j&lt;=SIZE;j++)
+        {
+            if(board[i][j]=='o')
+            {
+                for(d=0;d&lt;4;d++)
+                {
+                    nx1=i+dx[d];
+                    ny1=j+dy[d];
+                    if((nx1&gt;=1)&amp;&amp;(nx1&lt;=SIZE)&amp;&amp;(ny1&gt;=1)&amp;&amp;(ny1&lt;=SIZE)&amp;&amp;(board[nx1][ny1]=='o'))
+                    {
+                        nx2=nx1+dx[d];
+                        ny2=ny1+dy[d];
+                        if((nx2&gt;=1)&amp;&amp;(nx2&lt;=SIZE)&amp;&amp;(ny2&gt;=1)&amp;&amp;(ny2&lt;=SIZE)&amp;&amp;(board[nx2][ny2]=='e'))
+                        {
+                            board[i][j]='e';
+                            board[nx1][ny1]='e';
+                            board[nx2][ny2]='o';
+                            move[k].x1=i;
+                            move[k].y1=j;
+                            move[k].x2=nx2;
+                            move[k].y2=ny2;
+                            if(backtrack(k+1)==true)
+                            {
+                                return true;
+                            }
+                            board[i][j]='o';
+                            board[nx1][ny1]='o';
+                            board[nx2][ny2]='e';
+                        }
+                    }
+                }
+            }
+        }
+    }
+    return false;
+}
+
+int main()
+{
+    int i,j,k,t;
+    scanf("%d",&amp;t);
+    for(k=0;k&lt;t;k++)
+    {
+        m=0;
+        for(i=1;i&lt;=SIZE;i++)
+        {
+            for(j=1;j&lt;=SIZE;j++)
+            {
+                scanf(" %c",&amp;board[i][j]);
+                if((board[i][j]=='o')||(board[i][j]=='O'))
+                {
+                    m++;
+                }
+                if((board[i][j]=='E')||(board[i][j]=='O'))
+                {
+                    board[i][j]=tolower(board[i][j]);
+                    e.x=i;
+                    e.y=j;
+                }
+            }
+        }
+        printf("Dataset %d:\n",k+1);
+        if(backtrack(1)==true)
+        {
+            for(i=1;i&lt;m;i++)
+            {
+                printf("%d. (%d, %d) to (%d, %d)\n",i,move[i].y1,move[i].x1,move[i].y2,move[i].x2);
+            }
+        }
+        else
+        {
+            printf("No solution.\n");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+</Solution>
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

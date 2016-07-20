@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>2014年东华大学ACM校内友谊赛</PaperVersion><PaperID>2014年东华大学ACM校内友谊赛</PaperID><PaperName>2014年东华大学ACM校内友谊赛（程序设计语言组）</PaperName><PaperAuthor>东华大学ACM大学生协会</PaperAuthor><PaperTotalTime unit="hour">3</PaperTotalTime><PaperStartTime zone="+8">20141216 13:00</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEAtUGAhZ90uQl4aS4HchUIaS4Xzh/5285VYulMaTKeV4MauchrT0/Zo/iQYijfA+6B2hjP+KGXlX6jycg6A+uKgA==</PublicKey><Signature>MCwCFAqE6BeeO+QrVY1znPY2tcn7enOtAhRG4coTBIN/+FF1Giv/bj510XL1ag==</Signature><PaperReference><![CDATA[2014年东华大学ACM校内友谊赛]]></PaperReference><PaperDescribe><![CDATA[2014年东华大学ACM校内友谊赛
+
+活动背景
+       ACM国际大学生程序设计竞赛（简称ACM/ICPC）是由国际计算机界历史最悠久、最具权威性的组织ACM（Association for Computing Machinery）主办，是世界上公认的规模最大、水平最高、参与人数最多的国际大学生程序设计竞赛，其目的旨在使大学生运用计算机来充分展示分析问题和解决问题的能力。该项竞赛从1970年举办至今已历37届，因历届竞赛都荟萃了世界各大洲的精英，云集了计算机界的“希望之星”，而受到国际各知名大学的重视，并受到全世界各著名计算机公司如Microsoft、IBM、Google、Facebook等公司的高度关注，成为世界各国大学生最具影响力的国际级计算机类的赛事，此项竞赛所颁发的获奖证书也为世界各著名计算机公司、各知名大学所认可。近年来国内越来越多的知名高校在计算机学科研究生复试中开始采用ACM试题作为上机考试内容。
+
+竞赛宗旨
+       本次友谊赛旨在培养我校大学生的程序设计能力。在程序设计过程中激发创新意识，促进我校大学生程序设计的整体水平，并选拔优秀选手参加ACM新手入门训练。
+
+
+友谊赛比赛规则
+
+友谊赛采用ACM/ICPC规则与方式, 均为个人赛,无团队组别。
+比赛规则与传统ACM比赛规则略有不同，请参赛人员认真阅读比赛规则。
+      
+       1.  竞赛时，允许参赛选手携带源代码参考书、手册、字典等纸质参考资料以及草稿纸，严禁使用任何电子存储工具或通讯设备。
+      
+       2.  参赛选手可以针对题目描述中的不明确或错误的部分提问。如果评委确认题目中确实存在不明确或错误的部分，将会通告所有参赛选手进行声明或更正。
+      
+       3.  本大赛将进行现场实时排名，对成绩有疑问的选手可以当场向组委会投诉，投诉截止时间为比赛结束后30分钟，在截止时间以后的投诉均视为无效。
+      
+       4.  竞赛所用编程语言为C和C++，操作系统为Windows，比赛系统所用编译器为gcc和g++，不使用vc++。数据结构组竞赛试题全部采用英语描述，程序设计语言组竞赛试题全部采用中文描述。      
+ 
+       5.  所有选手使用的计算机具有完全相同的规格配置。
+ 
+       6.  在竞赛中，参赛队员不得和其他选手以及竞赛组委会指定工作人员以外的人交谈；系统支持人员可以回答和系统相关的问题，例如解释系统错误信。]]></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="2">
+        <ProblemArchive version="1.0" checked="true">
+            <Title>Problem 1 婚礼上的谎言</Title>
+            <Author>Ting Lu</Author>
+            <Problem contentType="html">
+                <Description xml:space="preserve">3对情侣参加婚礼，3个新郎为A、B、C，3个新娘为X、Y、Z。有人想知道究竟谁与谁结婚，于是就问新人中的3位，得到如下回答：A说他将和X结婚；X说她的未婚夫是C；C说他将和Z结婚。这人事后知道他们都在开玩笑，说的全是假话。那么，究竟谁与谁结婚呢？&lt;BR&gt;
+提示：可以用“a=1”表示新郎A和新娘X结婚，同理，如果新郎A不和新娘X结婚则可写成"a!=1"，用穷举法进行判断。注意，新郎不能与新郎结婚。</Description>
+                <InputSpec xml:space="preserve">无</InputSpec>
+                <OutputSpec xml:space="preserve">你的程序需要向标准输出文件（通常为启动该程序的终端）依次输出“谁-&gt;谁”表示“谁将嫁给谁”（中间的符号是减号和大于号，没有空格），每对夫妻占一行。在行首和行尾不要输出多余的空格。在所有数据前后，以及两组数据之间不要输出多余的空行。&lt;BR&gt;
+        具体输出顺序如下：谁将嫁给A&lt;BR&gt;
+            谁将嫁给B&lt;BR&gt;
+            谁将嫁给C</OutputSpec>
+            </Problem>
+            <EncryptedData xmlns="http://w2c.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Element">
+                <EncryptionMethod xmlns="" Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
+                <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                    <KeyName xmlns="">JYNG+F00MWE=</KeyName>
+                </ds:KeyInfo>
+                <CipherData xmlns="">
+                    <CipherValue>vS6JvuTzS98pxpGw5GgPtWwWyWB3qhOtYdzdaiQnew4TPhAHS3mYcktbZgd8uKyeZhv3spdovZ8T/+/iMcc6Q1aBEIdx1os2WuHHdTcfRTsrPlSvOJtZC30Vk1qqta/0euddEtHcKQgSUXGl34eAXzOjd0g6vxBxeabLljOh7wD1AsmVHBRchDSaHoPQMCZw3cLn8/AicW2/0BGVlGSRJ18+lExinvg4QLaQwxsf+7mXy3XZPg882wwBMcZYNhqMVv3DI9G8fuSxns/BbjAvo5QzgxAfXGm/7vipGy7DbcVW/cMj0bx+5F0SIs9fbxLfVv3DI9G8fuQ2mJQjlFOcOyU7T7LKFHYtTbIzWWr7XuEdcRhZJeNcj02yM1lq+17hHjc0/ylki89NsjNZavte4XO7jBkysAxQdTZTx6V1up9hEeKXkgzz6QeA6s9XFgJq9Unk3emqAkyTK8xGgU/vs1b9wyPRvH7kDAExxlg2GoxW/cMj0bx+5Fb9wyPRvH7kgIh2KiqwpnPYSPC9WzX0EkswXs7uB+qdXTxGkgGz9odW/cMj0bx+5Fb9wyPRvH7krIarNfKhywEl1A83HXDCWZtaWaTcoY4cxjmE9yqwcht5+vvuRoQOAFb9wyPRvH7kREm8Z7yQRZe7xMHEeVszj8lSUZfAbsQoJD9jywfVwaPfaXHV9/n7Hlb9wyPRvH7kpbHq3ZMf6+BW/cMj0bx+5PnCzXeDadBHpbHq3ZMf6+D5ws13g2nQRwkP69bdrDzbT/rFQd8PvHy/kFWyjmcnCFZoNqS0mUum</CipherValue>
+                </CipherData>
+            </EncryptedData>
+            <EncryptedData xmlns="http://w2c.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Element">
+                <EncryptionMethod xmlns="" Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
+                <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                    <KeyName xmlns="">nhrTAfvVXc0=</KeyName>
+                </ds:KeyInfo>
+                <CipherData xmlns="">
+                    <CipherValue>HGVj2ZFVhharULNhFpPvOhGgSjMVythX8dTV2b9f70JPdNV2Grb4uFAkX4yGUBY5aHrTcl5qIzGojlAwjI28Zh17z1Yy3hU+FUNeFLfz+CR3FGnaxKdnxoO3K/LNeSJdTGnKKXpG/OO5ozLKT3ZhszUhD0z1SPQClQuDFjrMzBTZa7ZQdJvFF+dk+SL6SPL0DApJvKIg1sNGi4yjJF5e83i2gW3aAZy4mjRFktiNwO3Za7ZQdJvFF5NU4lKDcBzWJ2RFyda01xussQZ4vixbHbi62UXm+xeXTtOParWtO+2EMVmp45SyVZDezgfwXiQzYQ4BDiBGk6v+A0XCqpfAtfL9WogtSbMpm6wWjgRtquIW8HmeqnJjb4ZKx/4xkZFK2Wu2UHSbxRewXWfRJayiKjpp7yfiPwGRkkDluWyz7DMTIQlqILe9CdlrtlB0m8UXW/jmx4XcKgYLO+j/QJ0i6yIaYUuAz0WCQJWFdfBZOV3/+1KOgS5qe9lrtlB0m8UXKIVvPqonP6x4DiflnWCkdm5jo2Ji7gDLBvVqkqTdZNYwHP5AidpM82rLUSej/sz1GbVHZ1B0iJkT8QsktSm4Wp/RrrwLBbEarUyTaQwgtRXCDG0eKyT4laLq3R/SdA8YFEQdItzU6G5vo+58UaKdqh17z1Yy3hU+pfywlRijxV5vdU6xbQz7xfMUE01eL9XMGKlYXBYv0/RLqvXyvc9Y+hqq+kNk4sP8RwzX3fcYZ/nZa7ZQdJvFF15gvKwsF0v8ugEHXFAvc4QiGmFLgM9FgkCVhXXwWTlddFtFnSnNvMkDn6sChsZiR5YybIZAZS7XgO1gOZRKTnM5WpvlhjVqtmz1EBtgx1opQy3pdO1GU3H+lrOlHNMKAioNPwAzMXKNQLidsLYKdiI=</CipherValue>
+                </CipherData>
+            </EncryptedData>
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

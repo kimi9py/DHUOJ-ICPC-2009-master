@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">5</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MCwCFFOFKnHtNDWaUhbZFX6zXiJePIJ5AhQQUPCmZrDQexSdtyz4j2bINLycYQ==</Signature><PaperReference><![CDATA[1]]></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="false">
+            <Title>Problem F: Food portion size</Title>
+    <Author />
+    <Problem contentType="html">
+        <Description xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US&gt;The university canteen does not want any student to leave
+the canteen hungry. Therefore, as long as a student is hungry, he can get
+another portion of food for free. The canteen uses a fixed food portion size,
+because it would take too much time to first ask a student how much food he
+wanted. It can happen that a student doesn't finish his last portion of food
+and the remainder has to be thrown away. &lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;To minimize costs, the manager of the canteen wants to
+determine a food portion size &lt;b&gt;&lt;i&gt;S&lt;/i&gt;&lt;/b&gt; such that the amount of food that
+is wasted is small, but also the number of times the students have to fetch
+another portion of food is not too big. Note that these two goals can be
+conflicting: &lt;/span&gt;&lt;/p&gt;
+ 
+&lt;ul type=disc&gt;
+ &lt;li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:left;mso-pagination:widow-orphan;mso-list:l0 level1 lfo4;
+     tab-stops:list 36.0pt'&gt;&lt;span lang=EN-US&gt;By choosing a very small food
+     portion size, one does not waste food, but simultaneously the number of
+     times the students have to fetch food is big. &lt;/span&gt;&lt;/li&gt;
+ &lt;li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     text-align:left;mso-pagination:widow-orphan;mso-list:l0 level1 lfo4;
+     tab-stops:list 36.0pt'&gt;&lt;span lang=EN-US&gt;By choosing a large food portion
+     size, one can make sure each student has to fetch only one portion, but at
+     the same time it may happen that a large quantity of food is wasted. &lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;The manager of the canteen has collected data about how
+many units of food each student eats. The problem to be solved can now be
+formulated mathematically as follows: Let &lt;b&gt;&lt;i&gt;x&lt;/i&gt;&lt;/b&gt; be the amount of food
+that is wasted, and &lt;b&gt;&lt;i&gt;y&lt;/i&gt;&lt;/b&gt; the number of times the students go to
+fetch food. Then, the goal is to minimize &lt;b&gt;&lt;i&gt;a &amp;times; x + b &amp;times; y&lt;/i&gt;&lt;/b&gt;,
+where &lt;b&gt;&lt;i&gt;a, b&lt;/i&gt;&lt;/b&gt; are weights that represent the relative importance of
+the two opposing goals. Note that &lt;b&gt;&lt;i&gt;x&lt;/i&gt;&lt;/b&gt; and &lt;b&gt;&lt;i&gt;y&lt;/i&gt;&lt;/b&gt; depend on
+the food portion size &lt;b&gt;&lt;i&gt;S&lt;/i&gt;&lt;/b&gt; and the quantities of food each student
+eats. We impose the additional constraint that no student should have to go
+more than 3 times to fetch food. &lt;/span&gt;&lt;/p&gt;
+</Description>
+        <InputSpec xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US&gt;The input file contains several test cases. Each test case
+starts with a line containing an integer &lt;b&gt;&lt;i&gt;n&lt;/i&gt;&lt;/b&gt;, (&lt;b&gt;&lt;i&gt;1 &amp;#8804; n
+&amp;#8804; 1000&lt;/i&gt;&lt;/b&gt;), the number of students eating in the canteen. The next
+line contains the values &lt;b&gt;&lt;i&gt;a&lt;/i&gt;&lt;/b&gt; and &lt;b&gt;&lt;i&gt;b&lt;/i&gt;&lt;/b&gt; (&lt;b&gt;&lt;i&gt;1 &amp;#8804;
+a, b &amp;#8804; 10&lt;/i&gt;&lt;/b&gt;). The third line of each test case consists of &lt;b&gt;&lt;i&gt;n&lt;/i&gt;&lt;/b&gt;
+integers &lt;b&gt;&lt;i&gt;y&lt;sub&gt;1&lt;/sub&gt;, ..., y&lt;sub&gt;n&lt;/sub&gt;&lt;/i&gt;&lt;/b&gt; (&lt;b&gt;&lt;i&gt;1 &amp;#8804; y&lt;sub&gt;i&lt;/sub&gt;
+&amp;#8804; 100&lt;/i&gt;&lt;/b&gt;), where &lt;b&gt;&lt;i&gt;y&lt;sub&gt;i&lt;/sub&gt;&lt;/i&gt;&lt;/b&gt; is the amount of food
+student &lt;b&gt;&lt;i&gt;i&lt;/i&gt;&lt;/b&gt; eats. Input is terminated by &lt;b&gt;&lt;i&gt;n=0&lt;/i&gt;&lt;/b&gt;. &lt;/span&gt;&lt;/p&gt;
+</InputSpec>
+        <OutputSpec xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US&gt;For each test case print one line containing the costs
+resulting from an optimal choice of the food portion size. Print each value as
+a reduced fraction. If the result is an integer, do not print the denominator
+1. See the sample output for details. &lt;/span&gt;&lt;/p&gt;
+
+&lt;p class=MsoNormal&gt;&lt;strong&gt;&lt;span lang=EN-US&gt;In the first sample input, the
+optimal food portion size is 4.5. Note that a food portion size of 3 would
+yield a smaller cost of 16, the 5th student, however, would have to fetch food
+4 times.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+</OutputSpec>
+    </Problem>
+            <TestData>
+                <TimeLimit>1</TimeLimit>
+                <InputFile />
+                <OutputFile />
+                <InputFormat inputType="eof">
+                    <Terminator xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </InputFormat>
+                <OutputFormat>
+                    <Header xml:space="preserve" />
+                    <Footer xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </OutputFormat>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve" filename="1083.in">
+            </TestInput>
+                    <TestOutput xml:space="preserve" filename="1083.out">
+            </TestOutput>
+                </TestCase>
+            </TestData>
+            <Solution xml:space="preserve" language="cpp" filename="" />
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

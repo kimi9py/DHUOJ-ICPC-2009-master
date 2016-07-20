@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">5</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MCwCFBwZU4Xz+v36naRUiS4fFmu4QTYmAhRRBjT7qYv0NsWjG16H6V94QORW3A==</Signature><PaperReference><![CDATA[1]]></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="false">
+            <Title>Door Repairing</Title>
+            <Author />
+            <Problem contentType="html">
+                <Description xml:space="preserve">Once upon a time, there was a famous university called Famous University. As thousands of students studied and lived in FU, a gigantic residential building was built, which is called 'B37'. All students lived in B37 happily.&lt;BR&gt;&lt;BR&gt;
+
+After decades, FU is still as famous as it had been in the past; however, the students living in it are now unhappy, because B37 is too old. Although the door of the building looks fine, it can be easily broken when being opened by some careless student too forcefully.&lt;BR&gt;&lt;BR&gt;
+
+So, YY, the accommodation officer of B37, is facing an extremely serious problem.&lt;BR&gt;&lt;BR&gt;
+
+With some mysterious methods, YY has predicted that exactly N students will enter or exit B37 during the next term. Unfortunately he doesn't know who the careless ones are, so he assumes that every student opening the door has a probability of P percent to be a careless one. When the door is broken by some careless guy, YY may repair it immediately or after some time, with a cost of A yuan. Unfortunately when a student goes through the door and finds it already broken and not repaired, he will report it to the headmaster, and YY will be subject to a fine of B yuan. The door is in good condition before the term begins, and will be repaired by the university after the term ends, so YY can leave the door unrepaired at the end of the term.&lt;BR&gt;&lt;BR&gt;
+
+Being good at mathematics, YY has made a strategy, to decide when to and when not to repair the door, in order to minimize his expense. &lt;BR&gt;&lt;BR&gt;
+
+Please write a program to calculate the expectation of his expense.</Description>
+                <InputSpec xml:space="preserve">The input consists of multiple test cases.&lt;BR&gt;
+For each test case, there is one line containing four non-negative integers N, P, A, B described as above, with 0≤N≤100000, 0≤P≤100, 0≤A≤100, 0≤B≤100.&lt;BR&gt;
+End of input is indicated by a line consisting of four zeros.&lt;BR&gt;</InputSpec>
+                <OutputSpec xml:space="preserve">For each test case, output one line containing the expectation of YY's minimal expense. Your answer should be rounded to 4 digits after the decimal point.&lt;BR&gt;&lt;BR&gt;
+
+&lt;B&gt;Hint&lt;/B&gt;
+&lt;BR&gt;
+
+In the first sample, the door will be broken every time it is opened, but repairing is free, so just repair it every time.&lt;BR&gt;
+In the second sample, nothing will be fined, so just leave the door unrepaired.&lt;BR&gt;
+In the last sample, if the door is broken by the first student, YY will be fined 1 yuan, otherwise he doesn’t need to pay anything.</OutputSpec>
+            </Problem>
+            <TestData>
+                <TimeLimit>10</TimeLimit>
+                <InputFile />
+                <OutputFile />
+                <InputFormat inputType="eof">
+                    <Terminator xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </InputFormat>
+                <OutputFormat>
+                    <Header xml:space="preserve" />
+                    <Footer xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </OutputFormat>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve">0 50 100 100
+3 51 59 61
+88 78 35 41
+73 19 93 38
+100000 1 1 1
+100000 0 0 0
+100000 0 0 50
+100000 0 0 100
+100000 0 50 0
+100000 0 50 50
+100000 0 50 100
+100000 0 100 0
+100000 0 100 50
+100000 0 100 100
+100000 50 0 0
+100000 50 0 50
+100000 50 0 100
+100000 50 50 0
+100000 50 50 50
+100000 50 50 100
+100000 50 100 0
+100000 50 100 50
+100000 50 100 100
+100000 100 0 0
+100000 100 0 50
+100000 100 0 100
+100000 100 50 0
+100000 100 50 50
+100000 100 50 100
+100000 100 100 0
+100000 100 100 50
+100000 100 100 100
+100000 100 51 49
+100000 100 49 51
+75190 83 70 80
+96527 54 81 66
+74244 39 27 50
+95130 54 28 96
+41803 34 33 16
+72896 92 85 85
+89328 95 26 69
+64185 76 72 74
+68559 65 66 53
+97292 64 54 37
+69711 84 55 89
+74512 16 84 33
+68537 77 56 83
+64812 94 20 73
+64056 88 58 86
+54169 77 86 95
+17246 70 98 72
+83849 1 99 1
+0 0 0 0
+</TestInput>
+                    <TestOutput xml:space="preserve">0.0000
+60.1800
+2375.1000
+1257.1882
+999.9900
+0.0000
+0.0000
+0.0000
+0.0000
+0.0000
+0.0000
+0.0000
+0.0000
+0.0000
+0.0000
+0.0000
+0.0000
+0.0000
+2499975.0000
+2499975.0000
+0.0000
+4999900.0000
+4999950.0000
+0.0000
+0.0000
+0.0000
+0.0000
+4999950.0000
+4999950.0000
+0.0000
+4999950.0000
+9999900.0000
+4899951.0000
+4899951.0000
+4368480.9000
+4222039.1400
+781778.7900
+1438350.4800
+469010.4704
+5700389.0000
+2206376.9000
+3512148.4800
+2941129.7500
+3362363.7248
+3220602.0000
+1001415.9552
+2955272.3200
+1218446.8000
+3269367.2000
+3587004.9600
+1182985.7200
+82916.0921
+</TestOutput>
+                </TestCase>
+            </TestData>
+            <Solution xml:space="preserve" language="cpp" filename="" />
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

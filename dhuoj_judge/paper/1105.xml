@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">5</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MCwCFFOFKnHtNDWaUhbZFX6zXiJePIJ5AhQQUPCmZrDQexSdtyz4j2bINLycYQ==</Signature><PaperReference><![CDATA[1]]></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="false">
+            <Title>Game Simulator</Title>
+    <Author />
+    <Problem contentType="html">
+        <Description xml:space="preserve">&lt;FONT COLOR="#ff0000"&gt;The teams who solve this problem will receive two decks of poker as prize.&lt;/FONT&gt;
+
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;#8220;Tractor&amp;#8221;
+is a very popular poker game in China. There are four players in the game.
+Suppose their names are Alice, Bob, Charles and David, in clockwise order. A
+judge is needed for this game. The players are divided into two teams, Alice
+and Charles are in team 1, and the other two are in team 2. The prop they use
+to play the game are two decks of pokers, including 108 cards in total. A simplified
+rule of the game is described below.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;The
+whole game contains a number of rounds. In each round, one team is called &lt;b
+style='mso-bidi-font-weight:normal'&gt;&amp;#8220;Declarers&amp;#8221; (CT)&lt;/b&gt;; the other
+team is called&lt;b style='mso-bidi-font-weight:normal'&gt; &amp;#8220;Defenders&amp;#8221; (FT)&lt;/b&gt;.
+Each team has a &lt;b style='mso-bidi-font-weight:normal'&gt;current rank (CR)&lt;/b&gt;.
+The goal of the player is to increase his own team's CR as much as possible.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;A
+certain round has a &lt;b style='mso-bidi-font-weight:normal'&gt;Main Suit&lt;/b&gt; (Heart
+- H, Spade - S, Club - C, Diamond - D, or &lt;u&gt;None - no main suit&lt;/u&gt; in this
+round) and its CR. The CR in this round is the CR of the CT, and Main Suit will
+be given. The Main Suit and CR will be used to determine the order of the
+cards.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;u&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;Cards
+ranked 5, 10, King value 5, 10, &lt;st1:chmetcnv TCSC="0" NumberType="1"
+Negative="False" HasSpace="True" SourceValue="10" UnitName="pts" w:st="on"&gt;10 pts&lt;/st1:chmetcnv&gt;
+(points) respectively, all other cards value &lt;st1:chmetcnv TCSC="0"
+NumberType="1" Negative="False" HasSpace="True" SourceValue="0" UnitName="pts"
+w:st="on"&gt;0 pts&lt;/st1:chmetcnv&gt;.&lt;/span&gt;&lt;/u&gt;&lt;span lang=EN-US style='font-family:
+"Courier New"'&gt; In one round, we only consider the FT's pts. The rules of
+getting pts for FT will be discussed later.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;If
+the FT gets less than &lt;st1:chmetcnv TCSC="0" NumberType="1" Negative="False"
+HasSpace="True" SourceValue="80" UnitName="pts" w:st="on"&gt;80 pts&lt;/st1:chmetcnv&gt;
+in one round, they will hold be FT in the next round. This situation is called &lt;b
+style='mso-bidi-font-weight:normal'&gt;&amp;#8220;make&amp;#8221;&lt;/b&gt;. Otherwise, they
+become CT in the next round and the original CT become FT instead. This
+situation is called &lt;b style='mso-bidi-font-weight:normal'&gt;&amp;#8220;down&amp;#8221;&lt;/b&gt;.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;If
+the FT gets &lt;st1:chmetcnv TCSC="0" NumberType="1" Negative="False"
+HasSpace="True" SourceValue="0" UnitName="pts" w:st="on"&gt;0 pts&lt;/st1:chmetcnv&gt;,
+the CR of the current CT will be increased by 3, for example, if the CR of the
+CT is 9, it will become Queen (12). Otherwise, if the FT gets less than &lt;st1:chmetcnv
+TCSC="0" NumberType="1" Negative="False" HasSpace="True" SourceValue="40"
+UnitName="pts" w:st="on"&gt;40 pts&lt;/st1:chmetcnv&gt;, the CR of the CT will be
+increased by 2. Otherwise, if the FT gets less than &lt;st1:chmetcnv TCSC="0"
+NumberType="1" Negative="False" HasSpace="True" SourceValue="80" UnitName="pts"
+w:st="on"&gt;80 pts&lt;/st1:chmetcnv&gt;, the CR of the CT will be increased by 1.
+Otherwise, if the FT gets not less than&amp;nbsp;&lt;i&gt;80 + k * 40&lt;/i&gt;&amp;nbsp;pts and
+less than&amp;nbsp;&lt;i&gt;120 + k * 40&lt;/i&gt;&amp;nbsp;pts, the CR of the current FT will be
+increased by&amp;nbsp;&lt;i&gt;k&lt;/i&gt;. For example, if the FT gets &lt;st1:chmetcnv TCSC="0"
+NumberType="1" Negative="False" HasSpace="True" SourceValue="255" UnitName="pts"
+w:st="on"&gt;255 pts&lt;/st1:chmetcnv&gt; in a round, the CR of the current FT will be
+increased by 4; and if the FT gets &lt;st1:chmetcnv TCSC="0" NumberType="1"
+Negative="False" HasSpace="True" SourceValue="80" UnitName="pts" w:st="on"&gt;80
+ pts&lt;/st1:chmetcnv&gt;, both teams' CR remain unchanged. If a team's CR becomes &lt;u&gt;beyond
+Ace&lt;/u&gt;, this team is considered the WINNER of the whole game.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;During
+a round, one of the players in CT is called the &lt;b style='mso-bidi-font-weight:
+normal'&gt;dealer&lt;/b&gt;. If &amp;#8220;make&amp;#8221;, the pard (teammate) of the dealer
+becomes the next round&amp;#8217;s dealer. Otherwise (&amp;#8220;down&amp;#8221;), the
+player on dealer's right-hand side becomes the dealer of the next round. For
+example, if the dealer of the current round is Alice and her team (CT) is &amp;#8220;down&amp;#8221;,
+the dealer of the next round should be Bob (on Alice's right-hand side).&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;At
+the start of a round, each of the players except the dealer gets exactly 25
+cards; the dealer gets all the remaining 33 cards. After that, the dealer
+chooses 8 of his cards and gives them to the judge, and these cards are called &lt;b
+style='mso-bidi-font-weight:normal'&gt;&amp;#8220;hidden cards&amp;#8221;&lt;/b&gt;.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;Now
+each player has exactly 25 cards. A round consists of several &lt;b
+style='mso-bidi-font-weight:normal'&gt;tricks&lt;/b&gt;. In the first trick, the dealer
+plays one or more cards (called &lt;b style='mso-bidi-font-weight:normal'&gt;&amp;#8220;lead&amp;#8221;&lt;/b&gt;),
+then, in clockwise order, players play the same number of cards as the first
+player one by one (called &lt;b style='mso-bidi-font-weight:normal'&gt;&amp;#8220;follow&amp;#8221;&lt;/b&gt;).
+The winner of the current trick leads cards during the next trick, and so on. &lt;u&gt;If
+the winner of the current trick is a member of FT, then the FT gets the sum of
+the cards' pts played in this trick.&lt;/u&gt; &lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;Now
+we start to describe how to determine the winner of a trick. After the main
+suit and the CR of the current round are fixed, we can determine the &lt;b
+style='mso-bidi-font-weight:normal'&gt;&amp;#8220;trumps&amp;#8221;&lt;/b&gt; which are cards
+with main suit or CR (Current Rank), and the Jokers. All other cards are &lt;b
+style='mso-bidi-font-weight:normal'&gt;&amp;#8220;not-trumps&amp;#8221;&lt;/b&gt;.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;We
+can have an order among all the cards according the following rules:&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;(1)
+&amp;#8220;Trumps&amp;#8221; are ordered higher than &amp;#8220;not-trumps&amp;#8221;.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;(2)
+For the trumps, the order are listed below:&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='margin-left:21.0pt;text-indent:21.0pt'&gt;&lt;span lang=EN-US
+style='font-family:"Courier New"'&gt;Red Joker&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='margin-left:21.0pt;text-indent:21.0pt'&gt;&lt;span lang=EN-US
+style='font-family:"Courier New"'&gt;Black Joker&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='margin-left:21.0pt;text-indent:21.0pt'&gt;&lt;span lang=EN-US
+style='font-family:"Courier New"'&gt;card with main suit and CR (if exists)&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='margin-left:21.0pt;text-indent:21.0pt'&gt;&lt;span lang=EN-US
+style='font-family:"Courier New"'&gt;other card with CR&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='margin-left:21.0pt;text-indent:21.0pt'&gt;&lt;span lang=EN-US
+style='font-family:"Courier New"'&gt;other trumps ordered by their ranks(i.e., A,
+K, Q, J, T, 9, 8, 7, ..., 3, 2)&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;(3)
+For the &amp;#8220;not-trumps&amp;#8221;, they are ordered by their ranks.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;u&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;Assume in all the
+description below, in the current round, the CR of the CT is 7.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/u&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;Suppose
+the main suit is H, the cards can be arranged in this order (as an example):&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;IMG SRC="1105_1.jpg"&gt;
+
+&lt;p&gt;&lt;b&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;b&gt;&lt;span
+lang=EN-US style='font-family:"Courier New"'&gt;&lt;span
+style='mso-spacerun:yes'&gt;&amp;nbsp; &lt;/span&gt;S2 , C2 , D2&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;b&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; S3 , C3 , D3&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;b&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; S4 , C4 , D4&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;b&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; S5 , C5 , D5&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;b&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; S6 , C6 , D6&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;b&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; S8 , C8 , D8&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;b&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; S9 , C9 , D9&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;b&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; ST , FT , CT (T -
+10)&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;b&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; SJ , CJ , DJ (J -
+Jack)&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;b&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; SQ , CQ , DQ (Q -
+Queen)&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;b&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; SK , CK , DK (K -
+King)&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;b&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; SA , CA , DA (A -
+Ace)&lt;/span&gt;&lt;/b&gt;&lt;i&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;i&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; H2&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;i&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; H3 &lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;i&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; H4&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;i&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; H5&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;i&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; H6 &lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;i&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; H8&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;i&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; H9&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;i&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; HT&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;i&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; HJ&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;i&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; HQ&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;i&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; HK&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;i&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; HA&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;i&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; S7 = C7 = D7&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;i&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; H7&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;i&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; BJ (the Black
+Joker)&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;i&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; RJ (the Red
+Joker)&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;If &amp;#8220;None&amp;#8221;
+during this round, then the pokers can be arranged in this order:&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;b&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;b&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&lt;span
+style='mso-spacerun:yes'&gt;&amp;nbsp; &lt;/span&gt;H2 , S2 , C2 , D2 &lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;b&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; H3 , S3 , C3 , D3&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;b&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; H4 , S4 , C4 , D4&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;b&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; H5 , S5 , C5 , D5&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;b&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; H6 , S6 , C6 , D6&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;b&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; H8 , S8 , C8 , D8&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;b&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; H9 , S9 , C9 , D9&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;b&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; HT , ST , FT , CT&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;b&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; HJ , SJ , CJ , DJ&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;b&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; HQ , SQ , CQ , DQ&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;b&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; HK , SK , CK , DK&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;b&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; HA , SA , CA , DA&lt;/span&gt;&lt;/b&gt;&lt;i&gt;&lt;span
+lang=EN-US style='font-family:"Courier New"'&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;i&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; H7 = S7 = C7 = D7&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;i&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; BJ&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;i&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;lt; RJ&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/i&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;In
+these two tables,&amp;nbsp;&lt;u&gt;&lt;span style='mso-bidi-font-weight:bold'&gt;cards written
+in italic&lt;/span&gt;&lt;/u&gt;&amp;nbsp;are &amp;#8220;trumps&amp;#8221;, and&amp;nbsp;&lt;u&gt;&lt;span
+style='mso-bidi-font-weight:bold'&gt;cards written in boldface&lt;/span&gt;&lt;/u&gt;&amp;nbsp;are
+&amp;#8220;not-trumps&amp;#8221;.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;In
+each trick, the &lt;b style='mso-bidi-font-weight:normal'&gt;lead cards&lt;/b&gt; (played
+by the player leading this trick) must be either all &amp;#8220;trumps&amp;#8221;, or
+all &amp;#8220;not-trumps&amp;#8221; with same suit.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;The
+possible &lt;b style='mso-bidi-font-weight:normal'&gt;structures&lt;/b&gt; of the cards are
+listed below (&lt;u&gt;assume the main suit is H and main rank is 7 for the example&lt;/u&gt;):&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;b&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;Single.&lt;/span&gt;&lt;/b&gt;&lt;span
+lang=EN-US style='font-family:"Courier New"'&gt;&amp;nbsp;A single card, such as D9.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;b&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;Pair.&lt;/span&gt;&lt;/b&gt;&lt;span
+lang=EN-US style='font-family:"Courier New"'&gt;&amp;nbsp;Two same cards, such as
+D9D9. But D7S7 is not a pair although their orders are the same.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;b&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;Tractor.&lt;/span&gt;&lt;/b&gt;&lt;span
+lang=EN-US style='font-family:"Courier New"'&gt;&amp;nbsp;Two or more consecutive-ordered
+pairs, satisfying the condition that they are all &amp;#8220;trumps&amp;#8221;, or all &amp;#8220;not-trumps&amp;#8221;
+with same suit, such as SJSJSQSQSKSKSASA, H7H7S7S7HAHA or RJRJBJBJ. But, these
+are not tractors: S7S&lt;st1:chmetcnv TCSC="0" NumberType="1" Negative="False"
+HasSpace="False" SourceValue="7" UnitName="C" w:st="on"&gt;7C&lt;/st1:chmetcnv&gt;&lt;st1:chmetcnv
+TCSC="0" NumberType="1" Negative="False" HasSpace="False" SourceValue="7"
+UnitName="C" w:st="on"&gt;7C&lt;/st1:chmetcnv&gt;7 (their orders are the same), C&lt;st1:chmetcnv
+TCSC="0" NumberType="1" Negative="False" HasSpace="False" SourceValue="7"
+UnitName="C" w:st="on"&gt;7C&lt;/st1:chmetcnv&gt;&lt;st1:chmetcnv TCSC="0" NumberType="1"
+Negative="False" HasSpace="False" SourceValue="7" UnitName="C" w:st="on"&gt;7C&lt;/st1:chmetcnv&gt;&lt;st1:chmetcnv
+TCSC="0" NumberType="1" Negative="False" HasSpace="False" SourceValue="6"
+UnitName="C" w:st="on"&gt;6C&lt;/st1:chmetcnv&gt;6 (they are not consecutive-ordered),
+DADAD2D2 (Ace is not &amp;#8220;one&amp;#8221;, so they are not consecutive-ordered),
+H2H2H4H4, or D2D2D3. Be careful: if &amp;#8220;None&amp;#8221; in this round,
+H7H7S7S7HAHA is not a tractor (H7 and S7 are same-ordered because of &amp;#8220;None&amp;#8221;).&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;b&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;Throw.&lt;/span&gt;&lt;/b&gt;&lt;span
+lang=EN-US style='font-family:"Courier New"'&gt;&amp;nbsp;The combination of the
+structures above, satisfying the condition that they are all &amp;#8220;trumps&amp;#8221;,
+or all &amp;#8220;not-trumps&amp;#8221; with same suit. Each of the Single, Pair or
+Tractor in a Throw is one of the Throw&amp;#8217;s component. In the original
+tractor game, in some situation, the throw will be rejected. But, to keep the
+rule simple, we assume in this problem all the throws are accepted. For
+example, RJRJBJBJH7H7HQHQHJHJH9H9H6H6HAH2 contains six components: two
+tractors, two pairs and two single cards (RJRJBJBJH7H7-HQHQHJHJ-H9H9-H6H6-HA-H2);
+CACAC&lt;st1:chmetcnv TCSC="0" NumberType="1" Negative="False" HasSpace="False"
+SourceValue="8" UnitName="C" w:st="on"&gt;8C&lt;/st1:chmetcnv&gt;8CK contains three
+components: two pairs and one single card(CACA-C&lt;st1:chmetcnv TCSC="0"
+NumberType="1" Negative="False" HasSpace="False" SourceValue="8" UnitName="C"
+w:st="on"&gt;8C&lt;/st1:chmetcnv&gt;8-CK).&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;A
+throw can be treated as different list of components, for example,
+H2H2H3H3H4H4H5H5H6H6 can also be treated as H2H2H3H3-H4H4H5H5H6H6, or
+H2H2-H3H3H4H4H4H5H5-H6H6, and so on. For the lead cards, each time we choose
+the longest component (choose the one with the highest order to break the tie)
+to construct a list of components, this list is the structure of the lead cards,
+also &lt;b style='mso-bidi-font-weight:normal'&gt;the structure of the trick&lt;/b&gt;. &lt;u&gt;So
+that the structure of the trick is unique.&lt;o:p&gt;&lt;/o:p&gt;&lt;/u&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;After
+the first player lead his or her cards, other players follow cards one by one
+in clockwise order, as mentioned above.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;An
+important part of the game is to determine the winner of a trick:&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;If
+one&amp;#8217;s follow cards contain both &amp;#8220;trumps&amp;#8221; and &amp;#8220;not-trumps&amp;#8221;,
+or all &amp;#8220;not-trumps&amp;#8221; but with different suits, this player can't be
+winner of this trick.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;Otherwise,
+if the lead cards are all &amp;#8220;not-trumps&amp;#8221; and one&amp;#8217;s follow cards
+contain &amp;#8220;not-trumps&amp;#8221; with different suit from the lead cards, this
+follow player can&amp;#8217;t be the winner of this trick.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;Else,
+if one&amp;#8217;s follow cards can't be constructed as the same structure of lead
+cards, this player can't be the winner of this trick either.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;Otherwise,
+if the structure of this trick is not &amp;#8220;throw&amp;#8221;, the one who played
+the highest-ordered card wins this trick. If more than one player played the
+same highest-ordered card, &lt;u&gt;the winner of this trick will be the one who
+plays the highest-ordered card first&lt;/u&gt;.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;Now
+let's consider the &amp;#8220;throw&amp;#8221; situation. We construct the follow cards
+into the structure of the lead cards, so that the order of the highest-ordered
+card in all the longest components of the &amp;#8220;throw&amp;#8221; is as high as
+possible (this card is called &lt;b style='mso-bidi-font-weight:normal'&gt;&amp;#8220;honor
+card&amp;#8221;&lt;/b&gt;). &lt;u&gt;Note that tractor can be treated as several pairs or
+shorter tractors, and pair can be treated as two single cards.&lt;/u&gt; The winner
+of this trick is the one who plays the highest-ordered &amp;#8220;honor card&amp;#8221;.
+Similarly, if more than one player played the same highest-ordered &amp;#8220;honor
+card&amp;#8221; the winner of this trick will be the one who plays the
+highest-ordered &amp;#8220;honor card&amp;#8221; first.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;There
+are many hair-raising rules about lead and follow cards; fortunately, they're
+not related to this problem, the only thing we care about is: when someone
+leads a &amp;#8220;not-trump&amp;#8221; &amp;#8220;throw&amp;#8221; the only possible way to
+beat it is to &amp;#8220;throw&amp;#8221; the same structure of &amp;#8220;trumps&amp;#8221;.
+And it&amp;#8217;s impossible to beat a leading &amp;#8220;trump&amp;#8221;
+&amp;#8220;throw&amp;#8221;.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;u&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;Special
+attention on the examples below&lt;/span&gt;&lt;/u&gt;&lt;span lang=EN-US style='font-family:
+"Courier New"'&gt;. In these examples, Alice always leads cards. And assume in all
+the following examples, the CR is 7, and the main suit is H.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+
+
+&lt;table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 &gt;
+ &lt;tr&gt;
+  &lt;td&gt;Alice&lt;/td&gt;
+  &lt;td&gt;Bob&lt;/td&gt;
+  &lt;td&gt;Charles&lt;/td&gt;
+  &lt;td&gt;David&lt;/td&gt;
+  &lt;td&gt;Winner&lt;/td&gt;
+  &lt;td&gt;Comments&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;SA&lt;/td&gt;
+  &lt;td&gt;S2&lt;/td&gt;
+  &lt;td&gt;ST&lt;/td&gt;
+  &lt;td&gt;S5&lt;/td&gt;
+  &lt;td&gt;Alice&lt;/td&gt;
+  &lt;td&gt;Alice plays the highest-ranked card SA.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;SA&lt;/td&gt;
+  &lt;td&gt;S2&lt;/td&gt;
+  &lt;td&gt;ST&lt;/td&gt;
+  &lt;td&gt;SA&lt;/td&gt;
+  &lt;td&gt;Alice&lt;/td&gt;
+  &lt;td&gt;Alice plays the first SA.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td&gt;SA&lt;/td&gt;
+  &lt;td&gt;S2&lt;/td&gt;
+  &lt;td&gt;ST&lt;/td&gt;
+  &lt;td&gt;H2&lt;/td&gt;
+  &lt;td&gt;David&lt;/td&gt;
+  &lt;td&gt;David plays the first only “trump”.&lt;/td&gt;
+ &lt;/tr&gt;
+  &lt;tr&gt;
+  &lt;td&gt;SA&lt;/td&gt;
+  &lt;td&gt;H2&lt;/td&gt;
+  &lt;td&gt;C7&lt;/td&gt;
+  &lt;td&gt;D7&lt;/td&gt;
+  &lt;td&gt;Charles&lt;/td&gt;
+  &lt;td&gt;Charles plays “trump” C7, while David plays D7 with the same order of C7.&lt;/td&gt;
+ &lt;/tr&gt;
+  &lt;tr&gt;
+  &lt;td&gt;C2C2&lt;/td&gt;
+  &lt;td&gt;C3C4&lt;/td&gt;
+  &lt;td&gt;C7D7&lt;/td&gt;
+  &lt;td&gt;RJBJ&lt;/td&gt;
+  &lt;td&gt;Alice&lt;/td&gt;
+  &lt;td&gt;The structure of this trick is “pair”, while all players except Alice play two single cards.&lt;/td&gt;
+ &lt;/tr&gt;
+  &lt;tr&gt;
+  &lt;td&gt;D3D3&lt;/td&gt;
+  &lt;td&gt;DTDT&lt;/td&gt;
+  &lt;td&gt;SKSK&lt;/td&gt;
+  &lt;td&gt;H2H3&lt;/td&gt;
+  &lt;td&gt;Bob&lt;/td&gt;
+  &lt;td&gt;Bob plays a pair with order higher than Alice's, while Charles discard a pair with wrong suit.&lt;/td&gt;
+ &lt;/tr&gt;
+  &lt;tr&gt;
+  &lt;td&gt;D3D3&lt;/td&gt;
+  &lt;td&gt;DTDT&lt;/td&gt;
+  &lt;td&gt;SKSK&lt;/td&gt;
+  &lt;td&gt;H2H2&lt;/td&gt;
+  &lt;td&gt;David&lt;/td&gt;
+  &lt;td&gt;David plays the only “trump” pair.&lt;/td&gt;
+ &lt;/tr&gt;
+  &lt;tr&gt;
+  &lt;td&gt;D6D6D8D8&lt;/td&gt;
+  &lt;td&gt;DJDJDKDK&lt;/td&gt;
+  &lt;td&gt;DTDTD2D3&lt;/td&gt;
+  &lt;td&gt;HTHTBJBJ&lt;/td&gt;
+  &lt;td&gt;Alice&lt;/td&gt;
+  &lt;td&gt;Alice plays the only tractor (because the CR is 7).&lt;/td&gt;
+ &lt;/tr&gt;
+  &lt;tr&gt;
+  &lt;td&gt;H6H6H8H8&lt;/td&gt;
+  &lt;td&gt;H7H7BJBJ&lt;/td&gt;
+  &lt;td&gt;C2C2C3C4&lt;/td&gt;
+  &lt;td&gt;HKHKRJRJ&lt;/td&gt;
+  &lt;td&gt;Bob&lt;/td&gt;
+  &lt;td&gt;Bob's tractor is higher-ordered than Alices'.&lt;/td&gt;
+ &lt;/tr&gt;
+  &lt;tr&gt;
+  &lt;td&gt;H6H6H8H8&lt;/td&gt;
+  &lt;td&gt;H7H7D7D7&lt;/td&gt;
+  &lt;td&gt;C2C2C3C4&lt;/td&gt;
+  &lt;td&gt;HKHKRJRJ&lt;/td&gt;
+  &lt;td&gt;Bob&lt;/td&gt;
+  &lt;td&gt;Bob also plays a tractor!&lt;/td&gt;
+ &lt;/tr&gt;
+  &lt;tr&gt;
+  &lt;td&gt;SASK&lt;/td&gt;
+  &lt;td&gt;STST&lt;/td&gt;
+  &lt;td&gt;C2H3&lt;/td&gt;
+  &lt;td&gt;S7SK&lt;/td&gt;
+  &lt;td&gt;Alice&lt;/td&gt;
+  &lt;td&gt;Alice makes a throw.&lt;/td&gt;
+ &lt;/tr&gt;
+  &lt;tr&gt;
+  &lt;td&gt;SASK&lt;/td&gt;
+  &lt;td&gt;HKH3&lt;/td&gt;
+  &lt;td&gt;HAH2&lt;/td&gt;
+  &lt;td&gt;S7SK&lt;/td&gt;
+  &lt;td&gt;Charles&lt;/td&gt;
+  &lt;td&gt;Both Bob and Charles can beat Alice.&lt;/td&gt;
+ &lt;/tr&gt;
+  &lt;tr&gt;
+  &lt;td&gt;SASK&lt;/td&gt;
+  &lt;td&gt;HAH2&lt;/td&gt;
+  &lt;td&gt;HAH3&lt;/td&gt;
+  &lt;td&gt;S7SK&lt;/td&gt;
+  &lt;td&gt;Bob&lt;/td&gt;
+  &lt;td&gt;Both Bob and Charles can beat Alice, but Bob's HA comes first.&lt;/td&gt;
+ &lt;/tr&gt;
+  &lt;tr&gt;
+  &lt;td&gt;S2S2S3S3SA&lt;/td&gt;
+  &lt;td&gt;H3H3H4H4RJ&lt;/td&gt;
+  &lt;td&gt;D7D7H7H7H2&lt;/td&gt;
+  &lt;td&gt;S7S7SQSJS6&lt;/td&gt;
+  &lt;td&gt;Charles&lt;/td&gt;
+  &lt;td&gt;Both Bob and Charles can beat Alice.&lt;/td&gt;
+ &lt;/tr&gt;
+&lt;/table&gt;
+
+
+ 
+&lt;p&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;There
+is a special rule about &amp;#8220;hidden cards&amp;#8221;: if the winner of the last
+trick of a certain round is a member of FT, then, in addition, the FT gets the
+sum of the hidden cards' pts, multiplied by 2&lt;sup&gt;w &lt;/sup&gt;(2 to the power of &lt;b
+style='mso-bidi-font-weight:normal'&gt;w&lt;/b&gt;).&lt;span
+style='mso-spacerun:yes'&gt;&amp;nbsp; &lt;/span&gt;&lt;u&gt;When the structure of the final trick
+is not &amp;#8220;throw&amp;#8221;, then&amp;nbsp;&lt;b style='mso-bidi-font-weight:normal'&gt;&lt;span
+style='mso-bidi-font-style:italic'&gt;w&lt;/span&gt;&lt;/b&gt;&amp;nbsp;is the number of lead
+cards of the last trick of this round. If the structure is &amp;#8220;throw&amp;#8221;
+instead, &lt;b style='mso-bidi-font-weight:normal'&gt;w&lt;/b&gt; is the length of the
+longest components&lt;/u&gt;, in the example RJRJBJBJH7H7HQHQHJHJH6H&lt;st1:chmetcnv
+TCSC="0" NumberType="1" Negative="False" HasSpace="False" SourceValue="6"
+UnitName="ha" w:st="on"&gt;6HA&lt;/st1:chmetcnv&gt;, the&amp;nbsp;&lt;b style='mso-bidi-font-weight:
+normal'&gt;&lt;span style='mso-bidi-font-style:italic'&gt;w&lt;/span&gt;&lt;/b&gt;&amp;nbsp;is 6 because
+the length of RJRJBJBJH7H7 (the longest components of the &amp;#8220;throw&amp;#8221;)
+is 6.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;To
+make the problem easier, you are only to write a single-round tractor game
+simulator.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+</Description>
+        <InputSpec xml:space="preserve">&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;Multiple
+test cases, the number of them&amp;nbsp;&lt;b&gt;T&lt;/b&gt;&amp;nbsp;is given in the very first
+line.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;For each test case:&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;The
+first line contains the main suit of this round (H, S, C, D, O; O denotes &amp;#8220;None&amp;#8221;
+in this round), the dealer of this round, the CR of team 1, the CR of team 2, separated
+by single spaces. Each of the rest lines contains 4 strings: the lead cards and
+the cards played by the second, third and last player. In one string, the cards
+can be given in any order. Each player will play exactly 25 cards in one round.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;You
+may assume the input is always valid.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;There
+is a blank line between consecutive test cases, and a blank line also appears
+between&amp;nbsp;&lt;b&gt;T&lt;/b&gt;&amp;nbsp;and the first test case.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+</InputSpec>
+        <OutputSpec xml:space="preserve">&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;For
+each test case:&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;The
+first line contains the case number.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;The
+second line contains the pts get by the FT in this round.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;If
+a team wins the whole game after this round, output &amp;#8220;Winner: Team&amp;nbsp;&lt;b
+style='mso-bidi-font-weight:normal'&gt;&lt;span style='mso-bidi-font-style:italic'&gt;X&lt;/span&gt;&lt;/b&gt;&amp;#8221;(without
+quotes,&amp;nbsp;&lt;b style='mso-bidi-font-weight:normal'&gt;&lt;span style='mso-bidi-font-style:
+italic'&gt;X&lt;/span&gt;&lt;/b&gt;&amp;nbsp;should be either 1 or 2) in the second line. If no
+team wins, output the new CR of team 1, the new CR of team 2 after this round, followed
+by the name of the dealer of the next round, separated by single spaces.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;See
+the example for further details.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+</OutputSpec>
+        <Figure filename="1105_1.jpg">
+            <Text />
+            <Image xml:space="preserve">/9j/4AAQSkZJRgABAQEAYABgAAD/4QAWRXhpZgAASUkqAAgAAAAAAAAAAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAF5AQMDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD31mCqWJwBVR53kPBKr7daW5fLhOwGT9ajC5OSKTGhPLBOd0hP/XQ07Z/tSf8AfZ/xpx6Ug96dgEKf7cn/AH2f8aNv+3J/32f8ad2pv4UWAbtJ/jk/77P+NLg/35P++z/jRnvmjJNAAQR/HJ/32aCrf89JP++zS0H3osMTDd5JP++z/jSYb/npJ/32f8acKXFFgGEOP+Wkn/fZoBb/AJ6yf99Gn9aQgelFgGEv/wA9JP8AvqmqX5Jlk/77NS7aQLSaAZlv+ekn/fZpwVz1kkH/AAM05QR1paLAN2P/AM9ZP++zSFXx/rZP++zT/wAaCeKdhDAG/wCesn/fRoIcn/XSf99U4HPalxRYBuH/AOesn/fVL8//AD1k/OjHpRRYBuZP+er/AJ0Zkz/rX/OnUYosAmZP+er0Zk/57P8ApTttGMUWAaDJ/wA9n/SlzJ/z2f8ASlxRRYABmXpKT7MBip4pt52sNrfoagGc0EZ9iOh9KLAXaKgSdSoLde9FAiJx++kJ9f6CmkH1p0n+sf6/0FJjigaFHSk5xSDgc0ufWgA5xzRmkJ96KYwx6UmKWkA560gF20YyKX8aQ0wFA4pRTVNLQAcUUnFA5oAWjgd6TNFAC5opKUEAdKADHvQMUZyaDigBeBSUmOaWgAxSUE8UDnBoEKQKO1JmloABQRSZpwNACYpelJRxQAoopAKDQBA/3zyaKV/vmipAsN/rX+v9BSH2pH/1r89/6UZ4pgJn86CcjpTTWfq+tafoNibzUrlYIc7QcElj6ADkn6UMqMW3ZHlvjjVfHOh6q13JqQt7Ce4aO1WDYcAAkbgV6kA9SaPB2s+OPE2swt/ahfT7SaNroskaBlJyV+VckkAin/EXxJpXibw3ZS6ZdCQwXw82N0KOuY3xwe3vVv4M42a0PeE/+h1zXftrJ6Hv+yissdSUEpp221t/meq/SlptAxnp+NdR8+O70Gk70HpxQAo470Zo7UdqADFLxTc/jSc55oAdS5zTaMn04oAUn2oFJnFKDQAfhRkYozSUAKOTS/jTMnPFLzQAvU0fSkpcUCEGfSnEUlLmgAopO9LmgAoozSd6AF74oNJS0AQufnNFMdhvPBoqRFljiWT6/wBKQ89KG5mf60dKYxp7815l8Y7C5l03TtQjVmtraR1mx/DuA2sfbIx/wKvTvwpkkcc0TRyIrowwysMgj0pTjzRcTow2IeHqxqpXsz5Z2QtaeYXcXPnYEYHyiMA/MT6kkYHbBr1n4N2c8dlql6ykW87xpGT/ABFd2ce3zD8jVzUtE8E2evCwg8PNfakY/Na0sxlUT1ZSyooPoetdT4c1zTNYsGGmKYVtX8mS1ePy3gYfwle34cVhToOMrt7HqY3NY16LpQi/ed2219yt6GyAc04YFNA9aO1dB4g5qilmjt4WlmkWONRlncgAD3JqTNeQeNNc1fUfFkumQrPbWtiUflmCyEfMOgwSwBAzkZHrTA9K/wCEisX4tPOvSen2WFnU/wDA/ufmasaZqsepeeggmt5oH2SQzbdwOMg/KSMH61x+u+PtL8BnQ9NuluryK6jwLnIZwowAx4G7qK3oHWHxYZUP7nULRXBIxlkPH44Y/lQB0FBNN9OaccUAFGaKKADnPWjn0ozTSaAHc9aKTNDGgBCAeR1pQa5fxx4xtvB2gyXchWS7f5LaDvI/0HOKseEPFdn4t0KK/tXAkxtnhP3on7g0COhB9aTqaTcDQKBjgMUuabmjseKBDiR60nXpSAilyQOlAB9KBz9aTNAJPagBw5oPA60mT7Cg9OtJgQOPnPNFNc/MaKkC2R++k570Gg8yP/vUVQDfrTcYHenUhpgea+A1kT4keORen/SjNCU3dTFhsY9sbaPBm6X4r+NprY5st0KMR90yhRkfUfNUWraxp03xF1Kz1SGKzTT7ATC/gnkhndSVAjJRhu+Y9OfpXXeDtIl0bRFhmtbW2eRjK0cAbOT3dmZizHjJz+fWkM6HNJnNKRkUgoAK4/x5oU9/pUt/pwP26CMnYvWVRzj/AHgRke4966+gntQB5toOseG9Y+Henat4jitUWz/cM0qZaF1OAoIG4HgVTufiJFrHiO1n0iNriwslMpkELAkH5WJPQKAe+DnFZ3jn4d6WNfe9s7e4kluVe5ltol3KNo5IUDJJJHH+Na154ej+y/2lFA1pG9y32aywYzMrIFVCnYFgCQew7UXA1PA/jDU9fvp7S5gimWJ3MlwsgBj9F2AeuR1zxk132a5Pwh4KtPDNssrFZtRdSZpwMAsTlsD69zzXV80ALxSZpKXIoAOaD71FcXMNrBJPPKsUUalndzgAfWuFvfEF/wCI7i2t9Nkex0meSSN7n7s8u0ZIQEfKDnr19KxxGIhQg5z2SuNK7sjrbnxBo9leC0utUs4Zz/yzkmVW/EZqbUtSt9M0y4v7hwLeGMyM3sBXnWpW9l4G8LyCGFru2lucTidtzsr9fm7/AI066t7/AMR/DTVtBtyzX1sPLRWODInDJ+Y/lXn5fmkcZKXLGy6O+9t9OhU4cp4Z4x8T33ibxH/al3LLGM5hjVceTHnjHPXv9af4K8U6j4V1w6jZSvJGTmeA9Jkzzn/aHWrVpo19FPeXn9izy3EUZE1rcWpjSIBeX3dMAg9wTUsmh3VydO1UaNcp50QEdvbWpmWbK8NuwFAJPTJIr1rmdj6i0jU7bWdKttRtHDwXEYdD9avCuT+HWjXmg+CbCxvxtuFBdkznZk52/hXWUDDqeKXOOKTml7UwADFLmkFGKQg2jORSHinZpecdsUANHNBbpR9eKOnJoAgYfMeaKVj8xopCLB/1r/Wl6ikP+tc/7VAPNMYNTaVhx7Ug9KAPIPEPgpfFPxS1Nb+wulspNLEcF4I22rOCCCD0JAz7V1Hw11HW5tDOma/Y3cN3YkxpcTRFVuIxwDk9/r2wfWsHW/EX9k/Fe7ttU1C+XShpf2lYIJJMCQHGcJ04U+1dv4Vtnj003gvLme3vtl1DHcymRoFdAdm4nJGefxoA3h9KDR0pDQMOlJwKQ5z1rm/Fq3yQxXUTTPYQBmuYbeQxyH0YEdcc/LkZ/Ssq1X2cHOzdui3Gldk00gj8c2wlUgS2UiQsOhO5SR9cCqiXVpJ4mvr/AFC6RI7DbbwRscBWYZZgO7EYA9s+tc/YaSdR1Oz8R6Z4jmuD5ZQSTIsh2kYwOm0j3B9xUUt3ovhue/1e9v5Li9luBA0t3sX59o4AUAAYIycV4tTPaVnGlFyn2s195oqb6notnqFpqMZks7mKdAcExuDg+h9D7VbHSuI0uWXWrmx1LSopYRkGa5dCiSR91APLZ6g9vWu2Feng8ROvSU5xcX2ZnJWdhao6pqdlpGnz319OsMEKl3Zj2q1LIIoXkOSFUsce1eS61qVpc+K9Gl1qxupraVfPuFWMtHF822LeM8L35711vyEQ3PidvFqfbbi6tLW0DhrK1muTGAQeHlGwhs+hxiuiuLa5bRpJ4Gtpdw+0NCvzqJMctE4II+tWNb8V6pZTSpp3hpbqyhfy2lluBH5hA52LtJIA71nX2k2niLw7eXmgedpWoKh8+0jHyyEjO1kHByOjDmvFxmAxFSXtKc9ezXTsaRmkrNHG+L7m7OhWuhhJ1kv54pLeWWXzX5PJkOcg56YrstH1iPTNTtZ74i1kjX7DfiV8bGHKOSeqnnmuQ0/4davaW9trctkI1hlS4ltVTfcuF5wPm2j+Z716Vc6NpfjrTrbUSt/YSsoywTypcZztYMCDz7VpSy9QUZU9HFt69b2TuDl3OQ+J/jW2u7UaDpV9E63CbrqaEhvkzwobpzUfwl8QTwXKeGp2MtuI2e2dvvR46r7jniux1n4caLrGlpasssM6Hct4pzKT6sT978aXwn8PrDwtdPeC5mu7tk2LJIANg74A9a9BRqc6beh3QrYT6pKEo+/0Z1+Kd1pKdW55ov0pMGge5p3emA3vTscUhxmjPpQAtHIzSE0o578UCEAzyaCeM0403tSAhb7xopHPzGikInGfNk9M0DjpS5+d+P4jQKYxM0hpT0owMUAed6no15F8Tm8R+bpRsxYfZDDcXZjc8k5PyHA5roPDFvfpLdXFxNZ/YSkUNjbWcxljijQHuQMk5HboBXDancHTPjjeTx6XJfk6MHaGLbuOG6gN1Py49avfCsf2pqGu+J7RY7PTb+UJFp8bZMbIMMzDgBj1wPWgZ6YTRnNJjPNHIpAIRmkYB1KsMgjBB707nNNJGD7UmB44ui2w+Kl5aaTcy2On28Qa5tYZXUPIwOSuOBwR0xirt14Q06Pxpo093A09k8zA+dcvLvlK/KWVuOoHT0Fckni2XTfFniG6s7ZJZ7i7ZRJMcoFX5RhRg54PetO08Z6prdxDbXFnDLcQSrdQtbowP7s7ipBJzkA18xVjiI45VlpBWT16dX8vM9JYGs8N7bl93ue4KoUAKAAOAB2pSwVSSeBVWwvrfUbOO7tZA8UgyD3HsR2I9Ky/GGrXGkeG7iezh866kIhiU9AzHAJ9h1r6hHmnJ+L/ABprMdo76RHHbwiQRiSVfMeXJx0HCDP97qOlce/hXxmbyC/l1WK4YKEeBWIOzuuTw2M967a98P2s/h620+e8eZoYl3SPHIuW6nZMBwMnuSK4+51HWdK1NLIaw1/afIWX5BL5ZznMq55GMcAk0amkPZ685f8AEGn+Ir620S0GoXUMltLiV47SVwO+8MgIYEcYzXZ+F4LLyLQNfqdSWBoZ442AMoyTyPUexyKwNM1watJYadpMkc+ipuNz5BdAqDk7pHG5ueuAPTPautsIluPK1a4CW1jbKxtYFAUKmPvsfcdugpmbOM1HxNqXhrUYbXVdRmt7K3ccFg5kVtxAZyuc4A49+tWvDviq4vp57rQ9PVLCdlkke4jnKvIeCIyEwB7nI9qT+zYfEN++p3ulmW2uFZoke5LhsnBbKKSOAMDH41q3c2maJpjXDrpVt5KExRz2z7mYDgB2IJP4UAdTo2rxaxZtMiGKWNzHNExyUcdRx1+taQ5FedfCFUn0LUNU3nzb69eSSNc7EPT5c84r0ZRjigApeaXFJzmmADrTjikHWloACAOaTOKUnj2pcZoEIF5pT7dKOnSigBOuKD04pQAaGwBSArN940UOTvPFFIRY/jf/AHjRgg9sUfxt/vH+dOPNNDEPIpMUtIelAHPf8IlbHxt/wk/2iX7T9n+zmLA2FPfjOc80uh+EdP8ADup6le6fJOn9oSebLAWBjV/VRjjqfzre604c80DIyPWkzTzzTcc9KLAHFRyAlGA6kHFPxk0EUmB86al4avUkW8srSe4W4eVZfJiLFJFkYHOPX1NWNJlbQradHke0vHRxPNsJKKpGcNj5QNwzj+6cc16pqNhf6Dd3F7p9o17p87mWa3jI82Jj1ZAfvA/3eD6V5xbahFd+ItSstO1aZ4JUkmS0lCxt52AdmGG7HqOOfWvmKv1iM5Qqx91ap91577ee9j054+pUw8aF9EcXe+Odd8P6m1rpWqt5ML743V9yvuwckD5WPqTnvXoWv61r+q+DdPm1I2JF60ZiEIaGRXPTIJZXHcjj2rx220TWfE2tXccNruvEDSSoIwmCO2AMA+1dT4U8LaydJ1kanp1ytjFblliuFZMyDoVB7jnkV61asqUI2mk42utLtPTTsebFXex7JoN3Amm2lqZbp7rJjQ2jMsfy/wC+2zPXj9KqeKLHy/L1O/jKQRny7iWSFBJ5RPJJViG2nkDFc94V1eS/8N6ZDpRe2jtWdVnlQMSwBZmAPouAM9662fxHJFHaxTwSMGiX7TfBFba5GQqqT94/TA9K9ERg3XiXRdK06aDSGfUonIa5ltIVRHHaNSAFBPfqevWtm3udQ1q2tpdS+yWlqdrR6ek+1Mdg8mwhz/sjAHfNZkA0jT72afTrCVpp4WmkDWwLJggkNu6euR+FdDqmpraanBPbWiSW81ss16rPgNGxCqQMHcwJ9uKANRZHjdY5r29tCeF3xRFD9GCkfmQa4nx7rmoWsO6RIbqwtptkjpGRIQVwxxnGAD7VBr1/dwW1zDJKZtISVzPbEAiCMEqoz1xnGQT+VVL3TtW1m9mtNI+yPpUkCQvcO5+Rio8zaB16YrDEYmnQjzVHZDSbdkdp8Mbe0tvCKfYFRbSSV3hwwLFCeN2Cea7QNzXi5lsvDOu2sHh7U7K1vo41Sa0M2UuSP4XHQN6Ec16BoHjbTNbuXsmWWx1GM7ZLW6Xa27/ZPRvwrPC42GIimtH2e/qOUWjqicDrSA0go7113JHZoH1pucU7timAop3bHQ00DHPejNMQ8Uh4NJnijnPNADs01wcUtB5BpAVn++aKHPzGikIn/jc/7Rp2cimHhmP+0acBTQwpGNKKaRQAnApw470zA96UfjSGOOOtNzz1pQfWlwM8UwE+goo6etKMD6UAMYc+1cr4o8BaN4nAnliNrqKcxXtv8siHtz3/ABrrM5pMVEknuB5JfyeL/CdhPBfWZ1SARkRajZLlwexkTr+IzWCPFl94h8BxafZMp1m4cwTY/hUH5nIxwD9Oteya/rMGiacZ5BvlciOCEdZXPRRXO6NoYszc312EfUr1vMuZFGAD2Uewr5bN44LBWmo++3dL0/Q2p80jyi3sNd8P63p9ldTudMRmnvVs4CCqEjccAZ2nA6D1rsrLXbXUvDGr63cwS21rZO7eXKu0tIcc7fZcYB9a6Xwdu1DXde1MqDEJVtIWx1CD5v1NIth4T17xbfWglae8tykt1aCU+S7dmZM4YivoMFOpLDxlV3auZysnoY1/qlrpej2OvM206o7RBevySDaucenX8am8Z3dvpU/hq0LHlglyyIW2wADJbHbIFdJZ+CNHs7mWVlmuY2Vkjt7iQvFCrdQingA1haZpFlpXjbV4bWNlUwRFQ7s+0egJJwPbpWeY4v6pQdVK9hwjzOxymtPrM02s3lrbQf2PqlxHB5krMJPL3DJVcfxetdtqeoab4R8OPcvH5dpboAI4lAJ7AAetWNUtI9X027sFba+Plb+6w5B/MCuI1HVtM1SE6Z4jEsFwoFtc27S7VUE8TJnqDxyOlfHTxM8zlF1FpF6pb2dv+Dr/AJmyiobHhd1eiTWZb2EyFTOZV3n5uuea9r8FeJovH32uz1HTIIpoEVjLCCGYdF5JyCMdf5VQ1L4W2ekiwk0izn1Z3nzOJXXaIsc+g79a65NBsPDVtDp3h62a0ur6QeZKCXZFHLEkk/T8a9XMcwwtejGNK/N0e1rbt9fwIhCSepd8L+LL2yuptL1sTPbxT+RBfyrtOSMqsn4Hhu/evQxyMg150t1bXkuo2tjqdpOkrCK6guocoWAxgOCOenc1q+DNS1CGSTQdYC/abdd1vIHL+bF25IGWHQ16uX5jCtGNOT962qas/wDgkTg1r0OxI44pVI6mkApRXrEDs5NHWkHWlHWmIMfSg5HNOFNNADuwpM0tIaYFdz854opXA3mipESP95v98/zp69KaeWf/AHj/ADp44FPoAnFJ9aU46UhoGJQeBQc46ZpegxQMaelKCOlBFG0UALn8qTNOAGMUnSgBAajubiG0tpLieRY4o1LO7HAAHepeKxfFmlSa34ZvrCFsSyxnZ6ZHIB9qibaV0BztkreIdVXxDdKfIQFdPhYfcTvIR/ebt6CtPVb1NP0q6vJDhYYmfP4VX0LUotS02MqPLniAjngI2mJx1Ujt7e1UvF0T3tja6VGwVr+6jhJz/BnLfoK/M6zrYzMFGru5Wt2VzsVox0GWi6loXwje4sYGk1N7Z7naoyS7ktnHqAf0r588J32u6b4ys7+0huXvHnHmAocyBjyD9ea+u3eGztCzEJDCmSeuFAryfwh4n0y5+JGp3Oxo01PCWzs7HO3oCCcDPav0pWglEwp0KlSMpQV1HVnrSksoJGCR09K5C4cL8QrmPgbrBG/8ersM8dK43Vl8n4jWbdptPdTx6NmvKzyPNgpip/EjVKIH3bRu9e9cR490bQ5tJnu9RhEt2ylbYb2JLkcYGf8A61dzUckMcpBdQcZwSOlfnmFxMqFVVE3p2djraurHjngu/wDFGjQSQRzRTWtvIkctpdyHdEG6MGAyFzx0I5rc8W6rqjzw2sOnXWn6xeR/Zo953pszlmR1yDx7A1qala6Zoes6hemOR/7QiELwxRsTI2MDHqxPetnVdKv5vCej6jPb79U0orOY15JGMMo99v8AKvscPCnjFLEKHvKzXRN21T76/ejnbcfduRaRoL6Zp0FuywssSjBk3Pk+u0YAOfbPvVbbNbNZaytvLbzQ3GZo5HL5QkIeT0B4br2715ve+K9Y1W6uCuoXCRysV8mNyqhfTFbPhK3unsdYghZzZJauZSG+Uy4yuPp/hXLTwlbDv6zUmrpp/wCaPWrZZKnh/bOSs7W+Z7wrBgCOQeQadms3Qrk3mg2NwwwZIFY/lWiK+zi7o8IdQDzR2oHXFWAoO0YLE896RqcQDSY9KBADxTgc00CgkEEelAETn5zRTXHzGikBNg72x/eP86eM01Thn/3j/OnZ9qEAgBzzRS5pDzTAM0hJ9KWkH4UDEo6UuD60mPegAzQSSPeg/Wkye1AC03NKTxnFJgd6QGBrPhWy1S6F9HLPY6gBgXVq+1iPRh0YexBri77S/FMPinw7Lqs9lNZW18AJoWKvKW4BZMYBA9DXqZ6Vg+JQAmmSdNmoQnn03YrmlhaMqiquK5lsyuZ2sReNfEEvhvw7JfQQLNKXWNQ4yo3dzjtXiGgeI7rQ/Es+r/YrKXzW4iCMPLBPOz5uD+dfQWsafa6tpNzZXYHkSoQxPb3/AArwzwBpela143m0+e+SdLByyKFI+07T157DvTqRm5LlPVwFbCQoVFWT5umr18tPM97tpftFtFOFKiRA+09RkZxXMeJylv4n0C4PG9pYM/Vcj9a6vO0YqjqukWGt2RtNRtlmhyGAJIII6EEcg/SoxeHWIoypXtdHlRdncyb3UrHTYzLfXkFsg/ilkC/zrIt/EsmuqyeF7b7eA21ruTKW8Z9yeW+ij8az9S+FOgR3Ut6QsNsqsz7tzkDHPLE/59K4/wCEPiKLQvE174enEyWV3KTavKCPmHGPxFeDhuGcPTknVk5eWy/zNZVm9j1nRPCq2V3/AGlqV02oamwwJXXCRD0jX+Ee/U+tdGelIMdqrardmx0m6u1ALxRsyAjq2OP1xX0UYQpQtFWSMW7nnfiXQNDsPELw3CxRR6jA8sbD5WhkGAdhHPzEj5fXPrVLTbG50jRpbHTItSuDIjBfPtlRJCw5JOQR368jvXULaJ9mN5qRNzPMgMs8oUeSNvbAG0D2+tN0zxDps9lJI+oWebfKybbhXxjvxXw+MxzrTlKjFuN1p0udkZSUeRvQveEdbUaJp1hqME1lqAjERiljbaWA7PjaeAT1zXVA5rzbVdftrpFgksJnJZWhCENNG/8AC4QfdPOeSDjqK7jQbyTUNEtLqUYkkjBce/evq8sxdWvFxrw5WvyOWcUtjT+lAPNJmnAe9eoQLmjIpOg60DpTAcRzSHAFGaXHFAis/wB480Urj5zRSESj7z/7x/nS5+tNzy3+8f50oGehJ+tCGKcntQeBnNLjv3oPp1pgNBz6UuM0cdqDQAEcd6aRS7uKM5pDG1FdXMVlayXM7hIo1LMx7CpG69657xPLvNjZHlXl82RR3VBu/IkAfjXPiq/sKUqnZDiruxg3vj3WYpohBoEVus06wwi+uGR5NxwGwqMB9N2fars/ijxLb3lvbt4Zt7kzkhTb6hyCBk53IPT1p8Gq/wBoaS91a2xa4VAwt5zsIJGQCeevY1h6dr0+v6nbm0kW0KxSRXcUhxNE+RkKD3xn5q+aoZ3iZ1L1YpRjfm/rc2dONtDVv/iPbaGIx4g0fUdNaQ7U3eXKG+mxyT+VZvifx7od54ak+wyXT3bMrW8ZtnjJcHI5cAY/GtGXw1CmoWl5ZytbvAxLL95ZQRhsgnqfX+dWNY1DS7C2C6pLFHBNlAJRkNxyKdTiVOSjRhe/3/db9QVHuzk/HPjvU7/wTa33hIl2mfy70Rx+ZJb8cqV5xzxnFeKeGp/Euna6L7Qre6a/R9jGODeQW6hhg4zXqWp6Da+FdXGqxi4/sm6IP2i0kKTWxPfI+8vsc1c8OW2p2uvXMGl6tpsEcqeak66dEZJkJyMsoUHuTnmvXp5xh3T55XSte9vvWnVGbpO563YPcSadbSXihLlolMqjs2OR+dcn4t8XabpWox2V69xIqp5n2a1UtJO3ZcDoO/OKwfEesjT9PmbU/GNxJPgpHb2jRwkv2zsG4c+prkPCvg7Wii6hHiY3J3SzXLnEi9wP4se56/Sms0w7pOrdqK2vpf0uHJK9j0CHUNR8X2LTT20ljajBgtGAKyejOwJ3Af3ePfNcf4u8P/2JpT3UMXnm0dbrzGm+dZMjcVAXp7E4r0S3jvxFKj+TbRiMpH5Y6HswHIA9q5HxLp9/qfhCSW+uIZLTyjI0+0b8g4A2Yxyf4gR9K+eweIxWMxftE7pNXV9kayUYxseqaXcC80y1us582JXz9RmpL62W9sZ7WQkLNGyEjqMjGaoadFcW+i6dHA8aRpAikSdvl6+/04+taEHn8+dsJ7bK+ztdWZznkniGLUv7Q0vRrwzwiWWOORQuI7pAeQGGc8DJDc4rq9TOjam0Mek6Wb66thtintYEIgXvtd8JnsMEkVb1fw3qmreIhcnUIY9PWMIiiMmSPP3tpzgFum7GQOldNbW8VrBHBCgWNAFVR2Armw2Dp0IuENr3Kcm9zx/V7eXTyBqOkx6PE8qTRXSXOJ5NrqHEhDMDkNnqc4rvPB+qa5dQrb6xYPHtiDJP5YTd6A4JBOMHIx16CuknsrW6kiknt4pXhO6NnQMUPqD2qfHPSupRSd0ibiinAUnQUvXrVALRj0pB7UtAhOaWkoOR70AQv980Ujn5zxRSESEYZv8AePf3pwpAgLue+4/zp2KEMdmkPNLxjFIaYCYoxR1pcYHWkMbQQadjPQUFCBmgCPrXmnxJ0yOfWNOurm4ubdQhSKWCTYdwIYpnoNyg8+1elkGs3XtEtPEOjT6bepuilXr3U9iD6g1hXpucLJ2GnZmFrk/h+z0o3BEEk1tbLhFl2useOCwU7to+lca/gjRfEWlw6ppN/Kl+SZI7+KRiS3oQT0HTHUVs6dBYjf4Y1nToTcwKMGRAyXS9PMXPJPrnoaqTeE9R8PTSXXhCeGGN8mTT7gfunPqp6qa+Sx2Ncq3Ir05rvazXm/8APTubxjZX3MuXx5feH430vxDZ3C3UK5jukUFJl6bs9j61twWi3Ph77HrVlPfWkg82K4OHDKwDZznIIJPbpiqttrs99dJZa1psEVz5GJLW4UK0jE4bymJ2vkdhXKeI/DGtWNxBDo4urTR7pvMayGHaPBwSoY8Ej+EHp1rbC4OlWi/aQcOvMnpp2fQUpNbO51Cajs8OzxbYNT0sRtFH5oMTgDjaykfMB6qO1Y+mweKrPTzqXhq20e/sGGBaW0zbo8dDkt+Yz+FamifDjSdfsorxvEupXkORuijKwqrDsUA+Uj07VU8ceDIvCcCa74c1G8025LCOZlf92w/vP7/oa9PC5VTgpKolJS/r0+aSIlUb2OdtfEc3ijxzaWviLSJI4bUZa3Q5RXHV3H8QHFexT3lnYRxrLKkSsQqIOpz0AArgPhheXPifxFqd7rkq3FxHaJbrwAHQ9WAAHB9cV20tpaRa2tlDAsMVqglA7yseA2epA6fWvLzvLacaSqp2jFW5V6/h5l0ptuwXlhfXV0HF7ALZelu9uWBPqx3DP06Vw2u+IvEOsapH4ZGnQlYJTcvJIxjWeKPkcDOBmuz8R6tDpek3E0lwYdibt4BOPfiuG+Fthc+Kb/XNaub2WAOwtikUagsmM45BKg+1Lhp1pKTfwLy6/qFa3zPYdIu2v9Itbt4fJaWMMY852n0q8OaihjSCFIkG1EUKo9hUgPNfXmA4daD7UZpaYCA07t0pvQ0uaYh1FIDTsgigYgHvRzRRTELxmg9OlHfPahjgcCkBA/3zxRTXPzGikBYXl3H+0f507GKRR87/AO8accmhANpcZ7UEU9BwaYDdh+lKFA60pIBwTTWYnpxQA7IHtSZz05phPrSh+OPzoAYw+alwCBgHNB5Oe9KT8imkBheJdCt9VtkmXdHe2hMtvMhIKt6cdQe4rkdN8YpdPDDd2U0DzbhHJtYxuRxwQDg5BGDzXpJKvwa880VLzT/Ger6FG0ckQf7XBFN8oVH6lWAP8Wcj3rxs0y6OJtPl5mvkzWE7dSaeeymupZtWsLh4IC0aQNalgQeCzE8EegFU7yw0rTYbm60/T7DSoQeNRkkMbAjuBjke27B9Kg1LxXLp8WqSKx1W7Zzb21iiADcOpIHIGfXniqGi+HtR15dnjKb7Y80YeHSbcBRAvbcRwo+vNYYTDYh0PYJKMV1te666Pr5jlJXuYU3i9V1qC48IQXep6shC3kltAUtrkf7Y9fQ/rW/9t+JXiRpLO/0PTdL051w/ntlnHoDuPP4CuxttGTQtBMMRi0yAHiKwUDH1ZuSffiqOk2Ud1HqX2uEXkdux8i4uQJJA205G7Hb/ACTXr0aKoU1CLbS7mbd3c4vwVDNZa9qdorf6XOzRsynPlqpAJB+nAru4dEs4L+O4jE3nxoVAad2AB6/KTj9Kj8J2VtY6FDcxRL58+WZ8c9elaLxLPdxHzPLnIbZJ3U4/Ue1fH42pVxmM+rKTW6t0+fqdEbRjexz3iXwdb+Ib21ur55TBbAn7MuQsh/2vb2GKsfC1ojoupoI8TpqEgkIHB54x9BUurapqllZul9GkCZCGWP5y5J/hHbj15Hp3rzwDV/CdtBdaPbtZ3d3cyPFDOWYFSxIDeuQP1r18nw9fDXVa/Klpe2mupnUknse8EeoIpRz0Ga5TwZ43j8UW0tre2r2GrW+BNayj/wAeU9xXWklFGOCa+gTTV0ZCZPTHNPZcAGk3ZTPcU5iTtGetUA05x0NIvXmnM5DYBxikfsemaYhCRninD603migBx4puCT1pe1KPc0AOGMUhPrSZxzRnIoAhfG48UUNncaKQFgfff/eP86UfWkH33/3jR0oQDhzTl6U3pTlYdKYDD1PFJ1pW+9SZyaBjgmaGTaMg0+mSNjigRGTQWXYoJ7009eKacn6UDH4TOd1ef+NNZj8L+IbbV47uBbi8hNqLeUfeI5DA+x/nXcTSLBC8rsAiAs2ewFeHWF7/AMJP4p1HxteI8lpp7+RpUOTh3HQ4GT7nj+VAHReEdLfRb6+jv7hLnXLxvtFxMhDNaxt3we/0B6V2s6w+HtMWewePyi26aZ/nL5H3icjPOPw6CuK8Laha37RrqFnBLfTtIVuBH5khHU7+BleO2ONoxTvF89rZiK3trOBbqYl2cweYY17mI4zuPHHakVyO/KaWpa9/pTw3l+tu0sW9UgkaVFK98jAUHP8AFj8a2dI1jRv7MjsI7uNZ1gJaInBYYyWXP3vXIrkLOKy0+0tdUkZWhKrvjusSDHYAYzuH/wCuuQj15/EOs30PhPQ7HeHMrvKUR8gHJRc5z7iluazoqG7Ov0DxlYaZ4rv/AA5eTKtnIwks5HbgZUEqfT1rYuLq1v2k1Gy1u1jitmGxWmDB/XIGSv5V5hrWjtqfiC7OoRsksdvZyIxyHXJCt34P1r1K0uJdNEvh3ViGmlQra3JGBcJjof8AbHcfjXg4yhDCVvrkYc2/Xb8NSYvmXKR674tGnW8K3OnTyXp/eQRJEJElwOCWBAA9zjHoa4/TdSv9c1HSrzWoHtLqe9KxWzgjCAHkBuT9a7vSY7hohcXkPlyqghSMnJVF4H59a5rXXN3410KOPes8bvIFZMqBtxyc8fSuKtnX1iU6EI6WevyZSp2SbF1PQb0apezadceWscaujLhDC3P8RPfrjFdV4V8UHUpotNuJJZJ1QgySooYlQM8p8p69sEdxWLf6nqfh/SGSdrEvcs0bSru3+Y4IU8nHXjFcVFql7oGsQ6hps7XNjou2LUVZ9zOZD87degP8q9DLqydOlCnLmsnftp8vQia1bZ7+SAu0c0jN90jtVa2uIrq1iuIWDRyKHUg9QamNe4ZkvyP82cetI7AkAdqjAGadTELnFGaTGe1KCBx0oGLkUvXikxml6UAKPejHeijNAiFvvGilPWikImXKtJnuxNOx3pP4n+p/nS55waYwOPWkzS0hpgLTcijtSd6Bjt5x1ppOT1optAAR6U0nAp1NIzSA4T4t60+jeAr3yWInusW6Y6/NwcfhXKaboE1v4UsLMfaYxYWouGlhjDbZZBnJH3twXjgd6t/GNX1HVfC+irj/AEm93nPQ445/Ou70CMraXMywL5U1w5AU4wF+QDB7fL60AtHc4m08RWFpbrby3KGY5/elQYpm/vbhwD9SDx96sHVdV026vJLufXbZtPsCXMMLYaSTpk4OS2eAf1avUrzSNCnUrdaVHEVPmbxBggj+Lco68+tc5eeBdIu7L7Ppy6dPubzCSkaSH0O5Vwcc9VJ9xSsXze9zI4TRb+/8S6s2q3MKjRYMrHBI+37RJ6DPH1xjP1rT8PadFYeKrmIlWWN0uoILJBHG8ZJBJXBZmUnoTUPi/S9TsHgggtGWCFQiLjaGJ6nP3ck+hz7Vz03jKPw3rNvYuDL5QMWoSFQZXDDlVbHRc+x470WFKTk7s19YiktfFGoiUmHdb2uM87sTdOOlejfELT4r3w4lzLvItJkm+RiDjOD0+teQXGraZ/aBeC/R45rK3SLLhmJWXoR2OK9c1nXbTVIJdH88RfaIzGCCC5Yjjg8L+PPoKyrU+eDiSnqX9Lgkhsoo5bp7ggfLLIMMR2z6n3qFNDtI9ak1Z1d7wp5aszcIvoBXnNld6s8T6G8epi5jOYnsGYtuHHLZwFOOjgYrR8O+IPFLtfaLqq2rXtudgmeUCRAR1IUENj2Ir4eWR4z3pQeuz6XT/A6ozTaRhXUtrqPjrV7+4k+0zwSrbafaI/zSyDoceg656V1lhojaVmw1IMwuV/0hm2lmWXhs4/uuOPrXJJoEWmy22pafP5M/nSRyX8VwWlk7lym07Rkc+xrrrSe61LQ4L+8trdJgJ4WljyDKVwytj6rnrX2OEwkaC3u7JeiS6fmZTTN34aXpfQbjSnmEsulXL2pcHqoOV/Q12341534Sk+z/ABH1622hBdW0F3gE/MxHzH+Vei4rsMgHFO60ntTgKYEVzcx2dpLcy7vLiQu+1SxwBk4A5NYLeONF/wCETl8Swyy3GnRffaNPnHzbT8px3rZ1O8GnaVd3pjaQW8LymNerbQTgflXhi6PqX/CrvEGu2l/aQaZqubg6YsRcQ/OOFfcMHpng9KAPc9M1CLVNNtr+AOsVxGsiBwAcEZGaudq5/wAGEN4K0Rh0NlF/6CK3wKQC9aXkUmKKAImPzGilb7xooETn774/vH+dLRn5mH+0aTFNABzSHp1pC1J3oGKMiikpM0ALjBo70CkzmmAGkxS4ANGPzoA8k+JzJbfELwbcuGfZK22NM7mO5e/YV6F4dcyaLGxA/wBbMMAYA/eNXCfGGH7PceHNYYkJa36rIwGcKf8A64Fdx4fkGL226COcugyD8jgMD+e6kBr9ahuLO2uAvn28Uu05XegOD7ZqV3SJC8jqijqWOBWfNqhMMj20YKocNLcZijHvkjn8PzpgK2lW5kMiNPGc5ISZguf93O39K8t8d+BPDV81xd/a5PtuTzEqKob0YjC/hy1d5qDvcW63Etzi2xy0gZI8+ix8F89txx9a8x8YT3Xi25j0nSLk2844m8w4M0Y6kMBhQO6jA6daQHD3X2TT/DzaFZo6XctwDczlCSY8DksB9wH0rtfDHhu8spLi71K9H2WGVYxOIU8pgMYZu4+pFeheFvC66bow0SZXe2jtRHJvH33fkn8BxXn91qUui2F3o87Obu2u444sDOShypIPUbP1FA0tTuw2nR2t7erc20luImYG4gmaMj2LvtI4/hrhPts9vrtlbPqFrFcNGJxFNCVQSScnB7nGOM9O9d1rUkOk/DxYbJzcvdhVi3EAysx3HpwOM1w19ql7pv2jV1umupJEwtoI1dYFHC7pF+7j0BqWa0o+9fojbuBPq+vnSNLtd08iD7dctkJEg6d+p9O9dLrGlDSNJsLSKYG3iZgBs5/1bZJP1pfA/hpbHw7DNqKl9RuibieQEhgzDoCPQcVJ4jjWC7gjieV/3T743lZgd+EXgn600iak+eVzC8NnPxTmwDkaTDuOQfp0r00VwPhJIrzx94iv4TuS3jhsunRkHOD36iu/GQKZmL+NLRR1oAjuJUhtZZnGUjQsR7AZrzDUHg07wffa/c+D9EQbVmlsWOXKswALDbgHnPSvVMcYryHxrHYeItD1vVYNQuY7h7VbcacjFWLo5zvQfe68UAeleHGjk8OWEkVrBaxvAriCAYRMjOB04rUHtWL4NZn8G6OXDB/skYYMuCDtGcitvHNAhDnNBziloxRYCI5zRSnrRSETkfMx/wBo0nNKzYdx7mmhvegoQ5zSYIpWpN3FABzRmjcMU3oaAH+9FIOntQScccCmApIxxTcjFKKMdc0wOX+IGhf8JH4L1GwQAzGPfFn++vI/lXJfDrXzd6Fp0+8RyIo0+8LBjsdT+7Jz+K9eM16ngeleNavYr4E8ezSTAr4c18lJCBxFMe+e3PP50gPUCvnSfuIzcuDgzTn5F6cgdCfpj6imTqlrIJZzJeXTAARrwq+4UnCj3P51Fp+p3Lj+zZlU30K/NIxG14+0g9cjsO/pxTLjYkbMeUY4YueZ8f3jg4QUwMXWNQmjJkkZrmGYbQBkLj0X0x6nk/So9A8MW1tdi5By74mmVx86r1VePfn6dhWlYaa015NdOzGDbmWJ1zn0A7EcDp0GBWhJHt09iwaG4v5Ap/iIz0H0A/LNAFrSIJEs2knUiWaRpGBPTJ4/TFef/Erwxqx1GLX9DsYrt1QfaoncKQEOVcZI6civT441jRUQAKoAA9BSsodSpAIPBBpAnbU8LvdK1txZ3zeGb2606QBvsrT+YINw5MYRsr/3zV++0691drHTG0qS0slYM0UxCeYF5wSfm2jvwPxr05/C+lbsxQPbEnP+izPD/wCgEVC3hHS5blJrn7Vcsg2qtxdSSLj0ILYI+uaVjR1ZWscP8NtP1B9TudRvIjbW8W5VdN8cUynoAhO3Ax94evWrGqeJbd7nU9bDxy2VguUZZB8zLkKvtlizfTFXfiL4jm0u3g0HQ0Ems6inkxxq3+pTuxHQd+a5yx0E6lfab4StbkzWVkFuNYniI2Syfwx5/p6UzM7L4ZaRNpvhKKe7Xbd38jXcvqN5yAfwxXa9ajjRY0VFGFUYAHYVJ0pgAH1pe1HXrRgUAMmV5IJEjlaJ2UhZFAJU+uCCPzrx2bxxreg2nibSPEGqCLW7UGfT7kwxqs0fGAo24P8APn2r2UjivKvFaab4hk1cam2mR6lBEbSxV5wViLYy0j4+Vs9j07dTQB3nhC9uNR8IaTe3cpmuLi1jkkcqFyxAJ4AAFbfFYXhDT7nSPCOl6deFDPbWyRMY33KcDGQcCt0DA60CDApG4FL16UhpARUU4dKKQh7/AOsf/eNNNOf/AFj/AFNJ0FIoTtzSAADil7UntQAdqAO5peF+tHNMAPSkHPSnYoxx6UAJ3waXGKO9L+NUAnWsrxBoNj4l0a40zUI90My4z3U9mHuK1jSEUAeH/wBsX3g7Ubbw94rZ44oTjTNajXIC9lkHdccEV6DFqyX0sEdyoS6lAEbRybobj0ZG6Y7kdfUGtzXdA0zxHpklhqlqk8D9mHKn1B7H3rzCTw94n8AwzQ2lqnifw6xybaX/AF8I9vXHt+QpAenvbDZDYr8yfelJ/iHv9TT2UT6ogyD9nUseAcE8D3HFcDoPjfSp0DafrkVvMx2yafq+Q6EfwiT7w/4Fu9q62HVruCQmfSZ2aQ53208cqED0yVY/980wN8UVkHX4gcfYdRJ9Psrf/qpsmsXrRlrbRbtjjIM0kca/j8xI/KgDXIJ6HFcp4i8XPaStpWg2zanrbDHlR8pBn+KVuij261meIvEdraxmPxB4gj04Fcmw09szMPQv94/8BC1k2lpr3iS2OneHdOHhrw6/3ruWMi5nB6kDqCfU/maQGbBaXFlqFzp1lL/bHjPUQVvbxwRHZRnrg8Yx2x1r0vwn4Ws/CeipYWuXc/PNM33pXPUk1J4b8K6X4WsPsumw7S3Msz8vK3qx7mtrGaAEwaXBoC8YFHTrTAXHrS0g6UtAGfrs81poGo3FvnzorWR48f3gpI/WuL8B2NnL8IQZlVxd280ly7DJZm3biT3/APrV6EVDqVYBlPBBFcFfeG9M0HTbjTG8UyaZot07E2jtGCoYksiMRuCnn9eaQJN6ItfCa5urr4d6c90zMymREZjklFchf0Artu3SsrQJtHOlw22hz20tnbqERbeQMEA7cVrds0wcbAOlNOcH/GnUjDg0CI1ztFFC52iikSPYHzX+ppMU9h+9fnvRikWNAJo4peaTbQAbfajaaWloASiloxTATIzSEc0d6KAAUHnpQMU4UAMIz1NJj8qcfakxTAwNd8G+HvEYP9qaTbzuRjzdu1x/wIYP61yEnwcs4JFfSPEOtadsOURLjcifQYz+temkc0Ac0AeeR+BPFcXCfEC92/7VojN+ZNSt8N7q9VV1bxhrl2gGDHHKIUYe4UZP5135HrSYoA5rRPAnhvw+4ksdKhE4/wCW8uZJP++myR+FdIvHanY9qUigApDmlApSOKAGigjNFOwPWgBvP4UmMdsVJTT1oAinl8m3lkAyUQtj6CvmoX8moa013qU0sgnZnuGXBZlALEDPHQYHpX0ndDNrOMdY2H6V85eFkim8VaZHPGskUk5R0boQwIIP51zV94rzPfyVRjTr1OqWhP4bv5tL8S2l/pjOoadY3hJyxjZgCpxjd16464r6OUkgcYrkNJ+G+gaRqyajAk7yRndFHLJuSM+w6n8Sa7CrowlBWZw5niqWJnGVJNWVtd2HakbpxS0jdOuK2POIwuBRQmdgopEkpH75/rSnOKGH75z70UDE7c0vNFLigY3GaXGKO9BoAOlJigA96CTQAnSkP0paOtAAM45oOaSlNMAB45pDRSUAJ1NLnFFIfyoAXNLik57U7BpAJRwaX2pQOaAG/hSjrRilximAYpDmlzg0uOc0AJSEE06mnigDmvGmq6xpOlRPounm8upZfLx5TSBBgnJC49B7V4tbaB4n0i9trwaHemaGRZF/0dnUkHPO31r6Nz64zSgcVlOmptNvY7sJj5YaEoRinzaO99uxjeF73Vr/AEOK51qzSzvHZsxICMLk7eCSRxjvW0OlJjijFaI4m7u+w849qaw4oFHagkan3BRSAcCigRI3+uf60Y60jf61/rS49KQwzS9aaaUGmAtIfpRzSdaYCijFIOKdQMbxTT1p/NJikAnFBxS8UhFMBKKXHFGKAE6ijHrRjmnYBFADfwpc+lG2lGKQCAZxmlIpcCjNMAA4oIBpe1J1oAQ/pSjnvS44pv6UAKeKaee9LwTQQM0gEIo7e1B+tJQA76dKTvSGjPNAh3ekbgGjNDfhigBqfcFFA6UUEjs7pHPvS9KWYeVMSejcikz6/hSKDmjPNH40DrQApPHSikJxQDin1GHJNKelFNJ7UAO7UhPPSjtR1oAQUc0vFJmmAZoyOlJyaOnWlcBRxTu1MBzxTgRmgAxQopaQ8HjNACnBz1oAwPWgZNJTAWlzim555petAC80hNAzikJoEBNFB9qaR3pAGKKUUlAwIpM0pHFRtSAeDSkgjkGoxkHpTmOB70hAG44FFWo4AI1DDnHNFMRLJGsibW/P0qoY3hPKll9RV6inYDO85AeWA/GmmVM8Ov51fbrRU2C5QaZAMbhn60omjx95fzFXTSdqEtQuVGuIlHMiDPH3hR50f99PzFGo/wCoi/67R/8AoQqemO5X86P/AJ6L/wB9Ck86MceYv/fVTmm0Bci86P8Avr+dHmx/31/76qTvSimFyLzY/wC+v50ebEerqfxqajtSsFyESxA/fX86Xzo/76/nTzUbdKAuO8+P++v50efHn76/nUfainYLj/PTs6/nR5yH+JfzplLQFx3mr/fX86FlUfxr+dJQehoC47zV/vD86USIT94fnTB1pwoC4pdD/EPzpu9e7D86dSUxXAyIP4h+dN81f7y/nT+9L3pDGeavZl/Oml0PVh+dTjrQ/wB00mFyuGB+VfmPoOaswWzbg8gxjov+NSW/3fwqxRYVxKKWimB//9k=</Image>
+        </Figure>
+    </Problem>
+    <TestData>
+        <TimeLimit>10</TimeLimit>
+                <InputFile />
+                <OutputFile />
+                <InputFormat inputType="eof">
+                    <Terminator xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </InputFormat>
+                <OutputFormat>
+                    <Header xml:space="preserve" />
+                    <Footer xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </OutputFormat>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve" filename="1105.in">
+            </TestInput>
+                    <TestOutput xml:space="preserve" filename="1105.out">
+            </TestOutput>
+                </TestCase>
+            </TestData>
+            <Solution xml:space="preserve" language="cpp" filename="" />
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">5</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MCwCFHfC5sOoSunFkPBkLRVml62f9woIAhQrwNv6FKRi+4Rugr/qX9PbcmD6qA==</Signature><PaperReference><![CDATA[1]]></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="false">
+            <Title>Circle and Triangle</Title>
+            <Author />
+            <Problem contentType="html">
+                <Description xml:space="preserve">LMY and YY are geometry lovers. They enjoy challenging each other with interesting geometry problems. One day, LMY puts a circle and a triangle on a plane. Then YY moves them. They find that the overlapping area of the circle and the triangle varies as the relative position between the two changes. LMY and YY want to find out the largest common area.</Description>
+                <InputSpec xml:space="preserve">Input consists of one or more lines. For each line, there are four integers describing one test case: the lengths of three sides of a triangle a, b, c; and the radius of a circle r; where 1≤a≤b≤c≤100, 1≤r≤100, and a+b&amp;gt;c.&lt;BR&gt;&lt;BR&gt;
+
+End of input is indicated by a line consisting four zeros.</InputSpec>
+                <OutputSpec xml:space="preserve">For each test case, output a single line showing the largest overlapping area of the circle and the triangle. The precision should be 10&lt;SUP&gt;-2&lt;/SUP&gt;.</OutputSpec>
+            </Problem>
+            <TestData>
+                <TimeLimit>10</TimeLimit>
+                <InputFile />
+                <OutputFile />
+                <InputFormat inputType="eof">
+                    <Terminator xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </InputFormat>
+                <OutputFormat>
+                    <Header xml:space="preserve" />
+                    <Footer xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </OutputFormat>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve">3 4 5 2
+5 10 12 3
+23 28 35 10
+36 49 81 7
+36 49 81 40
+98 99 100 29
+98 99 100 57
+100 100 100 1
+1 1 1 100
+100 100 100 43
+1 100 100 1
+1 100 100 7
+1 100 100 49
+1 100 100 50
+2 99 100 1
+2 99 100 7
+2 99 100 49
+2 99 100 50
+4 97 100 1
+4 97 100 2
+4 97 100 4
+11 90 100 2
+11 90 100 5
+11 90 100 13
+30 71 100 4
+30 71 100 40
+50 51 100 4
+50 51 100 20
+13 84 85 7
+13 84 85 28
+0 0 0 0
+</TestInput>
+                    <TestOutput xml:space="preserve">5.74
+18.07
+248.25
+145.08
+514.96
+2633.60
+4243.05
+3.14
+0.43
+3938.24
+1.90
+13.01
+49.98
+50.00
+2.94
+22.40
+86.13
+86.17
+3.14
+9.51
+19.72
+12.57
+40.25
+98.10
+44.56
+310.34
+47.43
+226.50
+143.06
+481.81
+</TestOutput>
+                </TestCase>
+            </TestData>
+            <Solution xml:space="preserve" language="cpp" filename="" />
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

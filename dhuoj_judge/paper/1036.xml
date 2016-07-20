@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">1</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MCwCFCzBlx15YcFMmF4Jme8Y9Ba7N3pjAhRjFZ4LzIUivukhAfYWs/7nTrTJiQ==</Signature><PaperReference><![CDATA[1]]></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="true">
+            <Title>Pig-Latin</Title>
+            <Author>Hu, Yongjian</Author>
+            <Problem contentType="html">
+                <Description xml:space="preserve">You have decided that PGP encryptation is not strong enough for your email. You have decided to supplement it by first converting your clear text letter into Pig Latin before encrypting it with PGP. &lt;BR&gt;
+Pig Latin Rules:&lt;BR&gt;
+1.  Words that begin with a vowel (a, e, i, o, or u, and the capital versions of these) should just have the string "ay" (not including the quotes) appended to it. For example, "apple" becomes "appleay".&lt;BR&gt;
+2. Words that begin with a consonant (any letter than is not A, a, E, e, I, i, O, o, U or u) should have the first consonant removed and appended to the end of the word, and then appending "ay" as well. For example, "hello" becomes "ellohay".&lt;BR&gt;
+3. Do not change the case of any letter. </Description>
+                <InputSpec xml:space="preserve">You are to write a program that will take in multiple lines of text and output it in Pig Latin. Each line of text will contain no more than 100 charactors and will contain one or more words. A "word" is defined as a consecutive sequence of letters (upper and/or lower case).</InputSpec>
+                <OutputSpec xml:space="preserve">For each case you should output one line which is the result of Pig-Latin.</OutputSpec>
+            </Problem>
+            <TestData>
+                <TimeLimit>1</TimeLimit>
+                <InputFile />
+                <OutputFile />
+                <InputFormat inputType="eof">
+                    <Terminator xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </InputFormat>
+                <OutputFormat>
+                    <Header xml:space="preserve" />
+                    <Footer xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </OutputFormat>
+                <TestCase difficulty="sample">
+                    <TestInput xml:space="preserve">This is the input.
+</TestInput>
+                    <TestOutput xml:space="preserve">hisTay isay hetay inputay.
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="sample">
+                    <TestInput xml:space="preserve">Do not change the case of any letter. 
+</TestInput>
+                    <TestOutput xml:space="preserve">oDay otnay hangecay hetay asecay ofay anyay etterlay. 
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">You have decided that PGP encryptation is not strong enough for your email.
+</TestInput>
+                    <TestOutput xml:space="preserve">ouYay avehay ecidedday hattay GPPay encryptationay isay otnay trongsay enoughay orfay ouryay emailay.
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">You have decided to supplement it by first converting your clear text letter into Pig Latin before encrypting it with PGP. 
+</TestInput>
+                    <TestOutput xml:space="preserve">ouYay avehay ecidedday otay upplementsay itay ybay irstfay onvertingcay ouryay learcay exttay etterlay intoay igPay atinLay eforebay encryptingay itay ithway GPPay. 
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">Each line of text will contain one or more words. A ``word'' is defined as a consecutive sequence of letters (upper and/or lower case).
+</TestInput>
+                    <TestOutput xml:space="preserve">Eachay inelay ofay exttay illway ontaincay oneay oray oremay ordsway. Aay ``ordway'' isay efinedday asay aay onsecutivecay equencesay ofay etterslay (upperay anday/oray owerlay asecay).
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">Words should be converted to Pig Latin according to the following rules (non-words should be output exactly as they appear in the input): 
+</TestInput>
+                    <TestOutput xml:space="preserve">ordsWay houldsay ebay onvertedcay otay igPay atinLay accordingay otay hetay ollowingfay ulesray (onnay-ordsway houldsay ebay outputay exactlyay asay heytay appearay inay hetay inputay): 
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">Words that begin with a vowel (a, e, i, o, or u, and the capital versions of these) should just have the string ``ay'' (not including the quotes) appended to it. For example, ``apple'' becomes ``appleay''.
+</TestInput>
+                    <TestOutput xml:space="preserve">ordsWay hattay eginbay ithway aay owelvay (aay, eay, iay, oay, oray uay, anday hetay apitalcay ersionsvay ofay hesetay) houldsay ustjay avehay hetay tringsay ``ayay'' (otnay includingay hetay uotesqay) appendeday otay itay. orFay exampleay, ``appleay'' ecomesbay ``appleayay''.
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">abc,def,ghi,jkl
+</TestInput>
+                    <TestOutput xml:space="preserve">abcay,efday,higay,kljay
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve">A#################B####################
+</TestInput>
+                    <TestOutput xml:space="preserve">Aay#################Bay####################
+</TestOutput>
+                </TestCase>
+            </TestData>
+            <Solution xml:space="preserve" language="cpp" filename="pig">#include &lt;cstdio&gt;
+#include &lt;iostream&gt;
+#include &lt;cstring&gt;
+using namespace std;
+
+int main()
+{
+    char ch,temp;
+    bool flag1,flag2;
+    flag1=flag2=true;
+    while(scanf("%c",&amp;ch)!=EOF)
+    {
+        if((ch&lt;'A')||((ch&gt;'Z')&amp;&amp;(ch&lt;'a'))||(ch&gt;'z'))
+        {
+            if(flag1==false)
+            {
+                if(flag2==false)
+                {
+                    printf("%c",temp);
+                }
+                printf("ay");
+                flag1=flag2=true;
+            }
+            printf("%c",ch);
+        }
+        else
+        {
+            if(flag1==false)
+            {
+                printf("%c",ch);
+            }
+            else if((flag1==true)&amp;&amp;(ch=='A')||(ch=='a')||(ch=='E')||(ch=='e')||(ch=='I')||(ch=='i')||(ch=='O')||(ch=='o')||(ch=='U')||(ch=='u'))
+            {
+                printf("%c",ch);
+                flag1=false;
+            }
+            else
+            {
+                flag1=flag2=false;
+                temp=ch;
+            }
+        }
+    }
+    return 0; 
+}
+</Solution>
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

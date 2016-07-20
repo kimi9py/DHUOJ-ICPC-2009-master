@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">5</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MCwCFFOFKnHtNDWaUhbZFX6zXiJePIJ5AhQQUPCmZrDQexSdtyz4j2bINLycYQ==</Signature><PaperReference><![CDATA[1]]></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="false">
+            <Title>Problem H: Hotel booking</Title>
+    <Author />
+    <Problem contentType="html">
+        <Description xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US&gt;A transport company often needs to deliver goods from one
+city to another city. The transport company has made a special deal with a
+hotel chain which allows its drivers to stay in the hotels of this chain for
+free. Drivers are only allowed to drive up to 10 hours a day. The transport
+company wants to find a route from the starting city to the destination city
+such that a driver can always spend the night in one of the hotels of the hotel
+chain, and that he needs to drive at most 10 hours from one hotel to the next
+hotel (or the destination). Of course, the number of days needed to deliver the
+goods should also be minimized. &lt;/span&gt;&lt;/p&gt;
+</Description>
+        <InputSpec xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US&gt;The input file contains several test cases. Each test case
+starts with a line containing an integer &lt;b&gt;&lt;i&gt;n&lt;/i&gt;&lt;/b&gt;, (&lt;b&gt;&lt;i&gt;2 &amp;#8804; n
+&amp;#8804; 10000&lt;/i&gt;&lt;/b&gt;), the number of cities to be considered when planning the
+route. For simplicity, cities are numbered from 1 to &lt;b&gt;&lt;i&gt;n&lt;/i&gt;&lt;/b&gt;, where 1
+is the starting city, and &lt;b&gt;&lt;i&gt;n&lt;/i&gt;&lt;/b&gt; is the destination city. The next
+line contains an integer &lt;b&gt;&lt;i&gt;h&lt;/i&gt;&lt;/b&gt; followed by the numbers &lt;b&gt;&lt;i&gt;c&lt;sub&gt;1&lt;/sub&gt;,
+c&lt;sub&gt;2&lt;/sub&gt;, ..., c&lt;sub&gt;h&lt;/sub&gt;&lt;/i&gt;&lt;/b&gt; indicating the numbers of the cities
+where hotels of the hotel chain are located. You may assume that &lt;b&gt;&lt;i&gt;0
+&amp;#8804; h &amp;#8804; min(n, 100)&lt;/i&gt;&lt;/b&gt;. The third line of each test case
+contains an integer &lt;b&gt;&lt;i&gt;m&lt;/i&gt;&lt;/b&gt; (&lt;b&gt;&lt;i&gt;1 &amp;#8804; m &amp;#8804; 10&lt;sup&gt;5&lt;/sup&gt;&lt;/i&gt;&lt;/b&gt;),
+the number of roads to be considered for planning the route. The following &lt;b&gt;&lt;i&gt;m&lt;/i&gt;&lt;/b&gt;
+lines describe the roads. Each road is described by a line containing 3
+integers &lt;b&gt;&lt;i&gt;a, b, t&lt;/i&gt;&lt;/b&gt; (&lt;b&gt;&lt;i&gt;1 &amp;#8804; a, b &amp;#8804; n&lt;/i&gt;&lt;/b&gt; and &lt;b&gt;&lt;i&gt;1
+&amp;#8804; t &amp;#8804; 600&lt;/i&gt;&lt;/b&gt;), where &lt;b&gt;&lt;i&gt;a, b&lt;/i&gt;&lt;/b&gt; are the two cities
+connected by the road, and &lt;b&gt;&lt;i&gt;t&lt;/i&gt;&lt;/b&gt; is the time in minutes needed by the
+driver to drive from one end of the road to the other. Input is terminated by &lt;b&gt;&lt;i&gt;n
+= 0&lt;/i&gt;&lt;/b&gt;. &lt;/span&gt;&lt;/p&gt;
+</InputSpec>
+        <OutputSpec xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US&gt;For each test case, print one line containing the minimum
+number of hotels the transport company has to book for a delivery from city 1
+to city &lt;b&gt;&lt;i&gt;n&lt;/i&gt;&lt;/b&gt;. If it is impossible to find a route such that the
+driver has to drive at most 10 hours per day, print &lt;b&gt;&lt;i&gt;-1&lt;/i&gt;&lt;/b&gt; instead. &lt;/span&gt;&lt;/p&gt;
+</OutputSpec>
+    </Problem>
+            <TestData>
+                <TimeLimit>8</TimeLimit>
+                <InputFile />
+                <OutputFile />
+                <InputFormat inputType="eof">
+                    <Terminator xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </InputFormat>
+                <OutputFormat>
+                    <Header xml:space="preserve" />
+                    <Footer xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </OutputFormat>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve" filename="1085.in">
+            </TestInput>
+                    <TestOutput xml:space="preserve" filename="1085.out">
+            </TestOutput>
+                </TestCase>
+            </TestData>
+            <Solution xml:space="preserve" language="cpp" filename="" />
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

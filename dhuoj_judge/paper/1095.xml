@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">5</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MCwCFFOFKnHtNDWaUhbZFX6zXiJePIJ5AhQQUPCmZrDQexSdtyz4j2bINLycYQ==</Signature><PaperReference><![CDATA[1]]></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="false">
+            <Title>Jammed Traffic</Title>
+    <Author />
+    <Problem contentType="html">
+        <Description xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US&gt;Finally, YY graduated from a little known university and
+got employed by a small company, with great effort. The job is interesting,
+well paid and nice in many aspects, except for the company is a little far from
+home. So YY has to take bus to work every day early in the morning, and prays
+for no traffic jams along the road.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;The route of the bus is fixed. It goes past &lt;span
+class=GramE&gt;&lt;b style='mso-bidi-font-weight:normal'&gt;N&lt;/b&gt;+1 landmarks&lt;/span&gt; one
+by one, the first of which is the bus-stop where YY gets on the bus, and the
+last is the company where he should get off. If traffic jams do not occur, the
+time consumed to go between landmarks is also fixed &amp;#8212; &lt;b
+style='mso-bidi-font-weight:normal'&gt;T&lt;sub&gt;i&lt;/sub&gt;&lt;/b&gt; minutes from &lt;span
+class=SpellE&gt;i&lt;sup&gt;th&lt;/sup&gt;&lt;/span&gt; landmark to (i+1)&lt;span class=SpellE&gt;&lt;sup&gt;th&lt;/sup&gt;&lt;/span&gt;
+landmark (1&lt;/span&gt;&lt;span style='font-family:SimSun'&gt;&amp;#8804;&lt;/span&gt;&lt;span
+class=SpellE&gt;&lt;span lang=EN-US&gt;i&lt;/span&gt;&lt;/span&gt;&lt;span style='font-family:SimSun'&gt;&amp;#8804;&lt;/span&gt;&lt;b
+style='mso-bidi-font-weight:normal'&gt;&lt;span lang=EN-US&gt;N&lt;/span&gt;&lt;/b&gt;&lt;span
+lang=EN-US&gt;). However, if a traffic jam is encountered, things are different.
+After having been late for many times (and luckily enough not been fired by his
+boss &amp;amp; girlfriend LMY), YY has discovered that the road between two
+consecutive landmarks will be jammed only in a fixed time period in a day. If
+the bus is between &lt;span class=SpellE&gt;i&lt;sup&gt;th&lt;/sup&gt;&lt;/span&gt; landmark and (i+1&lt;span
+class=GramE&gt;)&lt;span class=SpellE&gt;&lt;sup&gt;th&lt;/sup&gt;&lt;/span&gt;&lt;/span&gt; landmark (excluding
+at the two landmarks themselves) and encounters a traffic jam, additional &lt;b
+style='mso-bidi-font-weight:normal'&gt;D&lt;sub&gt;i&lt;/sub&gt;&lt;/b&gt; minutes are needed to get
+to (i+1)&lt;span class=SpellE&gt;&lt;sup&gt;th&lt;/sup&gt;&lt;/span&gt; landmark.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;Given the time YY gets on the bus and the time his company
+start to work, could he reach the company in time?&lt;/span&gt;&lt;/p&gt;
+</Description>
+        <InputSpec xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US&gt;Input contains several test cases.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;For each test case, the first line contains only one
+integer &lt;b style='mso-bidi-font-weight:normal'&gt;N&lt;/b&gt;. (1&lt;/span&gt;&lt;span
+style='font-family:SimSun'&gt;&amp;#8804;&lt;/span&gt;&lt;b style='mso-bidi-font-weight:normal'&gt;&lt;span
+lang=EN-US&gt;N&lt;/span&gt;&lt;/b&gt;&lt;span style='font-family:SimSun'&gt;&amp;#8804;&lt;/span&gt;&lt;span
+lang=EN-US&gt;100)&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;Then &lt;b style='mso-bidi-font-weight:normal'&gt;N&lt;/b&gt; lines
+follow. The &lt;span class=SpellE&gt;i&lt;sup&gt;th&lt;/sup&gt;&lt;/span&gt; line of which describes the
+road between &lt;span class=SpellE&gt;i&lt;sup&gt;th&lt;/sup&gt;&lt;/span&gt; landmark and (i+1&lt;span
+class=GramE&gt;)&lt;span class=SpellE&gt;&lt;sup&gt;th&lt;/sup&gt;&lt;/span&gt;&lt;/span&gt; landmark. Two
+integers comes first, &lt;b style='mso-bidi-font-weight:normal'&gt;T&lt;sub&gt;i&lt;/sub&gt;&lt;/b&gt;
+and &lt;b style='mso-bidi-font-weight:normal'&gt;D&lt;sub&gt;i&lt;/sub&gt;&lt;/b&gt; (1&lt;/span&gt;&lt;span
+style='font-family:SimSun'&gt;&amp;#8804;&lt;/span&gt;&lt;b style='mso-bidi-font-weight:normal'&gt;&lt;span
+lang=EN-US&gt;T&lt;sub&gt;i&lt;/sub&gt;&lt;/span&gt;&lt;/b&gt;&lt;sub&gt;&lt;span lang=EN-US&gt; &lt;/span&gt;&lt;/sub&gt;&lt;span
+lang=EN-US&gt;, &lt;b style='mso-bidi-font-weight:normal'&gt;D&lt;sub&gt;i&lt;/sub&gt;&lt;/b&gt;&lt;/span&gt;&lt;span
+style='font-family:SimSun'&gt;&amp;#8804;&lt;/span&gt;&lt;span lang=EN-US&gt;60), indicating the basic
+time consumption and additional time consumption with traffic jam for the bus
+to go between the two landmarks, in minutes. A pair of time &lt;b
+style='mso-bidi-font-weight:normal'&gt;S&lt;sub&gt;i&lt;/sub&gt;&lt;/b&gt; and &lt;span class=SpellE&gt;&lt;b
+style='mso-bidi-font-weight:normal'&gt;E&lt;sub&gt;i&lt;/sub&gt;&lt;/b&gt;&lt;/span&gt; follows, in HH:MM
+format (24 hours), indicating the starting and ending time of traffic jam
+between the two landmarks. &lt;b style='mso-bidi-font-weight:normal'&gt;S&lt;sub&gt;i&lt;/sub&gt;&lt;/b&gt;
+is always strictly earlier than &lt;span class=SpellE&gt;&lt;b style='mso-bidi-font-weight:
+normal'&gt;E&lt;sub&gt;i&lt;/sub&gt;&lt;/b&gt;&lt;/span&gt;, and they are always in the same day.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;The last line contains the time when YY gets on the bus and
+the time when the company starts to work, in HH:MM format (24 hours). He must
+arrive at the company strictly before it starts to work, or he is late.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;All times are in the same day.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;Input end with &lt;b style='mso-bidi-font-weight:normal'&gt;N&lt;/b&gt;=0.&lt;/span&gt;&lt;/p&gt;
+</InputSpec>
+        <OutputSpec xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US&gt;For each test case, output one line with string &amp;#8220;Poor
+YY!&amp;#8221; if he will definitely be late or output &amp;#8220;Lucky YY!&amp;#8221; if
+he will not. Quotes for clarity, do not output them.&lt;/span&gt;&lt;/p&gt;
+&lt;BR&gt;
+&lt;B&gt;Hint&lt;/B&gt;
+&lt;BR&gt;
+&lt;p&gt;&lt;span lang=EN-US&gt;In the first test case, the bus starts at 07:20 and arrives
+at the company at 07:30, just avoids to be blocked by the traffic jam.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;In the second test case, the bus start at 07:21 and
+encounters traffic jam at 07:30 when it is still on the way to the company. So
+additional 20 minutes are needed, and it arrives at the company at 07:51. So
+poor YY is just late, because he doesn't reach the company before 07:51,
+when it starts to work.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;In the third test case, the bus arrives at the company at
+00:&lt;st1:chmetcnv UnitName="in" SourceValue="0" HasSpace="True" Negative="False"
+NumberType="1" TCSC="0" w:st="on"&gt;00 in&lt;/st1:chmetcnv&gt; the second day, so he is
+considered to be late for almost one entire day.&lt;/span&gt;&lt;/p&gt;
+</OutputSpec>
+    </Problem>
+            <TestData>
+                <TimeLimit>1</TimeLimit>
+                <InputFile />
+                <OutputFile />
+                <InputFormat inputType="eof">
+                    <Terminator xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </InputFormat>
+                <OutputFormat>
+                    <Header xml:space="preserve" />
+                    <Footer xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </OutputFormat>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve" filename="1095.in">
+            </TestInput>
+                    <TestOutput xml:space="preserve" filename="1095.out">
+            </TestOutput>
+                </TestCase>
+            </TestData>
+            <Solution xml:space="preserve" language="cpp" filename="" />
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

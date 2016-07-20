@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">5</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MCwCFFOFKnHtNDWaUhbZFX6zXiJePIJ5AhQQUPCmZrDQexSdtyz4j2bINLycYQ==</Signature><PaperReference><![CDATA[1]]></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="false">
+            <Title>Eclipse</Title>
+    <Author />
+    <Problem contentType="html">
+        <Description xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US&gt;As you know, when the moon goes between you and the sun, it
+may block your sight, and thus you can only see part of the sun, or even cannot
+see it at all. This is called eclipse.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;Now the news says that an eclipse will take place in
+several days. Being interested in astronomy, YY is curious whether he can
+observe the eclipse in the city he lives in, or he has to go somewhere else.
+Without loss of generality, YY models the problem as follows:&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='margin-left:31.5pt;text-indent:-21.0pt;mso-list:l2 level1 lfo5;
+tab-stops:list 31.5pt'&gt;&lt;![if !supportLists]&gt;&lt;span lang=EN-US style='mso-fareast-font-family:
+"Times New Roman"'&gt;&lt;span style='mso-list:Ignore'&gt;1.&lt;span style='font:7.0pt "Times New Roman"'&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;![endif]&gt;&lt;span lang=EN-US&gt;There is one and only one light
+source, called &amp;#8216;the sun&amp;#8217;, in a 3-dimensional space. It is sphere
+shaped, centered at the origin (0, 0, 0), with radius &lt;b style='mso-bidi-font-weight:
+normal'&gt;R&lt;/b&gt;.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='margin-left:31.5pt;text-indent:-21.0pt;mso-list:l2 level1 lfo5;
+tab-stops:list 31.5pt'&gt;&lt;![if !supportLists]&gt;&lt;span lang=EN-US style='mso-fareast-font-family:
+"Times New Roman"'&gt;&lt;span style='mso-list:Ignore'&gt;2.&lt;span style='font:7.0pt "Times New Roman"'&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;![endif]&gt;&lt;span lang=EN-US&gt;There is one and only one
+obstacle, called &amp;#8216;the moon&amp;#8217;, in the same 3D space. It is also
+sphere shaped, center at the point (&lt;b style='mso-bidi-font-weight:normal'&gt;x&lt;sub&gt;0&lt;/sub&gt;&lt;/b&gt;,
+&lt;b style='mso-bidi-font-weight:normal'&gt;y&lt;sub&gt;0&lt;/sub&gt;&lt;/b&gt;, &lt;b style='mso-bidi-font-weight:
+normal'&gt;z&lt;sub&gt;0&lt;/sub&gt;&lt;/b&gt;), with radius &lt;b style='mso-bidi-font-weight:normal'&gt;r&lt;/b&gt;.
+Besides, it is completely opaque.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='margin-left:31.5pt;text-indent:-21.0pt;mso-list:l2 level1 lfo5;
+tab-stops:list 31.5pt'&gt;&lt;![if !supportLists]&gt;&lt;span lang=EN-US style='mso-fareast-font-family:
+"Times New Roman"'&gt;&lt;span style='mso-list:Ignore'&gt;3.&lt;span style='font:7.0pt "Times New Roman"'&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;![endif]&gt;&lt;span lang=EN-US&gt;There is one and only one
+observer, called &amp;#8216;YY&amp;#8217;, in the same 3D space, too. He is not sphere
+shaped. Comparing to the moon and the sun, his volume is so small that he can
+be regarded as a point located at (&lt;b style='mso-bidi-font-weight:normal'&gt;x&lt;sub&gt;1&lt;/sub&gt;&lt;/b&gt;,
+&lt;b style='mso-bidi-font-weight:normal'&gt;y&lt;sub&gt;1&lt;/sub&gt;&lt;/b&gt;, &lt;b style='mso-bidi-font-weight:
+normal'&gt;z&lt;sub&gt;1&lt;/sub&gt;&lt;/b&gt;). &lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='margin-left:31.5pt;text-indent:-21.0pt;mso-list:l2 level1 lfo5;
+tab-stops:list 31.5pt'&gt;&lt;![if !supportLists]&gt;&lt;span lang=EN-US style='mso-fareast-font-family:
+"Times New Roman"'&gt;&lt;span style='mso-list:Ignore'&gt;4.&lt;span style='font:7.0pt "Times New Roman"'&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;![endif]&gt;&lt;span lang=EN-US&gt;There is nothing and nobody
+else in the space.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='margin-left:31.5pt;text-indent:-21.0pt;mso-list:l2 level1 lfo5;
+tab-stops:list 31.5pt'&gt;&lt;![if !supportLists]&gt;&lt;span lang=EN-US style='mso-fareast-font-family:
+"Times New Roman"'&gt;&lt;span style='mso-list:Ignore'&gt;5.&lt;span style='font:7.0pt "Times New Roman"'&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;![endif]&gt;&lt;span lang=EN-US&gt;There is no assumption which of
+the two spheres is bigger.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='margin-left:31.5pt;text-indent:-21.0pt;mso-list:l2 level1 lfo5;
+tab-stops:list 31.5pt'&gt;&lt;![if !supportLists]&gt;&lt;span lang=EN-US style='mso-fareast-font-family:
+"Times New Roman"'&gt;&lt;span style='mso-list:Ignore'&gt;6.&lt;span style='font:7.0pt "Times New Roman"'&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;![endif]&gt;&lt;span lang=EN-US&gt;The sun and the moon neither
+intersect with each other, nor even touch. And for his safety and comfort, YY
+will not be inside or on the surface of any of the spheres.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;Four situations may occur:&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='margin-left:31.5pt;text-indent:-21.0pt;mso-list:l3 level1 lfo6;
+tab-stops:list 31.5pt'&gt;&lt;![if !supportLists]&gt;&lt;span lang=EN-US style='mso-fareast-font-family:
+"Times New Roman"'&gt;&lt;span style='mso-list:Ignore'&gt;1.&lt;span style='font:7.0pt "Times New Roman"'&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;![endif]&gt;&lt;span lang=EN-US&gt;Total eclipse: the sun is
+totally blocked by the moon, so no part of the sun can be seen by YY.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='margin-left:31.5pt;text-indent:-21.0pt;mso-list:l3 level1 lfo6;
+tab-stops:list 31.5pt'&gt;&lt;![if !supportLists]&gt;&lt;span lang=EN-US style='mso-fareast-font-family:
+"Times New Roman"'&gt;&lt;span style='mso-list:Ignore'&gt;2.&lt;span style='font:7.0pt "Times New Roman"'&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;![endif]&gt;&lt;span lang=EN-US&gt;Partial eclipse: part of the
+sun is blocked, and part can be seen. To be distinguished from annular eclipse,
+part of the border of the sun must be blocked in a partial eclipse.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='margin-left:31.5pt;text-indent:-21.0pt;mso-list:l3 level1 lfo6;
+tab-stops:list 31.5pt'&gt;&lt;![if !supportLists]&gt;&lt;span lang=EN-US style='mso-fareast-font-family:
+"Times New Roman"'&gt;&lt;span style='mso-list:Ignore'&gt;3.&lt;span style='font:7.0pt "Times New Roman"'&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;![endif]&gt;&lt;span lang=EN-US&gt;Annular eclipse: some central
+part of the sun is blocked and cannot be seen by YY, but the whole border of
+the sun must be visible.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='margin-left:31.5pt;text-indent:-21.0pt;mso-list:l3 level1 lfo6;
+tab-stops:list 31.5pt'&gt;&lt;![if !supportLists]&gt;&lt;span lang=EN-US style='mso-fareast-font-family:
+"Times New Roman"'&gt;&lt;span style='mso-list:Ignore'&gt;4.&lt;span style='font:7.0pt "Times New Roman"'&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;![endif]&gt;&lt;span lang=EN-US&gt;No eclipse at all: The whole
+sun is observable, so YY cannot observe any eclipse at all.&lt;/span&gt;&lt;/p&gt;
+</Description>
+        <InputSpec xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US&gt;Input contains multiple test cases.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;For each test case, there is only one single line
+consisting of 8 integers with absolute value no larger than 1000: &lt;b
+style='mso-bidi-font-weight:normal'&gt;R&lt;/b&gt;, &lt;b style='mso-bidi-font-weight:normal'&gt;r&lt;/b&gt;,
+&lt;b style='mso-bidi-font-weight:normal'&gt;x&lt;sub&gt;0&lt;/sub&gt;&lt;/b&gt;, &lt;b style='mso-bidi-font-weight:
+normal'&gt;y&lt;sub&gt;0&lt;/sub&gt;&lt;/b&gt;, &lt;b style='mso-bidi-font-weight:normal'&gt;z&lt;sub&gt;0&lt;/sub&gt;&lt;/b&gt;,
+&lt;b style='mso-bidi-font-weight:normal'&gt;x&lt;sub&gt;1&lt;/sub&gt;&lt;/b&gt;, &lt;b style='mso-bidi-font-weight:
+normal'&gt;y&lt;sub&gt;1&lt;/sub&gt;&lt;/b&gt;, &lt;b style='mso-bidi-font-weight:normal'&gt;z&lt;sub&gt;1&lt;/sub&gt;&lt;/b&gt;,
+indicating the radii of the sun and the moon, the location of the moon, and the
+location of YY. &lt;b style='mso-bidi-font-weight:normal'&gt;R&lt;/b&gt; and &lt;b
+style='mso-bidi-font-weight:normal'&gt;r&lt;/b&gt; are always positive.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;A line with 8 space-separated 0s indicates the end of
+input.&lt;/span&gt;&lt;/p&gt;
+</InputSpec>
+        <OutputSpec xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US&gt;For each test case, output one single line, containing one
+of the four strings &amp;#8220;total eclipse&amp;#8221;, &amp;#8220;partial eclipse&amp;#8221;,
+&amp;#8220;annular eclipse&amp;#8221; or &amp;#8220;no eclipse at all&amp;#8221; (Quotes
+exclusive) , according to which of the four situations occurs in the test case.
+It is guaranteed that, when the coordinates of the observer change slightly
+(for example, 10&lt;sup&gt;-4&lt;/sup&gt;), the answer will not change.&lt;/span&gt;&lt;/p&gt;
+</OutputSpec>
+    </Problem>
+            <TestData>
+                <TimeLimit>1</TimeLimit>
+                <InputFile />
+                <OutputFile />
+                <InputFormat inputType="eof">
+                    <Terminator xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </InputFormat>
+                <OutputFormat>
+                    <Header xml:space="preserve" />
+                    <Footer xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </OutputFormat>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve" filename="1090.in">
+            </TestInput>
+                    <TestOutput xml:space="preserve" filename="1090.out">
+            </TestOutput>
+                </TestCase>
+            </TestData>
+            <Solution xml:space="preserve" language="cpp" filename="" />
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

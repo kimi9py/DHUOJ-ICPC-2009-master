@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">5</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MCwCFFOFKnHtNDWaUhbZFX6zXiJePIJ5AhQQUPCmZrDQexSdtyz4j2bINLycYQ==</Signature><PaperReference><![CDATA[1]]></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="false">
+            <Title>Highway</Title>
+            <Author />
+            <Problem contentType="html">
+                <Description xml:space="preserve">As we all know, every day, there are hundreds of trucks passing through the highway. As some of the trucks might carry several tons of goods, the highway will be damaged unless it is frequently repaired. The administration of highway is worried about this, so it invented repairing cars to ensure that the cars can pass through the highway.&lt;BR&gt;&lt;BR&gt;
+
+The highway has an initial durability. If a truck with x tons'goods pass the highway, its durability will be decreased by x. Once the highway's durability is less or equal to zero, it will be broken and can never be repaired. The trucks can't pass through the broken ones.&lt;BR&gt;&lt;BR&gt;
+
+There are two kinds of repairing cars: T1 can increase the highway's durability by r, T2 can increase the highway's durability to p, if the highway's durability is less than p. Although the repairing cars can pass through the broken parts, the broken parts can't be repaired.</Description>
+                <InputSpec xml:space="preserve">The input consists of several test cases.&lt;BR&gt;&lt;BR&gt;
+
+For every test case, there are three integers N (1≤N≤100000), M (1≤M≤100000), I (1≤I≤1000) in the first line, indicating the highway's length, the numbers of cars and the initial durability of the highway.&lt;BR&gt;&lt;BR&gt;
+
+Each of the next M lines described the information of cars in the following format:&lt;BR&gt;
+1 s t d	-- There is a truck with d tons'goods wanted to pass the interval [s, t]. You should check whether the truck can pass it. Notice that if the truck can't pass the whole interval, it will give up the whole passing; otherwise it can pass the highway freely, even if the highway will be broken after the truck's passing.&lt;BR&gt;
+2 s t r	-- A T1 car will pass the interval [s, t] and increase its durability by r.&lt;BR&gt;
+3 s t p	-- A T2 car will pass the interval [s, t] and increase its durability to p.&lt;BR&gt;&lt;BR&gt;
+
+You can assume that 1≤s≤t≤N, 1≤d, p, r≤1000&lt;BR&gt;&lt;BR&gt;
+
+The input ends with N=M=I=0.</InputSpec>
+                <OutputSpec xml:space="preserve">For each case, you should return how many trucks can successfully pass the interval.&lt;BR&gt;&lt;BR&gt;
+
+&lt;B&gt;Hint&lt;/B&gt;&lt;BR&gt;
+In the second test case, the third truck can't pass the road, because although the durability of interval [1, 2) and (2, 3] is larger than 0, in position 2, the durability is 0.</OutputSpec>
+            </Problem>
+            <TestData>
+                <TimeLimit>10</TimeLimit>
+                <InputFile />
+                <OutputFile />
+                <InputFormat inputType="eof">
+                    <Terminator xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </InputFormat>
+                <OutputFormat>
+                    <Header xml:space="preserve" />
+                    <Footer xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </OutputFormat>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve" filename="1046.in">
+            </TestInput>
+                    <TestOutput xml:space="preserve" filename="1046.ans">
+            </TestOutput>
+                </TestCase>
+            </TestData>
+            <Solution xml:space="preserve" language="cpp" filename="" />
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

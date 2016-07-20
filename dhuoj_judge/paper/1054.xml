@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="false">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">1</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>10</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MC0CFBEQOUnmWSbNxRC2v71jKAbNJUDNAhUAkWEHhovWe7LXknd1JXPKBDdIo+s=</Signature><PaperReference></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="false">
+    <Title>F · Extended Normal Order Sort</Title>
+    <Author />
+    <Problem contentType="html">
+        <Description xml:space="preserve">When sorted in standard order, strings with digits in them may not sort to where they are expected. 
+For instance, xyz100 precedes xyz2.  In some applications such as listing files, normal order sort 
+may be used where any string of digits in a character string is treated as a single digit with numerical 
+value given by the digit string.  For example, the following are in normal order: &lt;BR&gt;&lt;BR&gt;
+ 
+XYZ001, XYZ2, XYZ003, XYZ08, XYZ23, XYZ100, XYZQ &lt;BR&gt;&lt;BR&gt;
+ 
+We wish to extend normal order sort in two ways: &lt;BR&gt;
+1.  Lower case and upper case letters sort the same (with the upper case value). &lt;BR&gt;
+2.  If a plus (+) or minus (-) sign precedes a digit and does not follow a digit, it is considered part 
+of the following number for sorting purposes. &lt;BR&gt;&lt;BR&gt;
+ 
+So 123+456+7890 are three numbers separated by plus signs but A+003 is the same as A3. 
+ &lt;BR&gt;&lt;BR&gt;
+To do our sort, we will use a library sort routine but we need to furnish a comparison routine. Write a 
+comparison routine which takes as input two strings of printable, non-space ASCII characters 
+(chr(33)-chr(126)) and returns: &lt;BR&gt;&lt;BR&gt;
+ 
+-1 if the first string should precede the second in extended normal order &lt;BR&gt;
+0 it the two strings are the same in extended normal order, or &lt;BR&gt;
+1 if the first string should follow the second in extended normal order.&lt;BR&gt;</Description>
+        <InputSpec xml:space="preserve">The first line of input contains a single integer N, (1 &amp;lt;= N &amp;lt;= 1000) which is the number of data sets that 
+follow.  Each data set consists of a single line of input containing the two strings to be compared 
+separated by a space. </InputSpec>
+        <OutputSpec xml:space="preserve">For each data set, you should generate one line of output with the following values:  The data set 
+number as a decimal integer (start counting at one), a space and –1, 0 or 1 depending on whether the 
+first string precedes, is the same as, or follows the second string in extended normal order.</OutputSpec>
+    </Problem>
+    <TestData>
+        <TimeLimit>1</TimeLimit>
+        <InputFile />
+        <OutputFile />
+        <InputFormat inputType="eof">
+            <Terminator xml:space="preserve"></Terminator>
+            <Seperator xml:space="preserve" layout="bottom"></Seperator>
+        </InputFormat>
+        <OutputFormat>
+            <Header xml:space="preserve"></Header>
+            <Footer xml:space="preserve"></Footer>
+            <Seperator xml:space="preserve" layout="bottom"></Seperator>
+        </OutputFormat>
+        
+        <TestCase difficulty="special">
+                    <TestInput xml:space="preserve" filename="1054.in">
+            </TestInput>
+                    <TestOutput xml:space="preserve" filename="1054.out">
+            </TestOutput>
+                </TestCase>
+    </TestData>
+    <Solution xml:space="preserve" language="cpp" filename=""></Solution>
+</ProblemArchive>
+
+
+    </ProblemList>
+</PaperSetter>
+

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">5</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MCwCFFOFKnHtNDWaUhbZFX6zXiJePIJ5AhQQUPCmZrDQexSdtyz4j2bINLycYQ==</Signature><PaperReference><![CDATA[1]]></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="false">
+            <Title>Health</Title>
+    <Author />
+    <Problem contentType="html">
+        <Description xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US&gt;Unfortunately YY gets ill, but he does not want to go to
+hospital. His girlfriend LMY gives him &lt;b style='mso-bidi-font-weight:normal'&gt;N&lt;/b&gt;
+kinds of medicine, which may be helpful. It is not a good idea to take all of
+them, since taking several different kinds of medicine may have side effect.
+Formally speaking, for each subset &lt;b style='mso-bidi-font-weight:normal'&gt;S&lt;/b&gt;
+of the &lt;b style='mso-bidi-font-weight:normal'&gt;N&lt;/b&gt; kinds of medicine
+(excluding the empty set), it has a health value &lt;b style='mso-bidi-font-weight:
+normal'&gt;v(S)&lt;/b&gt;. If YY chooses to take a combination &lt;b style='mso-bidi-font-weight:
+normal'&gt;T&lt;/b&gt; of the medicines, the final effect to his illness is the sum of
+health values of all non-empty subsets of &lt;b style='mso-bidi-font-weight:normal'&gt;T&lt;/b&gt;.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;YY wants to be healthy as quickly as possible, so the final
+effect of the medicines he takes should be as large as possible. Of course, YY
+may choose taking nothing to have a zero final effect, if he is too unlucky to
+achieve a positive one&amp;#8230; &lt;/span&gt;&lt;/p&gt;
+</Description>
+        <InputSpec xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US&gt;Input contains multiple test cases.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;For each test case, the first line contains a positive
+integer &lt;b style='mso-bidi-font-weight:normal'&gt;N&lt;/b&gt; (&lt;b style='mso-bidi-font-weight:
+normal'&gt;N&lt;/b&gt;&lt;/span&gt;&lt;span style='font-family:SimSun'&gt;&amp;#8804;&lt;/span&gt;&lt;span
+lang=EN-US&gt;16), the number of different kinds of medicine YY received from LMY.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;The second line contains a single integer &lt;b
+style='mso-bidi-font-weight:normal'&gt;M&lt;/b&gt; (0&lt;/span&gt;&lt;span style='font-family:
+SimSun'&gt;&amp;#8804;&lt;/span&gt;&lt;b style='mso-bidi-font-weight:normal'&gt;&lt;span lang=EN-US&gt;M&lt;/span&gt;&lt;/b&gt;&lt;span
+style='font-family:SimSun'&gt;&amp;#8804;&lt;/span&gt;&lt;span lang=EN-US&gt;2&lt;b style='mso-bidi-font-weight:
+normal'&gt;&lt;sup&gt;N&lt;/sup&gt;&lt;/b&gt;).&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;b style='mso-bidi-font-weight:normal'&gt;&lt;span lang=EN-US&gt;M&lt;/span&gt;&lt;/b&gt;&lt;span
+lang=EN-US&gt; lines follow, representing a list of health values.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;Each of the &lt;b style='mso-bidi-font-weight:normal'&gt;M&lt;/b&gt;
+lines contains 2 integers, &lt;b style='mso-bidi-font-weight:normal'&gt;s&lt;/b&gt; (1&lt;/span&gt;&lt;span
+style='font-family:SimSun'&gt;&amp;#8804;&lt;/span&gt;&lt;b style='mso-bidi-font-weight:normal'&gt;&lt;span
+lang=EN-US&gt;s&lt;/span&gt;&lt;/b&gt;&lt;span lang=EN-US&gt;&amp;lt;2&lt;b style='mso-bidi-font-weight:
+normal'&gt;&lt;sup&gt;N&lt;/sup&gt;&lt;/b&gt;)and &lt;b style='mso-bidi-font-weight:normal'&gt;v&lt;/b&gt;
+(-10000&amp;#8804;&lt;b style='mso-bidi-font-weight:normal'&gt;v&lt;/b&gt;&amp;#8804;10000), indicating
+a subset of the &lt;b style='mso-bidi-font-weight:normal'&gt;N&lt;/b&gt; kinds of medicine
+and its health value. Write &lt;b style='mso-bidi-font-weight:normal'&gt;s&lt;/b&gt; in
+binary representation and add leading zeros if needed to make it exactly &lt;b
+style='mso-bidi-font-weight:normal'&gt;N&lt;/b&gt; binary digits. If the &lt;span
+class=SpellE&gt;i&lt;sup&gt;th&lt;/sup&gt;&lt;/span&gt; binary digit of &lt;b style='mso-bidi-font-weight:
+normal'&gt;s&lt;/b&gt; is 1, then the subset it represents includes the &lt;span
+class=SpellE&gt;i&lt;sup&gt;th&lt;/sup&gt;&lt;/span&gt; kind of medicine; otherwise it does not.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;It is guaranteed that no two lines of the list describe the
+same subset. All non-empty subsets that do not appear in the list have health
+value 0.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;Input ends with &lt;b style='mso-bidi-font-weight:normal'&gt;N&lt;/b&gt;=0.&lt;/span&gt;&lt;/p&gt;
+</InputSpec>
+        <OutputSpec xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US&gt;For each test case, output one line with only one integer,
+the maximum final effect that can be achieved.&lt;/span&gt;&lt;/p&gt;
+</OutputSpec>
+    </Problem>
+            <TestData>
+                <TimeLimit>2</TimeLimit>
+                <InputFile />
+                <OutputFile />
+                <InputFormat inputType="eof">
+                    <Terminator xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </InputFormat>
+                <OutputFormat>
+                    <Header xml:space="preserve" />
+                    <Footer xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </OutputFormat>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve" filename="1093.in">
+            </TestInput>
+                    <TestOutput xml:space="preserve" filename="1093.out">
+            </TestOutput>
+                </TestCase>
+            </TestData>
+            <Solution xml:space="preserve" language="cpp" filename="" />
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

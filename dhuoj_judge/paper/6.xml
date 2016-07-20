@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>2014年东华大学ACM校内友谊赛</PaperVersion><PaperID>2014年东华大学ACM校内友谊赛</PaperID><PaperName>2014年东华大学ACM校内友谊赛</PaperName><PaperAuthor>东华大学ACM大学生协会</PaperAuthor><PaperTotalTime unit="hour">5</PaperTotalTime><PaperStartTime zone="+8">20141216 12:30</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEAtUGAhZ90uQl4aS4HchUIaS4Xzh/5285VYulMaTKeV4MauchrT0/Zo/iQYijfA+6B2hjP+KGXlX6jycg6A+uKgA==</PublicKey><Signature>MCwCFE7GSDmEins27ze/8GZyj6GOmmP7AhQ4YfgrrSP42uw6O93zLhVqgcjRtA==</Signature><PaperReference><![CDATA[2014年东华大学ACM校内友谊赛]]></PaperReference><PaperDescribe><![CDATA[2014年东华大学ACM校内友谊赛
+
+活动背景
+       ACM国际大学生程序设计竞赛（简称ACM/ICPC）是由国际计算机界历史最悠久、最具权威性的组织ACM（Association for Computing Machinery）主办，是世界上公认的规模最大、水平最高、参与人数最多的国际大学生程序设计竞赛，其目的旨在使大学生运用计算机来充分展示分析问题和解决问题的能力。该项竞赛从1970年举办至今已历37届，因历届竞赛都荟萃了世界各大洲的精英，云集了计算机界的“希望之星”，而受到国际各知名大学的重视，并受到全世界各著名计算机公司如Microsoft、IBM、Google、Facebook等公司的高度关注，成为世界各国大学生最具影响力的国际级计算机类的赛事，此项竞赛所颁发的获奖证书也为世界各著名计算机公司、各知名大学所认可。近年来国内越来越多的知名高校在计算机学科研究生复试中开始采用ACM试题作为上机考试内容。
+
+竞赛宗旨
+       本次友谊赛旨在培养我校大学生的程序设计能力。在程序设计过程中激发创新意识，促进我校大学生程序设计的整体水平，并选拔优秀选手参加ACM新手入门训练。
+
+
+友谊赛比赛规则
+
+友谊赛采用ACM/ICPC规则与方式, 均为个人赛,无团队组别。
+比赛规则与传统ACM比赛规则略有不同，请参赛人员认真阅读比赛规则。
+      
+       1.  竞赛时，允许参赛选手携带源代码参考书、手册、字典等纸质参考资料以及草稿纸，严禁使用任何电子存储工具或通讯设备。
+      
+       2.  参赛选手可以针对题目描述中的不明确或错误的部分提问。如果评委确认题目中确实存在不明确或错误的部分，将会通告所有参赛选手进行声明或更正。
+      
+       3.  本大赛将进行现场实时排名，对成绩有疑问的选手可以当场向组委会投诉，投诉截止时间为比赛结束后30分钟，在截止时间以后的投诉均视为无效。
+      
+       4.  竞赛所用编程语言为C和C++，操作系统为Windows，比赛系统所用编译器为gcc和g++，不使用vc++。数据结构组竞赛试题全部采用英语描述，程序设计语言组竞赛试题全部采用中文描述。      
+ 
+       5.  所有选手使用的计算机具有完全相同的规格配置。
+ 
+       6.  在竞赛中，参赛队员不得和其他选手以及竞赛组委会指定工作人员以外的人交谈；系统支持人员可以回答和系统相关的问题，例如解释系统错误信。]]></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="2">
+        <ProblemArchive version="1.0" checked="true">
+            <Title>Get Jibin's favourite integer Y</Title>
+            <Author>toyking</Author>
+            <Problem contentType="html">
+                <Description xml:space="preserve">Now, give you three integers a,b,c, you will do the following things to get Jibin's favourite integer Y:&lt;BR&gt;
+(1)&amp;nbsp;First, find the biggest integer X (0 &amp;lt; X &amp;lt; 1000,000,000)  that satisfy the equation:&lt;IMG SRC="getY.png"&gt; &lt;/IMG&gt;&lt;BR&gt;
+(2)&amp;nbsp;Y is the smallest &lt;B&gt;positive&lt;/B&gt; integer that satisfy  Y*Y+ Y + s(Y) &amp;gt; X*X .&lt;BR&gt;
+function s(x) determines the sum of all digits in the decimal representation of number x. For example,when x=123456, s(x)=1+2+3+4+5+6=21.</Description>
+                <InputSpec xml:space="preserve">There will be several test cases(no more than 110), for each test case , there will be one line contains three space-separated integers: a, b, c (1 ≤ a ≤ 5; 1 ≤ b ≤ 10000;  - 10000 ≤ c ≤ 10000).</InputSpec>
+                <OutputSpec xml:space="preserve">For each case, output the &lt;B&gt;positive&lt;/B&gt; integer Y in a line. 
+Pay attention:  If X do not exist, output “Agimadei” instead .</OutputSpec>
+                <Figure filename="getY.png">
+                    <Text />
+                    <Image xml:space="preserve">iVBORw0KGgoAAAANSUhEUgAAAHIAAAAVCAIAAAAVTi3IAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC1UlEQVRYhe1Yq7ajMBQ9M2t+AVd14upwVXwBjn5AcKMqcRhwyKrrygcExxdEVYHDgaoiH5ERPAYob8q9c9d0u7CS89gJZ58E5I7IGUVERHSijZYih7J8xM2Ag8hBRETKmIMjBl4P2NtBzuhGVmdYyBl9oi1ysPq2PYal2JvWRnKrMJuRzsTIaYyGj3M59+Un+SfsCpFloOmasnZ9/GGB91udMVMxPC87u3HhNrhm9TIRWBbqc2y8DvvSKnjIN7AqgqtPL8bM5Ypxof41EADwSDiiAgAQu+RkcfrJrDZpjV1CCCGk3nGTEGIGAp6n9KFc1sIj4YAIgVlMaRvromncDES5KcfD/AgPR42HXACoOvXPhBBCQv3uaeCfx13PgqjSmMgDAKBbW8tamDP6gnoTOYiUlpZyRhtltj2STdWpqmTOaF8PMRbh7Epetgi96DMQOdgUwEkfT5JVOHxJDc8ZRepEeWNY0zRCq8yZw/JhjkYiHNiJCUxJVttq5Mxw8at7elWdgg8DBS12ydkfOPaUpXarghWF1VOblup/WjFuqdGcrRg3lpCTCfebYdgGADwGHI1GuAPiD4trnlflptppOrnmiVYAAPDD2FZ7qrxqp6k9N5xHwjXdq5MvWR4hQ7Xvnnk6udjZnyURvh5x6IPmLZTdbicQu+HR08APewRoeTilHEPR5fAhVY/dUoQU40Jr34ejBjx5OrNjET4SDi2R2w6RZdDIAwCEmFa/Nq2xG+q2oekaZJn4m+3acKq+RgTmyQLvPnAIRZZVJIksqz8rVRyzI1zZJav2bbiiKIgAZd9WdAMWr2MZ6oCqTqC8vZeluD1ai/pFYEoBW7LclbGWxk1EGO1z8x9IpPrc53L3N4FtWELU59/8pZRSRuz70bqA2J2O6gRyxvp28p+ntf95qosv4XTk8vENaJVy9Xvrl+GHlHKhcL4xjZ0fBv9XvGndBW9ad8Ef1/VLRrUth00AAAAASUVORK5CYII=</Image>
+                </Figure>
+            </Problem>
+            <EncryptedData xmlns="http://w2c.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Element">
+                <EncryptionMethod xmlns="" Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
+                <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                    <KeyName xmlns="">AaHE70VwqHw=</KeyName>
+                </ds:KeyInfo>
+                <CipherData xmlns="">
+                    <CipherValue>O8Z69Dl3K59snrO8OOFofkVGMCP40O7kWqRgVDPfkf+Nc5HLoXNCxsEDEhGHx9FYAPm30neKu8E9oaxGEhs4ySpzP/wPcthFal7vZr4xue3RGxMvX6/P0LhKS8b36yQglvKhvcV88t3xRaljZudOzbhKS8b36yQgjXKOtHBwDKrsObFHCFWkLGoSg6iutck0svVknnAAW0m1euQzplvymWOWMH1xtRoa6XcN+6lpamYWLhzLNUMtfubrWaXTUDcg5UrmAi3Y+dn7s1f1Vokf+XeojcTB8f2M25b5QkP3TeE6xQUtQMStuQ+WlQT0DWjOOiXv67uDtObF1ahPnC8onPQpWNC0tjZkEyyyefJ07lpb8KYXYStCnihS5PrtHUbH1Y8grUCyovLDctcIPY/EOz+kRenCSOTeYBpXF9BTt6khE4DccxK5jDGK62PBlPmg3R29aJjMEer7s1f1Vokf+Y6I/bH6mo4oEmeMPAQChgoa2E6sRCttyanFDVBd5x13XrPKuXrrQ5dPqVMyR58MHrHKLHLSuwDFVEimMUmlcPXX4l/oRMkS0y3t1kSOTeGXxu6cPlxPh7c+/iW5zLW0wVRIpjFJpXD1TMDrsa8e3GbHegmdLFQDJUNXV0AVuKiMbymtucZCmUIwSdv9LiLaMIFdP+UFFoY7+aCQABqrU36T47jl/Hlw/he/wR1zu6aaJ1Du+6uzbbDJXRM9d8s3PVRIpjFJpXD11XN1rkODUmVUSKYxSaVw9R3HeWDRqQAasQAUxVl8KfNb8KYXYStCnuYj5JKOE9I2YpGanK3eYHQXv8Edc7ummmkpNf9KzdPjh+68jv+NkUuWe+W4/rWiHfoAXeuB0EkL1ltN2gOVNHktLEPBiRtvACc/5tHUZiThvq+Gv6Me4TatWVN1F4mQeJYi8JjU+uEuejNqZX0W0IcXv8Edc7ummoWTin6D3lh0ygnDmeInRQgXv8Edc7ummmV+gdPueIgz2Dm6p7k4/6wics0h4KYmE7EAFMVZfCnzsEpY6mNe396wNGPboZLGF7LXsxuBcf0PrOyJdvxJF/Ua5gdAHWn4Vo7usH1Hq4/zGMT4oGA6Fw3w6qhGDruedGuH326Q2nmULb684qtK05QrCAVJobFbl5/WA6cEJWFP3N2k6Ub9PZvXRg5M0j/h2ORs5XaAmh7nDoQvsvxiy2Zk6ZAVYqs+X++bWXCRsOBitoVigNpxYmfqNG5rutk6E42KMyMNEXbl5WoP10BsvXFC288pBjnvtEOlpfhnpG4ILSxDwYkbbwDRuWdSB0eu0N8NfxbCpL8lKbtkbocE1PtImvdPNltTeA==</CipherValue>
+                </CipherData>
+            </EncryptedData>
+            <EncryptedData xmlns="http://w2c.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Element">
+                <EncryptionMethod xmlns="" Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
+                <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                    <KeyName xmlns="">iRx1499ASpI=</KeyName>
+                </ds:KeyInfo>
+                <CipherData xmlns="">
+                    <CipherValue>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</CipherValue>
+                </CipherData>
+            </EncryptedData>
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

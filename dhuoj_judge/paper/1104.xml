@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">5</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MCwCFFOFKnHtNDWaUhbZFX6zXiJePIJ5AhQQUPCmZrDQexSdtyz4j2bINLycYQ==</Signature><PaperReference><![CDATA[1]]></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="false">
+            <Title>Flowers Placement</Title>
+    <Author />
+    <Problem contentType="html">
+        <Description xml:space="preserve">&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;Bytetown
+has a long tradition in organizing an international flower exhibition.
+Professor Feuerbach, a true flower lover, visited the exhibition this year. He
+was pleased by the most beautiful flowers and other plants around the world
+roses, orchids, magnolias, cactuses. All flowers were nicely placed.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;The
+flower placement that was the most appealing to him was composed of many kinds
+of flowers placed in a rectangular grid, such that each row of the grid
+contained each kind of flowers exactly once and each column of the grid
+contained each kind of flowers at most once.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;Professor
+Feuerbach is a good mathematician and soon he realized that the number of
+columns of the grid has to be the same as the number of different kinds of
+flowers in the placement. The different kinds of flowers are represented by
+numbers &lt;b style='mso-bidi-font-weight:normal'&gt;1, 2..., N&lt;/b&gt;, where &lt;b
+style='mso-bidi-font-weight:normal'&gt;N&lt;/b&gt; is the number of different kinds of
+flowers. Soon he encountered a new problem. He would like to add one row of
+flowers to the placement without violating the rules stated above. (Note that
+he may not modify the existing rows and therefore he may not use any new kinds
+of flowers in the new rows.) It's quite easy, but he wants to know the &lt;u&gt;K-th lexicographically
+valid placement.&lt;/u&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+</Description>
+        <InputSpec xml:space="preserve">&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;The
+input data set describes about 100 flower placements. In the first line the number
+of placements is given.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;Each
+flower placement description begins with three positive integers &lt;b
+style='mso-bidi-font-weight:normal'&gt;N &lt;/b&gt;(1&amp;#8804;&lt;b style='mso-bidi-font-weight:
+normal'&gt;N&lt;/b&gt;&amp;#8804;200), &lt;b style='mso-bidi-font-weight:normal'&gt;M &lt;/b&gt;(0&amp;#8804;&lt;b
+style='mso-bidi-font-weight:normal'&gt;M&lt;/b&gt;&amp;#8804;&lt;b style='mso-bidi-font-weight:
+normal'&gt;N&lt;/b&gt;), &lt;b style='mso-bidi-font-weight:normal'&gt;K &lt;/b&gt;(1&amp;#8804;&lt;b
+style='mso-bidi-font-weight:normal'&gt;K&lt;/b&gt;&amp;#8804;200) representing the number of
+columns and rows of the grid. The following &lt;b style='mso-bidi-font-weight:
+normal'&gt;M&lt;/b&gt; lines contain &lt;b style='mso-bidi-font-weight:normal'&gt;N&lt;/b&gt;
+integers each representing the kinds of flowers in one row of the placement.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+</InputSpec>
+        <OutputSpec xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&lt;span style='mso-tab-count:
+1'&gt;&amp;nbsp;&amp;nbsp; &lt;/span&gt;For each flower placement output one line containing N
+numbers, describing the added row. The numbers in the output file should be
+separated by&amp;nbsp;&lt;span style='mso-bidi-font-weight:bold'&gt;exactly one&lt;/span&gt;&amp;nbsp;space.
+&lt;u&gt;If there are less than K valid placements, output&amp;nbsp;&lt;span
+style='mso-bidi-font-style:italic'&gt;-1&lt;/span&gt;&amp;nbsp;instead&lt;/u&gt;.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+</OutputSpec>
+    </Problem>
+    <TestData>
+        <TimeLimit>20</TimeLimit>
+                <InputFile />
+                <OutputFile />
+                <InputFormat inputType="eof">
+                    <Terminator xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </InputFormat>
+                <OutputFormat>
+                    <Header xml:space="preserve" />
+                    <Footer xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </OutputFormat>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve" filename="1104.in">
+            </TestInput>
+                    <TestOutput xml:space="preserve" filename="1104.out">
+            </TestOutput>
+                </TestCase>
+            </TestData>
+            <Solution xml:space="preserve" language="cpp" filename="" />
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">5</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MCwCFFOFKnHtNDWaUhbZFX6zXiJePIJ5AhQQUPCmZrDQexSdtyz4j2bINLycYQ==</Signature><PaperReference><![CDATA[1]]></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="false">
+            <Title>Dual Processing Task</Title>
+    <Author />
+    <Problem contentType="html">
+        <Description xml:space="preserve">&lt;p&gt;&lt;b style='mso-bidi-font-weight:normal'&gt;&lt;span lang=EN-US&gt;N&lt;/span&gt;&lt;/b&gt;&lt;span
+lang=EN-US&gt; items are to be processed with two product lines. YY operates the
+first line, and LMY operates the second. YY can use &lt;b style='mso-bidi-font-weight:
+normal'&gt;X&lt;/b&gt; processing modes for the first product line, with his &lt;span
+class=SpellE&gt;i&lt;sup&gt;th&lt;/sup&gt;&lt;/span&gt; mode, processing an item costs &lt;b
+style='mso-bidi-font-weight:normal'&gt;A&lt;sub&gt;i&lt;/sub&gt;&lt;/b&gt; units of material while
+the item's value increases by &lt;b style='mso-bidi-font-weight:normal'&gt;P&lt;sub&gt;i&lt;/sub&gt;&lt;/b&gt;
+units. Similarly LMY can use &lt;b style='mso-bidi-font-weight:normal'&gt;Y&lt;/b&gt; modes
+for the second product line, with her &lt;span class=SpellE&gt;i&lt;sup&gt;th&lt;/sup&gt;&lt;/span&gt;
+mode processing an item will cost &lt;b style='mso-bidi-font-weight:normal'&gt;B&lt;sub&gt;i&lt;/sub&gt;&lt;/b&gt;
+units of material and get &lt;span class=SpellE&gt;&lt;b style='mso-bidi-font-weight:
+normal'&gt;Q&lt;sub&gt;i&lt;/sub&gt;&lt;/b&gt;&lt;/span&gt; units of value increment. All items must be
+processed in both of the product lines, each with one of their modes, to
+satisfy both YY and LMY. Note that when processing an item with some mode of a
+product line, the cost and value increment are totally irrelevant to the mode
+chosen in the other line. YY and LMY want the value increment of the items to
+be maximized, but there are only &lt;b style='mso-bidi-font-weight:normal'&gt;M&lt;/b&gt;
+units of material available. So they have to choose their modes carefully, use
+no more than &lt;b style='mso-bidi-font-weight:normal'&gt;M&lt;/b&gt; units of material and
+still make the value increment as large as possible.&lt;/span&gt;&lt;/p&gt;
+</Description>
+        <InputSpec xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US&gt;The input file contains several test cases.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;The first line of each test case contains two integers &lt;b
+style='mso-bidi-font-weight:normal'&gt;N&lt;/b&gt; and &lt;b style='mso-bidi-font-weight:
+normal'&gt;M&lt;/b&gt; indicating the number of items to be processed and the quantity
+of material available. The next line contains an integer &lt;b style='mso-bidi-font-weight:
+normal'&gt;X&lt;/b&gt;, the number of modes YY has. &lt;b style='mso-bidi-font-weight:normal'&gt;X&lt;/b&gt;
+lines follow, the &lt;span class=SpellE&gt;i&lt;sup&gt;th&lt;/sup&gt;&lt;/span&gt; line of which
+contains two integers &lt;b style='mso-bidi-font-weight:normal'&gt;A&lt;sub&gt;i&lt;/sub&gt;&lt;/b&gt;
+and &lt;b style='mso-bidi-font-weight:normal'&gt;P&lt;sub&gt;i&lt;/sub&gt;&lt;/b&gt;, the material
+utilized and the value increased by YY's &lt;span class=SpellE&gt;i&lt;sup&gt;th&lt;/sup&gt;&lt;/span&gt;
+mode of the first product line. The next line contains an integer &lt;b
+style='mso-bidi-font-weight:normal'&gt;Y&lt;/b&gt;, the number of modes LMY has. &lt;b
+style='mso-bidi-font-weight:normal'&gt;Y&lt;/b&gt; lines follow, the &lt;span class=SpellE&gt;i&lt;sup&gt;th&lt;/sup&gt;&lt;/span&gt;
+line of which contains two integers &lt;b style='mso-bidi-font-weight:normal'&gt;B&lt;sub&gt;i&lt;/sub&gt;&lt;/b&gt;
+and &lt;span class=SpellE&gt;&lt;b style='mso-bidi-font-weight:normal'&gt;Q&lt;sub&gt;i&lt;/sub&gt;&lt;/b&gt;&lt;/span&gt;,
+the material utilized and the value increased by LMY's &lt;span
+class=SpellE&gt;i&lt;sup&gt;th&lt;/sup&gt;&lt;/span&gt; mode of the second product line.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;All integers except &lt;b style='mso-bidi-font-weight:normal'&gt;N&lt;/b&gt;
+are less than or equal to 800 and non-negative, while &lt;b style='mso-bidi-font-weight:
+normal'&gt;X&lt;/b&gt; and &lt;b style='mso-bidi-font-weight:normal'&gt;Y&lt;/b&gt; are always
+positive. &lt;b style='mso-bidi-font-weight:normal'&gt;N&lt;/b&gt; is a non-&lt;span
+class=SpellE&gt;negetive&lt;/span&gt; integer no more than 100000.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;A line with &lt;b style='mso-bidi-font-weight:normal'&gt;N&lt;/b&gt;=&lt;b
+style='mso-bidi-font-weight:normal'&gt;M&lt;/b&gt;=0 indicates the end of input, and
+should not be processed.&lt;/span&gt;&lt;/p&gt;
+</InputSpec>
+        <OutputSpec xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US&gt;For each test case, output one line containing an integer,
+the maximum value increment after YY and LMY have processed all the &lt;b
+style='mso-bidi-font-weight:normal'&gt;N&lt;/b&gt; items with no more than &lt;b
+style='mso-bidi-font-weight:normal'&gt;M&lt;/b&gt; units of material cost.&lt;/span&gt;&lt;/p&gt;
+&lt;BR&gt;
+&lt;B&gt;Hint&lt;/B&gt;&lt;BR&gt;&lt;BR&gt;
+
+In the sample, both YY and LMY have only one mode to choose, with sufficient materials. Processing 1 item with the only modes of the lines causes an increment of 3 units, so the output is 9.
+</OutputSpec>
+    </Problem>
+            <TestData>
+                <TimeLimit>2</TimeLimit>
+                <InputFile />
+                <OutputFile />
+                <InputFormat inputType="eof">
+                    <Terminator xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </InputFormat>
+                <OutputFormat>
+                    <Header xml:space="preserve" />
+                    <Footer xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </OutputFormat>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve" filename="1089.in">
+            </TestInput>
+                    <TestOutput xml:space="preserve" filename="1089.out">
+            </TestOutput>
+                </TestCase>
+            </TestData>
+            <Solution xml:space="preserve" language="cpp" filename="" />
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

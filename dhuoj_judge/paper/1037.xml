@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">1</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MCwCFFSYlwHD1Xmbp7Jq0crCSbQyjb3gAhQSjm3x8rmPtbxOLyHQY1UkjxV8IQ==</Signature><PaperReference><![CDATA[1]]></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="true">
+            <Title>A Contesting Decision</Title>
+            <Author>sch</Author>
+            <Problem contentType="html">
+                <Description xml:space="preserve">Judging a programming contest is hard work, with demanding contestants, tedious decisions, and monotonous work. Not to mention the nutritional problems of spending 12 hours with only donuts, pizza, and soda for food. Still, it can be a lot of fun.&lt;BR&gt;&lt;BR&gt;
+Software that automates the judging process is a great help, but the notorious unreliability of some contest software makes people wish that something better were available. You are part of a group trying to develop better, open source, contest management software, based on the principle of modular design.&lt;BR&gt;&lt;BR&gt;
+Your component is to be used for calculating the scores of programming contest teams and determining a winner. You will be given the results from several teams and must determine the winner.
+&lt;BR&gt;&lt;BR&gt;&lt;B&gt;Scoring&lt;/B&gt;&lt;BR&gt;
+There are two components to a team's score. The first is the number of problems solved. The second is penalty points, which reflects the amount of time and incorrect submissions made before the problem is solved. For each problem solved correctly, penalty points are charged equal to the time at which the problem was solved plus 20 minutes for each incorrect submission. No penalty points are added for problems that are never solved.&lt;BR&gt;&lt;BR&gt;
+So if a team solved problem one on their second submission at twenty minutes, they are charged 40 penalty points. If they submit problem 2 three times, but do not solve it, they are charged no penalty points. If they submit problem 3 once and solve it at 120 minutes, they are charged 120 penalty points. Their total score is two problems solved with 160 penalty points.&lt;BR&gt;&lt;BR&gt;
+The winner is the team that solves the most problems. If teams tie for solving the most problems, then the winner is the team with the fewest penalty points.</Description>
+                <InputSpec xml:space="preserve">The input consists of a set of test cases. Each test case consists of two parts as follows:&lt;BR&gt;
+For the programming contest your program is judging, there are four problems. You are guaranteed that the input will not result in a tie between teams after counting penalty points.&lt;BR&gt;
+&lt;table width="100%"&gt;
+&lt;tr&gt;
+&lt;td width="150" valign="top"&gt;&lt;B&gt;Line 1&lt;/B&gt;&lt;/td&gt;
+&lt;td valign="top"&gt;&amp;lt;nTeams&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width="150" valign="top"&gt;&lt;B&gt;Line 2&lt;/B&gt;-n + 1&lt;/td&gt;
+&lt;td valign="top"&gt;&amp;lt;Name&amp;gt; &amp;lt;p1Sub&amp;gt; &amp;lt;p1Time&amp;gt; &amp;lt;p2Sub&amp;gt; &amp;lt;p2Time&amp;gt; ... &amp;lt;p4Time&amp;gt;&lt;BR&gt;
+The first element on the line is the team name, which contains no whitespace. Following that, for each of the four problems, is the number of times the team submitted a run for that problem and the time at which it was solved correctly (both integers). If a team did not solve a problem, the time will be zero. The number of submissions will be at least one if the problem was solved.
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+nTeams is the number of teams, 0&amp;lt;nTeams&amp;lt;9, and all numbers in the test case less than 1000 and greater than -1.</InputSpec>
+                <OutputSpec xml:space="preserve">The output consists of a single line listing the name of the team that won, the number of problems
+they solved, and their penalty points.</OutputSpec>
+            </Problem>
+            <TestData>
+                <TimeLimit>1</TimeLimit>
+                <InputFile />
+                <OutputFile />
+                <InputFormat inputType="eof">
+                    <Terminator xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </InputFormat>
+                <OutputFormat>
+                    <Header xml:space="preserve" />
+                    <Footer xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </OutputFormat>
+                <TestCase difficulty="sample">
+                    <TestInput xml:space="preserve">4
+Stars 2 20 5 0 4 190 3 220
+Rockets 5 180 1 0 2 0 3 100
+Penguins 1 15 3 120 1 300 4 0
+Marsupials 9 0 3 100 2 220 3 80
+</TestInput>
+                    <TestOutput xml:space="preserve">Penguins 3 475
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="sample">
+                    <TestInput xml:space="preserve">1
+Try 0 0 0 0 0 0 0 0
+</TestInput>
+                    <TestOutput xml:space="preserve">Try 0 0
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve">8
+Stars 2 20 5 0 4 190 3 220
+Rockets 5 180 1 0 2 0 3 100
+Koalas 1 15 3 120 1 299 4 0
+Marsupials 9 0 3 100 2 220 3 80
+Foo 4 0 2 0 1 0 2 0
+Bar 0 0 0 0 0 0 0 0
+EmperorPenguins 2 5 3 120 1 300 4 0
+Eagles 1 10 3 0 2 0 1 0
+</TestInput>
+                    <TestOutput xml:space="preserve">Koalas 3 474
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">2
+A 2 20 5 0 4 190 8 22
+B 5 180 3 0 2 0 7 100
+</TestInput>
+                    <TestOutput xml:space="preserve">A 3 452
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">4
+ac 2 20 5 0 4 19 3 220
+ad 5 180 1 0 2 0 3 10
+qr 1 15 3 120 1 30 4 0
+ng 9 0 3 10 2 220 3 80
+</TestInput>
+                    <TestOutput xml:space="preserve">qr 3 205
+</TestOutput>
+                </TestCase>
+            </TestData>
+            <Solution xml:space="preserve" language="cpp" filename="contest">#include &lt;iostream&gt;
+#include &lt;limits&gt;
+#include &lt;string&gt;
+using namespace std;
+int main(){
+	int n;
+	string name;
+	while(cin&gt;&gt;n){
+		int bestSolved = 0;
+		int bestPenalty = INT_MAX;
+		string bestName;
+		for(int cnt=0;cnt&lt;n;cnt++){
+			cin&gt;&gt;name;
+			int solved=0;
+			int penalty=0;
+			int subs,time;
+			for(int p=0;p&lt;4;p++){
+				cin&gt;&gt;subs&gt;&gt;time;
+				if(time &gt; 0){
+					solved++;
+					penalty+=time+(subs-1)*20;
+				}
+			}
+			if(solved&gt;bestSolved || (solved == bestSolved &amp;&amp; penalty &lt; bestPenalty)){
+				bestSolved = solved;
+				bestPenalty = penalty;
+				bestName = name;
+			}
+		}
+		cout&lt;&lt;bestName&lt;&lt;" "&lt;&lt;bestSolved&lt;&lt;" "&lt;&lt;bestPenalty&lt;&lt;endl;
+	}
+	return 0;
+}
+</Solution>
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

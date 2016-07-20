@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">5</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MCwCFFOFKnHtNDWaUhbZFX6zXiJePIJ5AhQQUPCmZrDQexSdtyz4j2bINLycYQ==</Signature><PaperReference><![CDATA[1]]></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="false">
+            <Title>Problem A: Another lottery</Title>
+    <Author />
+    <Problem contentType="html">
+        <Description xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US&gt;Even in times of an economic crisis, people in Byteland
+still like to participate in lotteries. With a bit of luck, they might get rid
+of all their sorrows and become rich. &lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;The most popular lottery in Byteland consists of &lt;b&gt;&lt;i&gt;m&lt;/i&gt;&lt;/b&gt;
+rounds. In each round, everyone can purchase as many tickets as he wishes, and
+among all tickets sold in this round, one ticket is chosen randomly, each one
+with the same probability. The owner of that ticket wins the prize money of
+this round. Since people in Byteland like powers of 2, the prize money for the
+winner of round &lt;b&gt;&lt;i&gt;i&lt;/i&gt;&lt;/b&gt; amounts to &lt;b&gt;&lt;i&gt;2&lt;sup&gt;i&lt;/sup&gt;&lt;/i&gt;&lt;/b&gt;
+Bytelandian Dollars. &lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;Can you determine for each participant in the lottery the
+probability that he will win more money than anybody else? &lt;/span&gt;&lt;/p&gt;
+</Description>
+        <InputSpec xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US&gt;The input consists of several test cases. Each test case
+starts with a line containing two integers &lt;b&gt;&lt;i&gt;n&lt;/i&gt;&lt;/b&gt; and &lt;b&gt;&lt;i&gt;m&lt;/i&gt;&lt;/b&gt;,
+the number of participants in the lottery and the number of rounds in the
+lottery. You may assume that &lt;b&gt;&lt;i&gt;1 &amp;#8804; n &amp;#8804; 10000&lt;/i&gt;&lt;/b&gt; and &lt;b&gt;&lt;i&gt;1
+&amp;#8804; m &amp;#8804; 30&lt;/i&gt;&lt;/b&gt;. &lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;The following &lt;b&gt;&lt;i&gt;n&lt;/i&gt;&lt;/b&gt; lines contain the description
+of the tickets bought by the participant. The &lt;b&gt;&lt;i&gt;i&lt;sup&gt;th&lt;/sup&gt;&lt;/i&gt;&lt;/b&gt; such
+line contains &lt;b&gt;&lt;i&gt;m&lt;/i&gt;&lt;/b&gt; non-negative integers &lt;b&gt;&lt;i&gt;c&lt;sub&gt;1&lt;/sub&gt;, ..., c&lt;sub&gt;m&lt;/sub&gt;&lt;/i&gt;&lt;/b&gt;,
+where &lt;b&gt;&lt;i&gt;c&lt;sub&gt;j&lt;/sub&gt;&lt;/i&gt;&lt;/b&gt; (&lt;b&gt;&lt;i&gt;1 &amp;#8804; j &amp;#8804; m&lt;/i&gt;&lt;/b&gt;) is the
+amount of tickets of round &lt;b&gt;&lt;i&gt;j&lt;/i&gt;&lt;/b&gt; bought by partipant &lt;b&gt;&lt;i&gt;i&lt;/i&gt;&lt;/b&gt;.
+The total number of tickets sold in each round is between &lt;b&gt;&lt;i&gt;1&lt;/i&gt;&lt;/b&gt; and &lt;b&gt;&lt;i&gt;10&lt;sup&gt;9&lt;/sup&gt;&lt;/i&gt;&lt;/b&gt;.
+&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;The input ends with a line containing 2 zeros. &lt;/span&gt;&lt;/p&gt;
+</InputSpec>
+        <OutputSpec xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US&gt;For each test case, print &lt;b&gt;&lt;i&gt;n&lt;/i&gt;&lt;/b&gt; lines of output,
+where line &lt;b&gt;&lt;i&gt;i&lt;/i&gt;&lt;/b&gt; contains the probability as a reduced fraction that
+participant &lt;b&gt;&lt;i&gt;i&lt;/i&gt;&lt;/b&gt; wins the most money. See the sample output for
+details. &lt;/span&gt;&lt;/p&gt;
+</OutputSpec>
+    </Problem>
+            <TestData>
+                <TimeLimit>2</TimeLimit>
+                <InputFile />
+                <OutputFile />
+                <InputFormat inputType="eof">
+                    <Terminator xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </InputFormat>
+                <OutputFormat>
+                    <Header xml:space="preserve" />
+                    <Footer xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </OutputFormat>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve" filename="1078.in">
+            </TestInput>
+                    <TestOutput xml:space="preserve" filename="1078.out">
+            </TestOutput>
+                </TestCase>
+            </TestData>
+            <Solution xml:space="preserve" language="cpp" filename="" />
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

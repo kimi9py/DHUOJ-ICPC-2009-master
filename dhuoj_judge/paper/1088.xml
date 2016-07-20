@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">5</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MCwCFFOFKnHtNDWaUhbZFX6zXiJePIJ5AhQQUPCmZrDQexSdtyz4j2bINLycYQ==</Signature><PaperReference><![CDATA[1]]></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="false">
+            <Title>Card Collection</Title>
+    <Author />
+    <Problem contentType="html">
+        <Description xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US&gt;In &lt;i style='mso-bidi-font-style:normal'&gt;Card Captor Sakura&lt;/i&gt;,&lt;/span&gt;&lt;span
+lang=EN-US style='font-family:Arial'&gt; &lt;/span&gt;&lt;span lang=EN-US&gt;Sakura is a
+lovely girl. One day, she opens a magic box containing many cards. Every card
+has a respective natural force in the real world, such as wind, water, YY, LMY,
+and so on. Suddenly a gust of wind blows away these cards. Sakura only has a
+card called &amp;#8220;THE_WINDY&amp;#8221; in her hand. Sakura knows if any card is
+not found, disaster comes. So she must collect all the cards. Cards can only be
+collected one by one. Suppose there are &lt;b style='mso-bidi-font-weight:normal'&gt;N&lt;/b&gt;
+cards to be collected. It takes &lt;b style='mso-bidi-font-weight:normal'&gt;T&lt;sub&gt;i&lt;/sub&gt;&lt;/b&gt;
+to collect the &lt;span class=SpellE&gt;i&lt;sup&gt;th&lt;/sup&gt;&lt;/span&gt; card, 1&lt;/span&gt;&lt;span
+style='font-family:SimSun'&gt;&amp;#8804;&lt;/span&gt;&lt;span class=SpellE&gt;&lt;span lang=EN-US&gt;i&lt;/span&gt;&lt;/span&gt;&lt;span
+style='font-family:SimSun'&gt;&amp;#8804;&lt;/span&gt;&lt;b style='mso-bidi-font-weight:normal'&gt;&lt;span
+lang=EN-US&gt;N&lt;/span&gt;&lt;/b&gt;&lt;span lang=EN-US&gt;. For the &lt;span class=SpellE&gt;i&lt;sup&gt;th&lt;/sup&gt;&lt;/span&gt;
+card, there is a corresponding card &lt;b style='mso-bidi-font-weight:normal'&gt;P&lt;sub&gt;i&lt;/sub&gt;&lt;/b&gt;.
+If card &lt;b style='mso-bidi-font-weight:normal'&gt;P&lt;sub&gt;i&lt;/sub&gt;&lt;/b&gt; has been
+collected, it only takes time&lt;i style='mso-bidi-font-style:normal'&gt; &lt;/i&gt;&lt;span
+class=SpellE&gt;&lt;b style='mso-bidi-font-weight:normal'&gt;t&lt;sub&gt;i&lt;/sub&gt;&lt;/b&gt;&lt;/span&gt; to
+collect the &lt;span class=SpellE&gt;i&lt;sup&gt;th&lt;/sup&gt;&lt;/span&gt; card, where &lt;span
+class=SpellE&gt;&lt;b style='mso-bidi-font-weight:normal'&gt;t&lt;sub&gt;i&lt;/sub&gt;&lt;/b&gt;&lt;/span&gt;&amp;lt;&lt;b
+style='mso-bidi-font-weight:normal'&gt;T&lt;sub&gt;i&lt;/sub&gt;&lt;/b&gt;.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;Your task is to help Sakura design a schedule that takes
+the shortest time to collect all cards.&lt;/span&gt;&lt;/p&gt;
+</Description>
+        <InputSpec xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US&gt;The input consists of several test cases. Each test case
+starts with a line giving the number &lt;b style='mso-bidi-font-weight:normal'&gt;&lt;span
+style='mso-bidi-font-style:italic'&gt;N&lt;/span&gt;&lt;/b&gt; of cards (1&lt;/span&gt;&lt;span
+style='font-family:SimSun'&gt;&amp;#8804;&lt;/span&gt;&lt;b style='mso-bidi-font-weight:normal'&gt;&lt;span
+lang=EN-US style='mso-bidi-font-style:italic'&gt;N&lt;/span&gt;&lt;/b&gt;&lt;span
+style='font-family:SimSun'&gt;&amp;#8804;&lt;/span&gt;&lt;span lang=EN-US&gt;100). Each of the
+next &lt;b style='mso-bidi-font-weight:normal'&gt;&lt;span style='mso-bidi-font-style:
+italic'&gt;N&lt;/span&gt;&lt;/b&gt; lines describes a card.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;Every card has the format: &lt;b style='mso-bidi-font-weight:
+normal'&gt;Name&lt;sub&gt;1&lt;/sub&gt; T&lt;sub&gt;i&lt;/sub&gt; Name&lt;sub&gt;2&lt;/sub&gt; &lt;span class=SpellE&gt;t&lt;sub&gt;i&lt;/sub&gt;&lt;/span&gt;&lt;/b&gt;,
+where &lt;b style='mso-bidi-font-weight:normal'&gt;Name&lt;sub&gt;1&lt;/sub&gt;&lt;/b&gt;&lt;sub&gt; &lt;/sub&gt;and
+&lt;b style='mso-bidi-font-weight:normal'&gt;Name&lt;sub&gt;2&lt;/sub&gt;&lt;/b&gt; are cards'
+names, consisting of uppercase letters and underlines. The length of
+cards' names is no more than 20 characters. Card &lt;b style='mso-bidi-font-weight:
+normal'&gt;Name&lt;sub&gt;1&lt;/sub&gt;&lt;/b&gt; is a card to be collected. It takes &lt;b
+style='mso-bidi-font-weight:normal'&gt;T&lt;sub&gt;i&lt;/sub&gt;&lt;/b&gt; to collect Card &lt;b
+style='mso-bidi-font-weight:normal'&gt;Name&lt;sub&gt;1&lt;/sub&gt;&lt;/b&gt; without Card &lt;b
+style='mso-bidi-font-weight:normal'&gt;Name&lt;sub&gt;2&lt;/sub&gt;&lt;/b&gt;. And it takes &lt;span
+class=SpellE&gt;&lt;b style='mso-bidi-font-weight:normal'&gt;t&lt;sub&gt;i&lt;/sub&gt;&lt;/b&gt;&lt;/span&gt; to
+collect Card &lt;b style='mso-bidi-font-weight:normal'&gt;Name&lt;sub&gt;1&lt;/sub&gt;&lt;/b&gt; with
+Card &lt;b style='mso-bidi-font-weight:normal'&gt;Name&lt;sub&gt;2&lt;/sub&gt;&lt;/b&gt;, where &lt;span
+class=SpellE&gt;&lt;b style='mso-bidi-font-weight:normal'&gt;t&lt;sub&gt;i&lt;/sub&gt;&lt;/b&gt;&lt;/span&gt;&amp;lt;&lt;b
+style='mso-bidi-font-weight:normal'&gt;T&lt;sub&gt;i&lt;/sub&gt;&lt;/b&gt;.&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;End of input is indicated by a line consisting of a single
+0.&lt;/span&gt;&lt;/p&gt;
+</InputSpec>
+        <OutputSpec xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US&gt;For each test case, output a single line. Each line should
+give a single integer: the shortest time.&lt;/span&gt;&lt;/p&gt;
+</OutputSpec>
+    </Problem>
+            <TestData>
+                <TimeLimit>1</TimeLimit>
+                <InputFile />
+                <OutputFile />
+                <InputFormat inputType="eof">
+                    <Terminator xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </InputFormat>
+                <OutputFormat>
+                    <Header xml:space="preserve" />
+                    <Footer xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </OutputFormat>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve" filename="1088.in">
+            </TestInput>
+                    <TestOutput xml:space="preserve" filename="1088.out">
+            </TestOutput>
+                </TestCase>
+            </TestData>
+            <Solution xml:space="preserve" language="cpp" filename="" />
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">1</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MCwCFF5BhPyL1wbyD+9uxOdJKYLUWxPcAhRuLU6OQgsQptf4nVjH+DBcZMZFOA==</Signature><PaperReference><![CDATA[1]]></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="true">
+            <Title>Ambiguous Dates</Title>
+            <Author>try</Author>
+            <Problem contentType="html">
+                <Description xml:space="preserve">Background &lt;BR&gt;&lt;BR&gt;
+
+More than 200 companies in more than 50 countries all over the world contribute towards the success of the Merck Group. You can imagine that every day Merck Group Headquarters at Darmstadt gets loads of mail from all over the world, the layout of all the letters following the customary style of their origin. In particular, the representation of a date is often ambiguous if you do not know in what order day, month, and year are given. &lt;BR&gt;&lt;BR&gt;
+
+For example, if you read 01-02-03, you do not know if that represents the first of February 1903, or 2003, or if it is the third of February 1901, or 2001. It might even be the second of March 2001, or some other permutation of the three numbers. Instead of the hyphens, there could also be slashes, backslashes, dots, commas, or no delimiters at all. &lt;BR&gt;&lt;BR&gt;
+
+
+Problem &lt;BR&gt;&lt;BR&gt;
+
+You are hired to write a program that converts dates given in an unknown format to the format of the Adjusted Calender of Merck (ACM). The latter specifies the number of days relative to November 4, 2001, an important day in Merck's history. &lt;BR&gt;
+</Description>
+                <InputSpec xml:space="preserve">The first line contains the number of scenarios. &lt;BR&gt;&lt;BR&gt;
+
+Every scenario contains a single date on a line by itself. A date consists of three parts: A day, a month, and a year given in any order, separated either by exactly two identical delimiters, or not separated by delimiters at all. Delimiters can be slashes '/', backslashes '\', hyphens '-', dots '.', or commas ','. The day and month are represented by a single digit, or by two digits, the first of which can be a leading zero. Valid years are in the range 1700 . . . 2299; either all four digits are given, or just the last two that specify the year relative to the century. In the latter case, a leading zero may be omitted. &lt;BR&gt;&lt;BR&gt;
+
+Dates are considered illegal if no valid interpretation exists. More precisely, a date is illegal if no classification of the digits as day, month, and year results in a valid date in the range January 1, 1700, to December 31, 2299. However, you can be sure that all dates given contain 3 to 8 digits, and no other characters except for maybe the two delimiters. &lt;BR&gt;&lt;BR&gt;
+
+Remember that February 29 is a valid date for leap-years only. A year is a leap-year if and only if either its number is divisible by four, but not by one hundred, or if its number is divisible by four hundred. So, in particular, 2000 is a leap-year, while 1700, 1800, 1900, 2100, or 2200 are not. &lt;BR&gt;
+</InputSpec>
+                <OutputSpec xml:space="preserve">The output for every scenario begins with a line containing "Scenario #i:", where i is the number of the scenario starting at 1. &lt;BR&gt;&lt;BR&gt;
+
+For every scenario, print all possible interpretations of the given date in the format of the Adjusted Calender of Merck (ACM), each interpretation in a single line, in ascending order and with duplicates removed. If no valid interpretation exists, print a line containing Illegal date instead. &lt;BR&gt;&lt;BR&gt;
+
+Terminate the output for each scenario with a single blank line.&lt;BR&gt;
+</OutputSpec>
+            </Problem>
+            <TestData>
+                <TimeLimit>1</TimeLimit>
+                <InputFile />
+                <OutputFile />
+                <InputFormat inputType="num">
+                    <Terminator xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </InputFormat>
+                <OutputFormat>
+                    <Header xml:space="preserve" />
+                    <Footer xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom">
+</Seperator>
+                </OutputFormat>
+                <TestCase difficulty="sample">
+                    <TestInput xml:space="preserve">1700-01-01
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #1:
+-110245
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="sample">
+                    <TestInput xml:space="preserve">1700-02-28
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #2:
+-110187
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="sample">
+                    <TestInput xml:space="preserve">1700-02-29
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #3:
+Illegal date
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">1700-03-01
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #4:
+-110243
+-110186
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">1999-12-31
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #5:
+-674
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">2000-01-01
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #6:
+-673
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">2000-02-29
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #7:
+-614
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">2000-03-01
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #8:
+-671
+-613
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">2000-12-31
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #9:
+-308
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">2001-01-01
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #10:
+-307
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">2299-02-28
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #11:
+108593
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">2299-02-29
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #12:
+Illegal date
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">2299-12-31
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #13:
+108899
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">2300-01-01
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #14:
+Illegal date
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">000000
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #15:
+Illegal date
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">000001
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #16:
+Illegal date
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">010100
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #17:
+-110245
+-73721
+-37197
+-673
+35852
+72376
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">010101
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #18:
+-109880
+-73356
+-36832
+-307
+36217
+72741
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">010112
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #19:
+-109869
+-109546
+-105863
+-73345
+-73022
+-69339
+-36821
+-36498
+-32815
+-296
+27
+3710
+36228
+36551
+40234
+72752
+73075
+76758
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">010113
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #20:
+-109868
+-105497
+-73344
+-68973
+-36820
+-32449
+-295
+4076
+36229
+40600
+72753
+77124
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">010128
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #21:
+-109853
+-100019
+-73329
+-63495
+-36805
+-26971
+-280
+9554
+36244
+46078
+72768
+82602
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">010129
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #22:
+-109852
+-99653
+-73328
+-63129
+-36804
+-26605
+-279
+9920
+36245
+46444
+72769
+82968
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">010130
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #23:
+-109851
+-99288
+-73327
+-62764
+-36803
+-26240
+-278
+10285
+36246
+46809
+72770
+83333
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">010131
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #24:
+-109850
+-98923
+-73326
+-62399
+-36802
+-25875
+-277
+10650
+36247
+47174
+72771
+83698
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">010132
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #25:
+-98558
+-62034
+-25510
+11015
+47539
+84063
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">010199
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #26:
+-74086
+-37562
+-1038
+35487
+72011
+108535
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve">00000000
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #27:
+Illegal date
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve">00000001
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #28:
+Illegal date
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve">00000100
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #29:
+Illegal date
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve">00000101
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #30:
+Illegal date
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve">99999999
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #31:
+Illegal date
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve">333
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #32:
+-109089
+-72565
+-36041
+484
+37008
+73532
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve">1111
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #33:
+-109870
+-109576
+-106228
+-73346
+-73052
+-69704
+-36822
+-36528
+-33180
+-297
+-3
+3345
+36227
+36521
+39869
+72751
+73045
+76393
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve">11111
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #34:
+-109566
+-106218
+-105924
+-73042
+-69694
+-69400
+-36518
+-33170
+-32876
+7
+3355
+3649
+36531
+39879
+40173
+73055
+76403
+76697
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve">221111
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #35:
+-105903
+-101896
+-69379
+-65372
+-32855
+-28848
+3670
+7677
+39870
+39900
+40194
+44201
+76393
+76718
+80725
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve">2211111
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #36:
+39910
+40174
+76403
+76697
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve">22111111
+</TestInput>
+                    <TestOutput xml:space="preserve">Scenario #37:
+76707
+</TestOutput>
+                </TestCase>
+            </TestData>
+            <Solution xml:space="preserve" language="cpp" filename="date">#include &lt;cstdio&gt;
+#include &lt;iostream&gt;
+#include &lt;cstring&gt;
+#include &lt;cstdlib&gt;
+#include &lt;cctype&gt;
+#include &lt;string&gt;
+#include &lt;vector&gt;
+#include &lt;algorithm&gt;
+#define MERCK 110658
+#define MINY 1700
+#define MAXY 2300
+#define INCY 100
+using namespace std;
+
+int daysinmonth[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
+vector&lt;int&gt; v;
+string sline,sa,sb,sc;
+char line[16];
+
+bool leap_year(int year)
+{
+    if(((year%4==0)&amp;&amp;(year%100!=0))||(year%400==0))
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+int getdays(int y,int m,int d)
+{
+    int i,total;
+    if(leap_year(y)==true)
+    {
+        daysinmonth[2]=29;
+    }
+    else
+    {
+        daysinmonth[2]=28;
+    }
+    if((y&lt;MINY)||(y&gt;=MAXY)||(m&lt;1)||(m&gt;12)||(d&lt;1)||(d&gt;daysinmonth[m]))
+    {
+        return -1;
+    }
+    total=(y-MINY)*365+(y-1)/4-(y-1)/100+(y-1)/400;
+    for(i=1;i&lt;m;i++)
+    {
+        total=total+daysinmonth[i];
+    }
+    total=total+d;
+    return total;
+}
+
+void checkvalid(string sy,string sm,string sd)
+{
+    int i,iyear,imonth,iday,total;
+    if(((sd.size()==1)||(sd.size()==2))&amp;&amp;((sm.size()==1)||(sm.size()==2))&amp;&amp;((sy.size()==1)||(sy.size()==2)||(sy.size()==4)))
+    {
+        iday=atoi(sd.c_str());
+        imonth=atoi(sm.c_str());
+        iyear=atoi(sy.c_str());
+        if(sy.size()==4)
+        {
+            total=getdays(iyear,imonth,iday);
+            if(total!=-1)
+            {
+                v.push_back(total-MERCK);
+            }
+        }
+        else
+        {
+            for(i=MINY;i&lt;MAXY;i=i+INCY)
+            {
+                total=getdays(iyear+i,imonth,iday);
+                if(total!=-1)
+                {
+                    v.push_back(total-MERCK);
+                }
+            }
+        }
+    }
+}
+
+void check(int p1,int p2,char type)
+{
+    if(type==0)
+    {
+        sa=sline.substr(0,p1);
+        sb=sline.substr(p1+1,p2-p1-1);
+        sc=sline.substr(p2+1);
+    }
+    else
+    {
+        sa=sline.substr(0,p1);
+        sb=sline.substr(p1,p2-p1);
+        sc=sline.substr(p2);
+    }
+    checkvalid(sa,sb,sc);
+    checkvalid(sa,sc,sb);
+    checkvalid(sb,sa,sc);
+    checkvalid(sb,sc,sa);
+    checkvalid(sc,sa,sb);
+    checkvalid(sc,sb,sa);
+}
+
+int main()
+{
+    int i,j,k,t,p1,p2,len;
+    scanf("%d",&amp;t);
+    for(k=0;k&lt;t;k++)
+    {
+        scanf("%s",line);
+        len=strlen(line);
+        sline=line;
+        p1=p2=-1;
+        for(i=0;i&lt;len;i++)
+        {
+            if(!isdigit(line[i]))
+            {
+                if(p1==-1)
+                {
+                    p1=i;
+                }
+                else
+                {
+                    p2=i;
+                }
+            }
+        }
+        v.clear();
+        if((p1!=-1)&amp;&amp;(p2!=-1))
+        {
+            check(p1,p2,0);
+        }
+        else
+        {
+            for(p1=1;p1&lt;len;p1++)
+            {
+                for(p2=p1+1;p2&lt;len;p2++)
+                {
+                    check(p1,p2,1);
+                }
+            }
+        }
+        sort(v.begin(),v.end());
+        v.erase(unique(v.begin(),v.end()),v.end());
+        printf("Scenario #%d:\n",k+1);
+        if(v.size()&gt;0)
+        {
+            for(i=0;i&lt;v.size();i++)
+            {
+                printf("%d\n",v[i]);
+            }
+        }
+        else
+        {
+            printf("Illegal date\n");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+</Solution>
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

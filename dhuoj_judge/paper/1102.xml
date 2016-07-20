@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">5</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MCwCFFOFKnHtNDWaUhbZFX6zXiJePIJ5AhQQUPCmZrDQexSdtyz4j2bINLycYQ==</Signature><PaperReference><![CDATA[1]]></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="false">
+            <Title>Decrypt Messages</Title>
+    <Author />
+    <Problem contentType="html">
+        <Description xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&lt;span style='mso-tab-count:
+1'&gt;&amp;nbsp;&amp;nbsp; &lt;/span&gt;In the game BioHazard 4, the president's daughter has
+been abducted by some crazy villagers. Leon S. Kennedy, the secret agent of
+White House, goes to rescue her. He keeps in contact with Hunnigan, the
+president's secretary.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;But
+the time in their contact log has been encrypted, using the following method:&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;Count
+the number of seconds from 2000.01.01 00:00:00 to that time, assume this number
+is&amp;nbsp;&lt;b&gt;x&lt;/b&gt;. Then calculate&amp;nbsp;&lt;b&gt;x&lt;sup&gt;q&lt;/sup&gt;&lt;/b&gt;, modulo it by a
+prime number&amp;nbsp;&lt;b&gt;p&lt;/b&gt;. The remainder&amp;nbsp;&lt;b&gt;a &lt;/b&gt;is the encrypted
+number.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;Your
+task is to help Leon write a program to decrypt the contact log, and tell him
+all the possible original time.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New";
+mso-bidi-font-style:italic'&gt;1.&lt;/span&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;nbsp;Remember
+that if the year can be divided evenly by 4 but can't be divided evenly by 100,
+or it can be divided evenly by 400, this year is a leap year. The February of a
+leap year has 29 days, while the February of other years has 28 days.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New";
+mso-bidi-font-style:italic'&gt;2.&lt;/span&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&amp;nbsp;In
+this problem, if the year modulo 10 is 5 or 8, at the end of this year, there
+is one &amp;#8220;leap second&amp;#8221;, i.e., the second after 2005.12.31 23:59:59 is
+2005.12.31 23:59:60, and after that second, it's 2006.01.01 00:00:00.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;You
+may assume that from 2000.01.01 00:00:00 till that time, less than &lt;b
+style='mso-bidi-font-weight:normal'&gt;p&lt;/b&gt; seconds have passed.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;</Description>
+        <InputSpec xml:space="preserve">&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;There
+are multiple test cases.&lt;b style='mso-bidi-font-weight:normal'&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;The
+first line of the input contains an integer &lt;b style='mso-bidi-font-weight:
+normal'&gt;T&lt;/b&gt;, meaning the number of the test cases.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;For
+each test case, a single line of three integers: &lt;b style='mso-bidi-font-weight:
+normal'&gt;p&lt;/b&gt;, &lt;b style='mso-bidi-font-weight:normal'&gt;q&lt;/b&gt;, and &lt;b
+style='mso-bidi-font-weight:normal'&gt;a&lt;/b&gt;. (2&amp;lt;&lt;b style='mso-bidi-font-weight:
+normal'&gt;p&lt;/b&gt;&amp;#8804;1000000007, 1&amp;lt;&lt;b style='mso-bidi-font-weight:normal'&gt;q&lt;/b&gt;&amp;#8804;10,
+0&amp;#8804;&lt;b style='mso-bidi-font-weight:normal'&gt;a&lt;/b&gt;&amp;lt;&lt;b style='mso-bidi-font-weight:
+normal'&gt;p&lt;/b&gt;, &lt;b style='mso-bidi-font-weight:normal'&gt;p&lt;/b&gt; is always a prime.)&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+</InputSpec>
+        <OutputSpec xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&lt;span style='mso-tab-count:
+1'&gt;&amp;nbsp;&amp;nbsp; &lt;/span&gt;The time. If there are multiple solutions, you must
+output all possible solutions in chronological order.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;If
+the solution doesn't exist, output &lt;i style='mso-bidi-font-style:normal'&gt;&lt;u&gt;Transmission
+error&lt;/u&gt;&lt;/i&gt; instead.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;See
+the sample output for further details.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+</OutputSpec>
+    </Problem>
+    <TestData>
+        <TimeLimit>20</TimeLimit>
+                <InputFile />
+                <OutputFile />
+                <InputFormat inputType="eof">
+                    <Terminator xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </InputFormat>
+                <OutputFormat>
+                    <Header xml:space="preserve" />
+                    <Footer xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </OutputFormat>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve" filename="1102.in">
+            </TestInput>
+                    <TestOutput xml:space="preserve" filename="1102.out">
+            </TestOutput>
+                </TestCase>
+            </TestData>
+            <Solution xml:space="preserve" language="cpp" filename="" />
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

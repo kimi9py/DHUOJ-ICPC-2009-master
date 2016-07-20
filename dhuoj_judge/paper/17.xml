@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>2014年东华大学ACM校内友谊赛</PaperVersion><PaperID>2014年东华大学ACM校内友谊赛</PaperID><PaperName>2014年东华大学ACM校内友谊赛（程序设计语言组）</PaperName><PaperAuthor>东华大学ACM大学生协会</PaperAuthor><PaperTotalTime unit="hour">3</PaperTotalTime><PaperStartTime zone="+8">20141216 13:00</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEAtUGAhZ90uQl4aS4HchUIaS4Xzh/5285VYulMaTKeV4MauchrT0/Zo/iQYijfA+6B2hjP+KGXlX6jycg6A+uKgA==</PublicKey><Signature>MCwCFGQfqpPxvhAuyH/QB/A9QdoMoIDWAhR3TjXtbYSd+Ftf1XjJLrcwxixKqQ==</Signature><PaperReference><![CDATA[2014年东华大学ACM校内友谊赛]]></PaperReference><PaperDescribe><![CDATA[2014年东华大学ACM校内友谊赛
+
+活动背景
+       ACM国际大学生程序设计竞赛（简称ACM/ICPC）是由国际计算机界历史最悠久、最具权威性的组织ACM（Association for Computing Machinery）主办，是世界上公认的规模最大、水平最高、参与人数最多的国际大学生程序设计竞赛，其目的旨在使大学生运用计算机来充分展示分析问题和解决问题的能力。该项竞赛从1970年举办至今已历37届，因历届竞赛都荟萃了世界各大洲的精英，云集了计算机界的“希望之星”，而受到国际各知名大学的重视，并受到全世界各著名计算机公司如Microsoft、IBM、Google、Facebook等公司的高度关注，成为世界各国大学生最具影响力的国际级计算机类的赛事，此项竞赛所颁发的获奖证书也为世界各著名计算机公司、各知名大学所认可。近年来国内越来越多的知名高校在计算机学科研究生复试中开始采用ACM试题作为上机考试内容。
+
+竞赛宗旨
+       本次友谊赛旨在培养我校大学生的程序设计能力。在程序设计过程中激发创新意识，促进我校大学生程序设计的整体水平，并选拔优秀选手参加ACM新手入门训练。
+
+
+友谊赛比赛规则
+
+友谊赛采用ACM/ICPC规则与方式, 均为个人赛,无团队组别。
+比赛规则与传统ACM比赛规则略有不同，请参赛人员认真阅读比赛规则。
+      
+       1.  竞赛时，允许参赛选手携带源代码参考书、手册、字典等纸质参考资料以及草稿纸，严禁使用任何电子存储工具或通讯设备。
+      
+       2.  参赛选手可以针对题目描述中的不明确或错误的部分提问。如果评委确认题目中确实存在不明确或错误的部分，将会通告所有参赛选手进行声明或更正。
+      
+       3.  本大赛将进行现场实时排名，对成绩有疑问的选手可以当场向组委会投诉，投诉截止时间为比赛结束后30分钟，在截止时间以后的投诉均视为无效。
+      
+       4.  竞赛所用编程语言为C和C++，操作系统为Windows，比赛系统所用编译器为gcc和g++，不使用vc++。数据结构组竞赛试题全部采用英语描述，程序设计语言组竞赛试题全部采用中文描述。      
+ 
+       5.  所有选手使用的计算机具有完全相同的规格配置。
+ 
+       6.  在竞赛中，参赛队员不得和其他选手以及竞赛组委会指定工作人员以外的人交谈；系统支持人员可以回答和系统相关的问题，例如解释系统错误信。]]></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="2">
+        <ProblemArchive version="1.0" checked="true">
+            <Title>Problem 7 上个月的天数</Title>
+            <Author>Zhuping Zang</Author>
+            <Problem contentType="html">
+                <Description xml:space="preserve">请根据一个年份和月份，求出该月上个月的天数。注意：2月的天数取决于是否闰年。</Description>
+                <InputSpec xml:space="preserve">你的程序需要从标准输入设备（通常为键盘）中读入多组测试数据。每组输入数据占一行，其中包含两个整数y和m（1501≤y≤2049，1≤m≤12），依次表示年份和月份；这两个整数之间以一个空格隔开。在行首和行尾没有多余的空格。</InputSpec>
+                <OutputSpec xml:space="preserve">对每组测试数据，你的程序需要向标准输出设备依次输出一组对应的答案。每组答案占一行，其中包含一个整数，即该月上个月的天数。在行首和行尾不要输出多余的空格；在所有数据前后不要输出多余的空行；两组数据之间也不要输出多余的空行。</OutputSpec>
+            </Problem>
+            <EncryptedData xmlns="http://w2c.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Element">
+                <EncryptionMethod xmlns="" Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
+                <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                    <KeyName xmlns="">3z3T/UlPqOA=</KeyName>
+                </ds:KeyInfo>
+                <CipherData xmlns="">
+                    <CipherValue>WQzKuQnsfrE3lUoWi956QiIlBTrSCMeY21U1gV3NiBpZNAfxkBFFX0aApbQj9g4Ax2dtzK9jARzvAYxoSwZ8X8rXDSfFJ619GgaoYKXlMEc6SjDMPhrE2b3XgOhGbmWJBgvzXKr9VBToX9DYKzMdKWESI4uYZz3DmIeyaaHxaImsb/KWvN/WZtiTE82HWhxqFLBQboKAP8VLHCtnSpkJl5DrGYJzRH2ZJUvB2GPvJomgHStHKRXdLJ429O3MBhfZJyaRkRpUBfS+g2emDxg6mqAdK0cpFd0sqYIZKmWSA5qaPLa0IUQKDe3rDOrBpIDui3DGlBjou/KFypr+re3SGOcr1wmfW5lLdaME+qP1PvRjvH2nQswreKU6KM/QC8HQYl56EuJ95I7nK9cJn1uZSyvb1iVhM08dtad/nnF4au4y5x8hO9HTkxRuXqmSXPyiTar+2MSsEiZk7GLszHsqirELeg99k4OEifspjx3wpTzjE7TYsWwGV6AdK0cpFd0sXfLoei4B7lUPIQ98rsncJucr1wmfW5lL0A+q6YwmlN297C4ODN0dOqAdK0cpFd0s4919BY4wDlG1p3+ecXhq7vb2fhURpx31XlAFtaGFJIQ5IjSZX35tDCst3fyEAe4BwyYfxecYZQHz/CV33Knxi8DoMFmwi9CBBgviPYVd3dlzSfjlRNNWOaAdK0cpFd0s+gzSjs5E5iuQ3DKapqh+4RDVws/FF34SoB0rRykV3SzTOT7P2LXYzhYc0Fyn9SNMwRNSaG56XSKgHStHKRXdLKAdK0cpFd0sto7+m6c6HYVIMk5h1of5kUjz/sM3AMkBbLBMmzynDGaqFNcmeqWHHZRxEFcXd9I4</CipherValue>
+                </CipherData>
+            </EncryptedData>
+            <EncryptedData xmlns="http://w2c.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Element">
+                <EncryptionMethod xmlns="" Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
+                <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                    <KeyName xmlns="">ZF4ftj2kaFQ=</KeyName>
+                </ds:KeyInfo>
+                <CipherData xmlns="">
+                    <CipherValue>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</CipherValue>
+                </CipherData>
+            </EncryptedData>
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

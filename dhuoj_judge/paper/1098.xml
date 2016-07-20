@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">5</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MCwCFFOFKnHtNDWaUhbZFX6zXiJePIJ5AhQQUPCmZrDQexSdtyz4j2bINLycYQ==</Signature><PaperReference><![CDATA[1]]></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="false">
+            <Title>Completely Difficult</Title>
+    <Author />
+    <Problem contentType="html">
+        <Description xml:space="preserve">&lt;p class=MsoNormal&gt;&lt;span lang=EN-US style='mso-bidi-font-size:10.5pt;
+font-family:"Courier New"'&gt;&lt;span style='mso-tab-count:1'&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;Given
+an equation:&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p class=MsoNormal align=center style='text-align:center'&gt;
+&lt;IMG SRC="1098.jpg"&gt;
+&lt;/p&gt;
+ 
+&lt;p class=MsoNormal style='text-indent:21.0pt;mso-char-indent-count:2.0'&gt;&lt;span
+lang=EN-US style='mso-bidi-font-size:10.5pt;font-family:"Courier New"'&gt;It&amp;#8217;s
+well known that it has at most 3 roots, for positive &lt;b style='mso-bidi-font-weight:
+normal'&gt;a&lt;/b&gt; and &lt;b style='mso-bidi-font-weight:normal'&gt;b&lt;/b&gt;, But solving
+this equation is completely difficult. But your task is much easier: given two roots
+of the equation, try to find out the third one.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+</Description>
+        <InputSpec xml:space="preserve">&lt;p class=MsoNormal style='text-indent:21.0pt'&gt;&lt;span lang=EN-US
+style='mso-bidi-font-size:10.5pt;font-family:"Courier New"'&gt;The input contains
+several test cases. The number of test cases &lt;b style='mso-bidi-font-weight:
+normal'&gt;T&lt;/b&gt; given in the first line. For each test cases, only line contains &lt;b
+style='mso-bidi-font-weight:normal'&gt;a&lt;/b&gt;, &lt;b style='mso-bidi-font-weight:normal'&gt;b&lt;/b&gt;,
+&lt;b style='mso-bidi-font-weight:normal'&gt;x1&lt;/b&gt; and &lt;b style='mso-bidi-font-weight:
+normal'&gt;x2&lt;/b&gt;, so that x1 and x2 are two different roots of equation 
+&lt;IMG SRC="1098.jpg"&gt;
+. (7&amp;#8804;&lt;b style='mso-bidi-font-weight:normal'&gt;b&lt;/b&gt;&amp;#8804;2000000011,
+&lt;b style='mso-bidi-font-weight:normal'&gt;b&lt;/b&gt; is always prime, 0&amp;lt;&lt;b
+style='mso-bidi-font-weight:normal'&gt;a&lt;/b&gt;,&lt;b style='mso-bidi-font-weight:normal'&gt;x1&lt;/b&gt;,&lt;b
+style='mso-bidi-font-weight:normal'&gt;x2&lt;/b&gt;&amp;lt;&lt;b style='mso-bidi-font-weight:
+normal'&gt;b&lt;/b&gt;, &lt;b style='mso-bidi-font-weight:normal'&gt;x1&lt;/b&gt;&amp;#8800;&lt;b
+style='mso-bidi-font-weight:normal'&gt;x2, &lt;/b&gt;and there always be 3 different roots
+for the given equation)&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+</InputSpec>
+        <OutputSpec xml:space="preserve">&lt;p class=MsoNormal style='text-indent:21.0pt'&gt;&lt;span lang=EN-US
+style='mso-bidi-font-size:10.5pt;font-family:"Courier New"'&gt;For each test case,
+output case number and the third root of the equation. See sample input and
+output for further details.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+</OutputSpec>
+        <Figure filename="1098.jpg">
+            <Text />
+            <Image xml:space="preserve">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</Image>
+        </Figure>
+    </Problem>
+            <TestData>
+                <TimeLimit>1</TimeLimit>
+                <InputFile />
+                <OutputFile />
+                <InputFormat inputType="eof">
+                    <Terminator xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </InputFormat>
+                <OutputFormat>
+                    <Header xml:space="preserve" />
+                    <Footer xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </OutputFormat>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve" filename="1098.in">
+            </TestInput>
+                    <TestOutput xml:space="preserve" filename="1098.out">
+            </TestOutput>
+                </TestCase>
+            </TestData>
+            <Solution xml:space="preserve" language="cpp" filename="" />
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

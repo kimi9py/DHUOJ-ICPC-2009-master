@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">5</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MC0CFFxlOpiuauKbw5i63NS4BDwZDMFVAhUAhRcVTcU1TLPkum/wrH5Df/JFAdo=</Signature><PaperReference><![CDATA[1]]></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="false">
+            <Title>Integer's Power</Title>
+            <Author />
+            <Problem contentType="html">
+                <Description xml:space="preserve">LMY and YY are number theory lovers. They like to find and solve some interesting number theory problems together. One day, they become interested in some special numbers, which can be expressed as powers of smaller numbers.&lt;BR&gt;&lt;BR&gt;
+
+For example, 9=3^2, 64=2^6, 1000=10^3 …&lt;BR&gt;&lt;BR&gt;
+
+For a given positive integer y, if we can find a largest integer k and a smallest positive integer x, such that x^k=y, then the power of y is regarded as k.&lt;BR&gt;&lt;BR&gt;
+
+It is very easy to find the power of an integer. For example:&lt;BR&gt;&lt;BR&gt;
+
+The power of 9 is 2.&lt;BR&gt;
+The power of 64 is 6.&lt;BR&gt;
+The power of 1000 is 3.&lt;BR&gt;
+The power of 99 is 1.&lt;BR&gt;
+The power of 1 does not exist.&lt;BR&gt;&lt;BR&gt;
+
+But YY wants to calculate the sum of the power of the integers from a to b. It seems not easy. Can you help him?</Description>
+                <InputSpec xml:space="preserve">The input consists of multiple test cases.&lt;BR&gt;
+For each test case, there is one line containing two integers a and b. (2≤a≤b≤10^18)&lt;BR&gt;&lt;BR&gt;
+
+End of input is indicated by a line containing two zeros.</InputSpec>
+                <OutputSpec xml:space="preserve">For each test case, output the sum of the power of the integers from a to b.</OutputSpec>
+            </Problem>
+            <TestData>
+                <TimeLimit>10</TimeLimit>
+                <InputFile />
+                <OutputFile />
+                <InputFormat inputType="eof">
+                    <Terminator xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </InputFormat>
+                <OutputFormat>
+                    <Header xml:space="preserve" />
+                    <Footer xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </OutputFormat>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve">2 2
+4 4
+9 25
+25 27
+26 32
+32 63
+32 64
+33 64
+50 65
+730 1728
+100 10000
+759375 782757789696
+3462825991689 582622237229761
+688806796226641 2258823587809657
+450283905890997363 576460752303423487
+450283905890997364 576460752303423488
+298023223876953126 558545864083284006
+298023223876953125 558545864083284007
+1000000000000 100000000000000
+1000000000000000 10000000000000000
+100000000000000000 999999999999999999
+913517247483640899 994014980014994001
+982134461213542729 999997000002999999
+999999998000000001 1000000000000000000
+2 1000000000000000000
+0 0
+</TestInput>
+                    <TestOutput xml:space="preserve">1
+2
+22
+6
+13
+38
+44
+39
+21
+1029
+10116
+782757936623
+579159433662634
+1570016812955861
+126176846500780115
+126176846500780137
+260522640408096466
+260522640408096512
+99000009079938
+9000000068620429
+900000000684879611
+80497732572632220
+17862538798441141
+2000000018
+1000000001002087980
+</TestOutput>
+                </TestCase>
+            </TestData>
+            <Solution xml:space="preserve" language="cpp" filename="" />
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

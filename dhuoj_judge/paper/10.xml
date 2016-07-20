@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>2014年东华大学ACM校内友谊赛</PaperVersion><PaperID>2014年东华大学ACM校内友谊赛</PaperID><PaperName>2014年东华大学ACM校内友谊赛</PaperName><PaperAuthor>东华大学ACM大学生协会</PaperAuthor><PaperTotalTime unit="hour">5</PaperTotalTime><PaperStartTime zone="+8">20141216 12:30</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEAtUGAhZ90uQl4aS4HchUIaS4Xzh/5285VYulMaTKeV4MauchrT0/Zo/iQYijfA+6B2hjP+KGXlX6jycg6A+uKgA==</PublicKey><Signature>MCwCFElbfViShBmRXlMbUADkukZVA7ZjAhQk87X4SyP2MyA+iswmip49nEgnfw==</Signature><PaperReference><![CDATA[2014年东华大学ACM校内友谊赛]]></PaperReference><PaperDescribe><![CDATA[2014年东华大学ACM校内友谊赛
+
+活动背景
+       ACM国际大学生程序设计竞赛（简称ACM/ICPC）是由国际计算机界历史最悠久、最具权威性的组织ACM（Association for Computing Machinery）主办，是世界上公认的规模最大、水平最高、参与人数最多的国际大学生程序设计竞赛，其目的旨在使大学生运用计算机来充分展示分析问题和解决问题的能力。该项竞赛从1970年举办至今已历37届，因历届竞赛都荟萃了世界各大洲的精英，云集了计算机界的“希望之星”，而受到国际各知名大学的重视，并受到全世界各著名计算机公司如Microsoft、IBM、Google、Facebook等公司的高度关注，成为世界各国大学生最具影响力的国际级计算机类的赛事，此项竞赛所颁发的获奖证书也为世界各著名计算机公司、各知名大学所认可。近年来国内越来越多的知名高校在计算机学科研究生复试中开始采用ACM试题作为上机考试内容。
+
+竞赛宗旨
+       本次友谊赛旨在培养我校大学生的程序设计能力。在程序设计过程中激发创新意识，促进我校大学生程序设计的整体水平，并选拔优秀选手参加ACM新手入门训练。
+
+
+友谊赛比赛规则
+
+友谊赛采用ACM/ICPC规则与方式, 均为个人赛,无团队组别。
+比赛规则与传统ACM比赛规则略有不同，请参赛人员认真阅读比赛规则。
+      
+       1.  竞赛时，允许参赛选手携带源代码参考书、手册、字典等纸质参考资料以及草稿纸，严禁使用任何电子存储工具或通讯设备。
+      
+       2.  参赛选手可以针对题目描述中的不明确或错误的部分提问。如果评委确认题目中确实存在不明确或错误的部分，将会通告所有参赛选手进行声明或更正。
+      
+       3.  本大赛将进行现场实时排名，对成绩有疑问的选手可以当场向组委会投诉，投诉截止时间为比赛结束后30分钟，在截止时间以后的投诉均视为无效。
+      
+       4.  竞赛所用编程语言为C和C++，操作系统为Windows，比赛系统所用编译器为gcc和g++，不使用vc++。数据结构组竞赛试题全部采用英语描述，程序设计语言组竞赛试题全部采用中文描述。      
+ 
+       5.  所有选手使用的计算机具有完全相同的规格配置。
+ 
+       6.  在竞赛中，参赛队员不得和其他选手以及竞赛组委会指定工作人员以外的人交谈；系统支持人员可以回答和系统相关的问题，例如解释系统错误信。]]></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="2">
+        <ProblemArchive version="1.0" checked="true">
+            <Title>Yejie Zhou's Problem</Title>
+            <Author>ying_5</Author>
+            <Problem contentType="html">
+                <Description xml:space="preserve">As we know Yejie Zhou is a tall wealthy and handsome guy. He has many potential girlfriends but here the problem comes. He doesn't know whom he should date with. For every girl, Yejie Zhou has a value V denoting good feeling. And there is one kind of girls who are called ‘girl god’ (Chinese English) has the max value ----  ‘-1’. In other word, Yejie Zhou will choose girl god first. The other girl's value is positive and the larger value means Yejie Zhou think the girl is better. He wants to date with the best girl.</Description>
+                <InputSpec xml:space="preserve">The first line has a number T defining how many data sets.&lt;BR&gt;
+The first line of the data set contains integers N (N ≤ 50,000) indicating the number of operations. Each of the next N lines describes an operation.&lt;BR&gt;
+There are two different operations described in different format shown below:&lt;BR&gt;
+A  Name Value : Yejie Zhou finds the new potential girlfriend.&lt;BR&gt;
+Q  : output whom should Yejie Zhou dated with.&lt;BR&gt;
+We are sure there won’t be two girls having the same name or the same Value defining the good feeling. But there may be many ‘girl god’. If Yejie Zhou doesn’t know any girl, it will not have ‘Q’ operation.&lt;BR&gt;</InputSpec>
+                <OutputSpec xml:space="preserve">When you meet an operation Q, you should output one girl's name Yejie Zhou wants to meet with this moment. Yejie Zhou won't date with the same girl in the future. If there are more than one ‘girl god’, you should output the lower alphabet order just as the second example.</OutputSpec>
+            </Problem>
+            <EncryptedData xmlns="http://w2c.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Element">
+                <EncryptionMethod xmlns="" Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
+                <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                    <KeyName xmlns="">Mr8pKpK2l8E=</KeyName>
+                </ds:KeyInfo>
+                <CipherData xmlns="">
+                    <CipherValue>6EyPuwCxPIX5ZvCSDeB/Ct0RPo4Ia72YSkIAg4PBt1eAjtczXY/hml5meRehm+RJ1bhPPxZtyK08JFWO/gcTlZlkUTS1ymz2CW0PiRASmxJ2P7vjpP+KN1yRIJ6TkYDv4qXB2CSfW9ArhOSWyz/G4ag9Tbw7E4Hhbs6tmEuGXUs4r+okuies3RVF7WSxsxhyZl2e9q1UyPJbrXNCsd1h2oK7BZkrgvpdNbhriy92We+oV4aMy98uANGrNYb8BDOFFrPvZ86iXgucW5ACC3uYnWdAYgJEHj5WtvB4XMAdAEas2PlZXpOvFlyuB0Z2HwYNX9ZPX8N818MHuARq8bqrwlzOt93TZ45PBoNBtcpR+Kb0FIukKk9ZB+lg03ueIELs13/Yz9dH9MOr2afOZNHt/RlFs8kZjkFh/4gLcLNnGG80tEZZr/5nA6qL0v85v2jnziWJ7qzKrIRG/+PeVyNItt2722ff0jUM7wjoSGV0u44yx9+sRks2heHVzOmCTnXxPD2jXn1K7EzhPNZSItK7Kfle9XsRtLhcam6AaLKyzWGXEX7xC/LyfLAwdQStERm8XQjHGJFWlOfNttnI9y2HcAi+Tg/QoYM+tBFzMukiWd6dtfoDoyQYofYE5QMbqnDq+a0Ql5ZmkuUDGYKacELk2Zfd8qerKtB0kSsZ1HGtmvUGUw41xNqS+wpfCZqGVlMg3g8aMDOWjEw37bLyZt+avwO8mL07RLi7UieAFVhZziwrJrCn9JGGhkb/adt2k915gD09dEpJ6Xg0PpqnfQeFyoqUTdidVzME6uy/50Uu8AlWLb8dHJmRU0Qb199x3th7bom88TZ4lfEao8HWerVMzgg6/VfvxHyKB0OjVqkIhsLatzgMCCdDcJJBq4wrz9Tg1louG5vsUVn4Mp31dUy+sbTYOYgTKMEmoIkpg2El92Hdu9tn39I1DObxq13kqlVyB0OjVqkIhsLWWi4bm+xRWVuc7c+1yRgLaUG1y3UwbHnWWi4bm+xRWbjY6u1YKAiKc8JJ7/Kb9wrWWi4bm+xRWZIoPGz4qFTKdNrS+WMhg+vJWsHj53jX1l0rRfpKC1WaFrPvZ86iXgvWWi4bm+xRWQ/80aavkFW77nXU+0aQqzDWWi4bm+xRWdZaLhub7FFZ5uGOwQzrYdHGM3FMGjjNAuoW8I/pKp8FoIkpg2El92HWWi4bm+xRWWv+7kts9IOWVsehSSHRKznWWi4bm+xRWeMXpHzPnr/hpwrvjy7jmi87dUMs0ZYIoXjjZVLsmcOQ1louG5vsUVkn0//C/8xXu9ZaLhub7FFZBoNBtcpR+KbWWi4bm+xRWTZQn45c8xI5LJRD6oaVJmDWWi4bm+xRWR8tO2yzKDAepTMGTWa+UEg0iaWdZ8NDUdZaLhub7FFZ1louG5vsUVnJFL9ixrDTJmS3wT39EM3Ec6uKbshs3mnWWi4bm+xRWdZaLhub7FFZRfSD5OYXHIGVOgN5v8WqFtZaLhub7FFZ1louG5vsUVldKKeghN6exY3KAVOpumlTZNEwlCrhyMFlhN8se3IqlHvEiJkWUeUp1louG5vsUVlG6etVPVEm7AdDo1apCIbC1louG5vsUVmkyT9x1LtwX/1oiv/GvAhEwZQtnGe8fvPEOSAa04pUJ9ZaLhub7FFZ4818ZkTeF9Wy86OuSj7PaVbHoUkh0Ss51louG5vsUVlurdiE9qcF22aR6EGz/2tr2eSyMmnf9TSeriABjVxKFh1GT1Zbq2aH1louG5vsUVm00dk1Cxfz+1bHoUkh0Ss5tuFq59zO2K200dk1Cxfz+3XYdco+TYMxuNRYR6AhAiJ6hYqZR/rXJA==</CipherValue>
+                </CipherData>
+            </EncryptedData>
+            <EncryptedData xmlns="http://w2c.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Element">
+                <EncryptionMethod xmlns="" Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
+                <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                    <KeyName xmlns="">eahil/Sn/S8=</KeyName>
+                </ds:KeyInfo>
+                <CipherData xmlns="">
+                    <CipherValue>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</CipherValue>
+                </CipherData>
+            </EncryptedData>
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

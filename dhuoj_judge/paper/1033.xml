@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">1</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MCwCFFdsXYC+su8d6foHpj2vQnp1wcYaAhR7gKHeJLzE0+NvhK6y+3xw/HMEkQ==</Signature><PaperReference><![CDATA[1]]></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="true">
+            <Title>Binomial Showdown</Title>
+            <Author>Hu, Yongjian</Author>
+            <Problem contentType="html">
+                <Description xml:space="preserve">In how many ways can you choose k elements out of n elements, not taking order into account? 
+Write a program to compute this number.
+</Description>
+                <InputSpec xml:space="preserve">The input will contain one or more test cases. 
+Each test case consists of one line containing two integers n (n≥1) and k (0≤k≤n). 
+Input is terminated by two zeroes for n and k.
+</InputSpec>
+                <OutputSpec xml:space="preserve">For each test case, print one line containing the required number. This number will always fit into an integer, i.e. it will be less than 2&lt;SUP&gt;31&lt;/SUP&gt;. 
+Warning: Don't underestimate the problem. The result will fit into an integer - but if all intermediate results arising during the computation will also fit into an integer depends on your algorithm. The test cases will go to the limit.
+</OutputSpec>
+            </Problem>
+            <TestData>
+                <TimeLimit>1</TimeLimit>
+                <InputFile />
+                <OutputFile />
+                <InputFormat inputType="zero">
+                    <Terminator xml:space="preserve">0 0</Terminator>
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </InputFormat>
+                <OutputFormat>
+                    <Header xml:space="preserve" />
+                    <Footer xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </OutputFormat>
+                <TestCase difficulty="sample">
+                    <TestInput xml:space="preserve">4 2
+</TestInput>
+                    <TestOutput xml:space="preserve">6
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="sample">
+                    <TestInput xml:space="preserve">10 5
+</TestInput>
+                    <TestOutput xml:space="preserve">252
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">49 6
+</TestInput>
+                    <TestOutput xml:space="preserve">13983816
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">2000000000 0
+</TestInput>
+                    <TestOutput xml:space="preserve">1
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">2000000000 1
+</TestInput>
+                    <TestOutput xml:space="preserve">2000000000
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">2000000000 1999999999
+</TestInput>
+                    <TestOutput xml:space="preserve">2000000000
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">2000000000 2000000000
+</TestInput>
+                    <TestOutput xml:space="preserve">1
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">65000 2
+</TestInput>
+                    <TestOutput xml:space="preserve">2112467500
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">65000 64998
+</TestInput>
+                    <TestOutput xml:space="preserve">2112467500
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">64999 2
+</TestInput>
+                    <TestOutput xml:space="preserve">2112402501
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">64999 64997
+</TestInput>
+                    <TestOutput xml:space="preserve">2112402501
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">2300 3
+</TestInput>
+                    <TestOutput xml:space="preserve">2025189100
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">2300 2297
+</TestInput>
+                    <TestOutput xml:space="preserve">2025189100
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">400 4
+</TestInput>
+                    <TestOutput xml:space="preserve">1050739900
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">100 5
+</TestInput>
+                    <TestOutput xml:space="preserve">75287520
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">100 6
+</TestInput>
+                    <TestOutput xml:space="preserve">1192052400
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">70 7
+</TestInput>
+                    <TestOutput xml:space="preserve">1198774720
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">50 8
+</TestInput>
+                    <TestOutput xml:space="preserve">536878650
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">40 9
+</TestInput>
+                    <TestOutput xml:space="preserve">273438880
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">40 10
+</TestInput>
+                    <TestOutput xml:space="preserve">847660528
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">33 11
+</TestInput>
+                    <TestOutput xml:space="preserve">193536720
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">33 12
+</TestInput>
+                    <TestOutput xml:space="preserve">354817320
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">33 13
+</TestInput>
+                    <TestOutput xml:space="preserve">573166440
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">33 14
+</TestInput>
+                    <TestOutput xml:space="preserve">818809200
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">33 15
+</TestInput>
+                    <TestOutput xml:space="preserve">1037158320
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve">33 16
+</TestInput>
+                    <TestOutput xml:space="preserve">1166803110
+</TestOutput>
+                </TestCase>
+            </TestData>
+            <Solution xml:space="preserve" language="cpp" filename="Binomial">#include &lt;stdio.h&gt;
+
+int n,k;
+int bino[100000][20];
+
+void init()  /* compute table with Pascal's Triangle */
+{
+  bino[0][0] = 1;
+  for (k=1; k&lt;20; k++)
+    bino[0][k] = 0;
+  for (n=1; n&lt;100000; n++)
+    {
+      bino[n][0] = 1;
+      for (k=1; k&lt;20; k++)
+	bino[n][k] = bino[n-1][k-1]+bino[n-1][k];
+    }
+}
+
+int read_case()
+{
+  scanf("%d %d",&amp;n,&amp;k);
+  if (n==0 &amp;&amp; k==0) return 0;
+  return 1;
+}
+
+void solve_case()
+{
+  if (k&gt;n/2) k=n-k;
+  if (k==0)
+    printf("1\n");
+  else if (k==1)
+    printf("%d\n",n);
+  else
+    printf("%d\n",bino[n][k]);
+}
+
+int main()
+{
+  init();
+  while (read_case()) solve_case();
+  return 0;
+}</Solution>
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

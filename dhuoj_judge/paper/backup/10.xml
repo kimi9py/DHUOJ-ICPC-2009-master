@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>2</PaperVersion><PaperID>2014ACM校内友谊赛</PaperID><PaperName>2014ACM校内友谊赛</PaperName><PaperAuthor>DHUACM</PaperAuthor><PaperTotalTime unit="hour">5</PaperTotalTime><PaperStartTime zone="+8">20141106</PaperStartTime><PaperProblemSum>１</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MCwCFE6ta11nmFJ7v6Nq5T6V+XVFkNPfAhRhObhTSoaQ+c99zF6DGjri567sIg==</Signature><PaperReference><![CDATA[2014ACM校内友谊赛]]></PaperReference><PaperDescribe><![CDATA[2014ACM校内友谊赛(test 2)]]></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="2">
+        <ProblemArchive version="1.0" checked="true">
+            <Title>Yejie Zhou's Problem</Title>
+            <Author>ying_5</Author>
+            <Problem contentType="html">
+                <Description xml:space="preserve">As we know Yejie Zhou is a ‘tall wealthy handsome.’ He has many potential girlfriend but here the problem comes. He doesn't know whom he should date with. For every girl, Yejie Zhou has a value V defining good feeling. And there is one kind of girls who are called ‘girl god’(Chinese English) has the max value ----  ‘-1’. The other girl's value is positive and the larger value means Yejie Zhou think the girl is better. He asks you to write a program to solve his problem.</Description>
+                <InputSpec xml:space="preserve">The first line has a number T defining how many  data set.&lt;BR&gt;
+The first line of the data set contains integers N(N ≤ 50,000) indicating the number of operation. Each of the next N lines describes an operation.&lt;BR&gt;
+There are two different operation described in different format shown below:&lt;BR&gt;
+A  Name Value : the new potential girlfriend.  &lt;BR&gt;
+Q  : printf whom should Yejie Zhou dated with.&lt;BR&gt;
+We are sure there won’t be two girls having the same name or the same Value defining the good feeling.But there may be many ‘girl god’. When Yejie Zhou don’t know any girl,it will not have ‘Q’ operation.&lt;BR&gt;</InputSpec>
+                <OutputSpec xml:space="preserve">When you meet a operation Q, you should printf the girl's name Yejie Zhou wants to meet with.if there are more than one ‘girl god’, you should output the lower alphabet order first.</OutputSpec>
+            </Problem>
+            <EncryptedData xmlns="http://w2c.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Element">
+                <EncryptionMethod xmlns="" Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
+                <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                    <KeyName xmlns="">ohpuKo9up9M=</KeyName>
+                </ds:KeyInfo>
+                <CipherData xmlns="">
+                    <CipherValue>sd82iZHTiFw2Q9GpZSiLuagU5RLTUK8n/SLLjpEi+5l7w9f4ectTUMO95WysqM7FTIjXkMTcD2CsCpSisEU1EiPQWDe7hjzLl+nv9LABWMkDJsqn97kAG2nxoEu/b0jEFCTnpCpYnHSaiL6m7FddjBp6WBXD8gDRyAenfWnX0/hIIxgHChhIPWr0dsKLwySspQ1AIoWuGWoz2w8bYo1RA6o6HYKC50gHHTSt50Lq41hc7H5DBEt2VuP76OkzrEyn6we133NnRDAb53qHIaZGu9E7C9JkNFchfvQKXfoorIMod+z3Qh9MKDuid/38jfLfXfMXWdz3bUNvlnbfrNyKO+UT/UgfTZXDVx0OTXqTSoi4HC+gT7MAOFK2UtHFLS1A8v3hpC0mSdtwIVsEnJeL3ZYXTP2+wb1QyH3Svx1N6IlhA9M8/gl/JQIRBgkFEHFxQUuLGOKLFaTBqPj0DXg7XGvCSlPfNciRhrWiZgPuz7DiWoHtcpCf5Ek8PajFVzWbPXiIpsMhmyX4GUxLQQgd0VXZthqitUdF4xruTOTsh+fCTwMbmoJi82tTEOBt5L3psteS3dUmX6s3VkDmHhLfb/5LOs4NOJYs00/BTSKC5dCzEsnVO7Y6Twa/ECMiCOzzORzKqIZ9NIXC3afxUrYU5EujJMic+/4w1s9uAmMCve1w8tiHM50lnT4F38dOUe7t0J0sXoFVR/yf7XNUZDbcszMBT75fnH5lCsSv8MpxIKKYCYzta7elQ+L0/KujRmKBdgKGKK2ftTWA8iREUWLyF/FQ9pjJBMYt1AO4AGVgMTrQWe3bNlgjAHdeB2veeaHEwElpCSF+9cxq7MqO1+j5vaQRchPS7NKvb7xMKEDzSsuNN58I/aXLnAGgDW17rnC3TdIQ0t7qcTIM78okB2qLKqnxyI+H4tI68bXDfS4QT11rwkpT3zXIkTLOlo8JKDMUb7xMKEDzSstN0hDS3upxMhdfyQ1SrLyixLtErMuaBQhN0hDS3upxMjXOOqHLz5RHWEQSAbiKXUJN0hDS3upxMn5D+7YKf7r1jBnuHnEj0rdeprbKYhrWOc3MS5FNjF9G6we133NnRDBN0hDS3upxMrrwEPvneZi5LdIUUSVHcx1N0hDS3upxMk3SENLe6nEyls1iAf6BddbQmq+UWhn5oFmmwKdHqIKC8bXDfS4QT11N0hDS3upxMhZDNa2MPLmgAfZRYe0Aw5JN0hDS3upxMkYnT1mgzbX1mWCCm9/jFdFx2gr5hvdGdZG3Eig9raUBTdIQ0t7qcTKRiF4YfIGkC03SENLe6nEyVx0OTXqTSohN0hDS3upxMpk7AABJq542G1eWfIJHsrpN0hDS3upxMvV5zM1iFWkflPUdXaWl543LvLKb+ayMIE3SENLe6nEyTdIQ0t7qcTJrS19lZdXKG8jkvjO01OhDCSUQKkpT9iVN0hDS3upxMk3SENLe6nEy+2CBgrCnjETz5uSVwoL07U3SENLe6nEyTdIQ0t7qcTIjjEAlRf1uC6FU1wM3xuKxtPZBfvn311RDXl5xh4bhKY4v7LAhx+QnTdIQ0t7qcTJJ/fbCMr+YxW+8TChA80rLTdIQ0t7qcTLnKwFOAK154LTeV9ko6YQtsnd/OJIsuRiPMoKKfhPZJ03SENLe6nEyQNbdjReq2oNSBOcc8qVQHAH2UWHtAMOSTdIQ0t7qcTIrlNz2xKbmw0pe0F9A1EkYHnxDeYejTxBXaOhtaSo0UPW+p+BzcqgCTdIQ0t7qcTLF0CmLUlnuewH2UWHtAMOS11ANs2+gIGnF0CmLUlnue9A2edqCFoFqR5PZeaEdP/sAVlOdDDtUCQ==</CipherValue>
+                </CipherData>
+            </EncryptedData>
+            <EncryptedData xmlns="http://w2c.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Element">
+                <EncryptionMethod xmlns="" Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
+                <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                    <KeyName xmlns="">s3M+y9ZugOU=</KeyName>
+                </ds:KeyInfo>
+                <CipherData xmlns="">
+                    <CipherValue>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</CipherValue>
+                </CipherData>
+            </EncryptedData>
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

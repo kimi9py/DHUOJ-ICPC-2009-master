@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">5</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MCwCFFOFKnHtNDWaUhbZFX6zXiJePIJ5AhQQUPCmZrDQexSdtyz4j2bINLycYQ==</Signature><PaperReference><![CDATA[1]]></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="false">
+            <Title>Problem G: Generate random numbers</Title>
+    <Author />
+    <Problem contentType="html">
+        <Description xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US&gt;John von Neumann suggested in &lt;st1:chmetcnv TCSC="0"
+NumberType="1" Negative="False" HasSpace="True" SourceValue="1946" UnitName="a"
+w:st="on"&gt;1946 a&lt;/st1:chmetcnv&gt; method to create a sequence of pseudo-random
+numbers. His idea is known as the &amp;quot;middle-square&amp;quot;-method and works as
+follows: We choose an initial value &lt;b&gt;&lt;i&gt;a&lt;sub&gt;0&lt;/sub&gt;&lt;/i&gt;&lt;/b&gt;, which has a
+decimal representation of length at most &lt;b&gt;&lt;i&gt;n&lt;/i&gt;&lt;/b&gt;. We then multiply the
+value &lt;b&gt;&lt;i&gt;a&lt;sub&gt;0&lt;/sub&gt;&lt;/i&gt;&lt;/b&gt; by itself, add leading zeros until we get a decimal
+representation of length &lt;b&gt;&lt;i&gt;2 &amp;times; n&lt;/i&gt;&lt;/b&gt; and take the middle &lt;b&gt;&lt;i&gt;n&lt;/i&gt;&lt;/b&gt;
+digits to form &lt;b&gt;&lt;i&gt;a&lt;sub&gt;i&lt;/sub&gt;&lt;/i&gt;&lt;/b&gt;. This process is repeated for each &lt;b&gt;&lt;i&gt;a&lt;sub&gt;i&lt;/sub&gt;&lt;/i&gt;&lt;/b&gt;
+with &lt;b&gt;&lt;i&gt;i&amp;gt;0&lt;/i&gt;&lt;/b&gt;. In this problem we use &lt;b&gt;&lt;i&gt;n = 4&lt;/i&gt;&lt;/b&gt;. &lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;Example 1: &lt;b&gt;&lt;i&gt;a&lt;sub&gt;0&lt;/sub&gt;&lt;/i&gt;&lt;/b&gt;=5555, &lt;b&gt;&lt;i&gt;a&lt;sub&gt;0&lt;/sub&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/i&gt;&lt;/b&gt;=30858025,
+&lt;b&gt;&lt;i&gt;a&lt;sub&gt;1&lt;/sub&gt;&lt;/i&gt;&lt;/b&gt;=8580,... &lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;Example 2: &lt;b&gt;&lt;i&gt;a&lt;sub&gt;0&lt;/sub&gt;&lt;/i&gt;&lt;/b&gt;=1111, &lt;b&gt;&lt;i&gt;a&lt;sub&gt;0&lt;/sub&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/i&gt;&lt;/b&gt;=01234321,
+&lt;b&gt;&lt;i&gt;a&lt;sub&gt;1&lt;/sub&gt;&lt;/i&gt;&lt;/b&gt;=2343,... &lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;Unfortunately, this random number generator is not very
+good. When started with an initial value it does not produce all other numbers
+with the same number of digits. &lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US&gt;Your task is to check for a given initial value &lt;b&gt;&lt;i&gt;a&lt;sub&gt;0&lt;/sub&gt;&lt;/i&gt;&lt;/b&gt;
+how many different numbers are produced. &lt;/span&gt;&lt;/p&gt;
+</Description>
+        <InputSpec xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US&gt;The input contains several test cases. Each test case
+consists of one line containing &lt;b&gt;&lt;i&gt;a&lt;sub&gt;0&lt;/sub&gt;&lt;/i&gt;&lt;/b&gt; (&lt;b&gt;&lt;i&gt;0 &amp;lt; a&lt;sub&gt;0&lt;/sub&gt;
+&amp;lt; 10000&lt;/i&gt;&lt;/b&gt;). Numbers are possibly padded with leading zeros such that
+each number consists of exactly 4 digits. The input is terminated with a line
+containing the value 0. &lt;/span&gt;&lt;/p&gt;
+</InputSpec>
+        <OutputSpec xml:space="preserve">&lt;p&gt;&lt;span lang=EN-US&gt;For each test case, print a line containing the number of
+different values &lt;b&gt;&lt;i&gt;a&lt;sub&gt;i&lt;/sub&gt;&lt;/i&gt;&lt;/b&gt; produced by this random number
+generator when started with the given value &lt;b&gt;&lt;i&gt;a&lt;sub&gt;0&lt;/sub&gt;&lt;/i&gt;&lt;/b&gt;. Note
+that &lt;b&gt;&lt;i&gt;a&lt;sub&gt;0&lt;/sub&gt;&lt;/i&gt;&lt;/b&gt; should also be counted. &lt;/span&gt;&lt;/p&gt;
+
+&lt;p class=MsoNormal&gt;&lt;strong&gt;&lt;span lang=EN-US&gt;Note that the third test case has
+the maximum number of different values among all possible inputs.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+
+</OutputSpec>
+    </Problem>
+            <TestData>
+                <TimeLimit>2</TimeLimit>
+                <InputFile />
+                <OutputFile />
+                <InputFormat inputType="eof">
+                    <Terminator xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </InputFormat>
+                <OutputFormat>
+                    <Header xml:space="preserve" />
+                    <Footer xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </OutputFormat>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve" filename="1084.in">
+            </TestInput>
+                    <TestOutput xml:space="preserve" filename="1084.out">
+            </TestOutput>
+                </TestCase>
+            </TestData>
+            <Solution xml:space="preserve" language="cpp" filename="" />
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

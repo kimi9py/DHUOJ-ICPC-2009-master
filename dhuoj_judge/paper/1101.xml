@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">5</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MCwCFFOFKnHtNDWaUhbZFX6zXiJePIJ5AhQQUPCmZrDQexSdtyz4j2bINLycYQ==</Signature><PaperReference><![CDATA[1]]></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="false">
+            <Title>Compressed String</Title>
+    <Author />
+    <Problem contentType="html">
+        <Description xml:space="preserve">&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;Dealing
+with super long character strings is Chris&amp;#8217;s daily work. Unfortunately,
+the strings are so long that even the fastest computer in the world cannot work
+with them.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;Chris
+does her work in a smart way by compressing the strings into shorter expressions.
+She does her compression for each string in the following way:&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;a)
+Find a consecutive repeated substring of the original string, e.g. &amp;#8220;ab&amp;#8221;
+in &amp;#8220;cabababd&amp;#8221;.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;b)
+Replace the repeating part with the bracketed repetend, followed by the times the
+repetend appears in the original string. e.g. Write &amp;#8220;cabababd&amp;#8221; as &amp;#8220;c[ab]3d&amp;#8221;.
+Note she can also write it as &amp;#8220;c[ab]1ababd&amp;#8221; or &amp;#8220;ca[ba]2bd&amp;#8221;
+and so on, although these string are not compressed as well as the first one is.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;c)
+Repeat a) and b) several times until the string is short enough.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;Chris
+does her compression quite well. But as you know, the work is boring and a
+waste of time. Chris has written a computer program to help her do the boring
+work. Unfortunately, there is something wrong with the program; it often outputs
+an incorrect result. To help her debug the program, you are ordered to write a debugger
+which can compare Chris&amp;#8217;s standard compressed string against the string compressed
+by the program.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+</Description>
+        <InputSpec xml:space="preserve">&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;There
+are multiple test cases.&lt;b style='mso-bidi-font-weight:normal'&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;The
+first line of the input contains an integer &lt;b style='mso-bidi-font-weight:
+normal'&gt;T&lt;/b&gt;, meaning the number of the test cases.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;For
+each test case, there are two lines of character strings which the first one is
+Chris&amp;#8217;s standard compressed string and the second one is the
+program&amp;#8217;s compressed string. Both string contains only lowercase letters (a-z),
+square brackets ([]) and numbers (0-9). The brackets must be followed with an
+integer indicating the times the string in the brackets repeat, &lt;u&gt;note that
+the repeat time can be zero&lt;/u&gt;. The brackets can be nested.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;You
+can assume all the compressed strings in the input are no longer than 20.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;See further details in
+the input sample.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+</InputSpec>
+        <OutputSpec xml:space="preserve">&lt;p style='text-indent:21.0pt'&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;For
+each test case, output case number first. And then if the two uncompressed
+strings are the same, output &amp;#8220;YES&amp;#8221; in a single line; otherwise,
+output &amp;#8220;NO&amp;#8221; followed by the first position where the uncompressed
+strings differ.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b style='mso-bidi-font-weight:normal'&gt;&lt;span lang=EN-US style='font-family:
+"Courier New"'&gt;[Hint]&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&lt;span style='mso-tab-count:
+1'&gt;&amp;nbsp;&amp;nbsp; &lt;/span&gt;For sample test case 3, the first string &amp;#8220;[a[ba]2b]&lt;st1:chmetcnv
+UnitName="&amp;#8221;" SourceValue="12" HasSpace="False" Negative="False"
+NumberType="1" TCSC="0" w:st="on"&gt;12&amp;#8221;&lt;/st1:chmetcnv&gt; can be written as &amp;#8220;[ababab]&lt;st1:chmetcnv
+UnitName="&amp;#8221;" SourceValue="12" HasSpace="False" Negative="False"
+NumberType="1" TCSC="0" w:st="on"&gt;12&amp;#8221;&lt;/st1:chmetcnv&gt;, then &amp;#8220;[[ab]3]&lt;st1:chmetcnv
+UnitName="&amp;#8221;" SourceValue="12" HasSpace="False" Negative="False"
+NumberType="1" TCSC="0" w:st="on"&gt;12&amp;#8221;&lt;/st1:chmetcnv&gt;, finally we get &amp;#8220;[ab]&lt;st1:chmetcnv
+UnitName="&amp;#8221;" SourceValue="36" HasSpace="False" Negative="False"
+NumberType="1" TCSC="0" w:st="on"&gt;36&amp;#8221;&lt;/st1:chmetcnv&gt;.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+ 
+&lt;p&gt;&lt;span lang=EN-US style='font-family:"Courier New"'&gt;&lt;span style='mso-tab-count:
+1'&gt;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;u&gt;The numbers in this task may be very large and cannot
+be stored in a 32 bit integer&lt;/u&gt;.&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;
+</OutputSpec>
+    </Problem>
+    <TestData>
+        <TimeLimit>10</TimeLimit>
+                <InputFile />
+                <OutputFile />
+                <InputFormat inputType="eof">
+                    <Terminator xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </InputFormat>
+                <OutputFormat>
+                    <Header xml:space="preserve" />
+                    <Footer xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </OutputFormat>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve" filename="1101.in">
+            </TestInput>
+                    <TestOutput xml:space="preserve" filename="1101.out">
+            </TestOutput>
+                </TestCase>
+            </TestData>
+            <Solution xml:space="preserve" language="cpp" filename="" />
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

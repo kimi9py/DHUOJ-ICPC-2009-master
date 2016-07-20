@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="gb2312"?>
+<PaperSetter checked="true">
+    <PaperDetail xml:space="preserve"><PaperVersion>1</PaperVersion><PaperID>1</PaperID><PaperName>1</PaperName><PaperAuthor>1</PaperAuthor><PaperTotalTime unit="hour">1</PaperTotalTime><PaperStartTime zone="+8">1</PaperStartTime><PaperProblemSum>1</PaperProblemSum><PublicKey>MIHxMIGoBgcqhkjOOAQBMIGcAkEA/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFwIVAJYu3cw2nLqOuyYO5rahJtk0bjjFAkBnhHGyepz0TukaScUUfbGpqvJE8FpDTWSGkx0tFCcbnjUDC3H9c9oXkGmzLik1Yw4cIGI1TQ2iCmxBblC+eUykA0QAAkEA8ojKBedYrFoDBvrk2cvh998qmKFuHB0gXegkDXzHhk+yUprBGbpdLHVDWq8P7hPLyNPuviEvJoxz4x5kqiidgQ==</PublicKey><Signature>MCwCFEDTqGZSZcQMtCBrZnfXEjut1QP+AhQ+34BfqGk+AawbXrqelgSLpOuffQ==</Signature><PaperReference><![CDATA[1]]></PaperReference><PaperDescribe></PaperDescribe></PaperDetail>
+    <ProblemList encrypted="0">
+        <ProblemArchive version="1.0" checked="true">
+            <Title>皇帝出行问题</Title>
+            <Author>ZhuXingyin</Author>
+            <Problem contentType="html">
+                <Description xml:space="preserve">你有一个NXN的棋盘， 1 ≤ N ≤ 100。在棋盘上，只有一个皇帝。皇帝的位置用数字r，c了来描述。r是行号，c是列号。位置(1,1)是棋盘左下角的位置，而(n,n)是棋盘右上角的位置。
+这个问题是要你计算皇帝从一个起点到一个终点的移动的最小的移动次数。如果移动是不可能的，输出:“no move”.如果你从没玩过象棋，不要担心。你只需要以下的一条提示：皇帝可以对角线移动任意多的步数，只要途中无障碍物。</Description>
+                <InputSpec xml:space="preserve">输入的开头为一个整数，C，表示以下有几个测试组。每个测试的组在下面描述。接下来是一个空行，同样的，在两个相邻的测试组中间也会有空行。
+对于每一个测试组，第一行是一个整数T，1 ≤ T ≤ 100，表示这个组中有几个测试数据。第二行是一个整数N(1 ≤ N ≤ 100)，N表示的是棋盘的大小(N*N)。然后就是T组的测试数据。每组一行，每行四个整数，用空格隔开。前两个整数是皇帝的出发的位置(r,c)，后两个是终点的位置(r,c)。</InputSpec>
+                <OutputSpec xml:space="preserve">对于每个测试数据，你需要打出一行，表示皇帝从起点到终点移动的最小的次数。如不可能，打出“no move”。</OutputSpec>
+            </Problem>
+            <TestData>
+                <TimeLimit>1</TimeLimit>
+                <InputFile />
+                <OutputFile />
+                <InputFormat inputType="num">
+                    <Terminator xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </InputFormat>
+                <OutputFormat>
+                    <Header xml:space="preserve" />
+                    <Footer xml:space="preserve" />
+                    <Seperator xml:space="preserve" layout="bottom" />
+                </OutputFormat>
+                <TestCase difficulty="sample">
+                    <TestInput xml:space="preserve">1
+8
+3 6 6 3
+</TestInput>
+                    <TestOutput xml:space="preserve">1
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">1
+8
+4 2 2 3
+</TestInput>
+                    <TestOutput xml:space="preserve">no move
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">1
+8
+7 2 1 4
+</TestInput>
+                    <TestOutput xml:space="preserve">2
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">1
+6
+1 2 6 5
+</TestInput>
+                    <TestOutput xml:space="preserve">2
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">1
+6
+2 3 5 1
+</TestInput>
+                    <TestOutput xml:space="preserve">no move
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="sample">
+                    <TestInput xml:space="preserve">2
+8
+3 6 6 3
+4 2 2 3
+</TestInput>
+                    <TestOutput xml:space="preserve">1
+no move
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">3
+8
+3 6 6 3
+4 2 2 3
+7 2 1 4
+</TestInput>
+                    <TestOutput xml:space="preserve">1
+no move
+2
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="special">
+                    <TestInput xml:space="preserve">2
+6
+1 2 6 5
+2 3 5 1
+</TestInput>
+                    <TestOutput xml:space="preserve">2
+no move
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">3
+8
+3 6 6 3
+4 2 2 3
+7 2 1 4
+</TestInput>
+                    <TestOutput xml:space="preserve">1
+no move
+2
+</TestOutput>
+                </TestCase>
+                <TestCase difficulty="trivial">
+                    <TestInput xml:space="preserve">2
+6
+1 2 6 5
+2 3 5 1
+</TestInput>
+                    <TestOutput xml:space="preserve">2
+no move
+</TestOutput>
+                </TestCase>
+            </TestData>
+            <Solution xml:space="preserve" language="cpp" filename="test">#include &lt;iostream&gt;
+#include &lt;cmath&gt;
+using namespace std;
+int main() 
+{
+	int cas,t,n;
+	cin&gt;&gt;cas;
+	while(cas--)
+	{
+		cin&gt;&gt;t;
+		cin&gt;&gt;n;
+		long sr,sl,er,el;
+		while(t--)
+		{
+			cin&gt;&gt;sr&gt;&gt;sl&gt;&gt;er&gt;&gt;el;
+			if((sr+sl)%2 != (er+el)%2)cout&lt;&lt;"no move"&lt;&lt;endl;
+			else
+			{
+				if((sr==er) &amp;&amp; (sl==el))cout&lt;&lt;"0"&lt;&lt;endl;
+				else if(labs(sr-er) == labs(sl-el))
+					cout&lt;&lt;"1"&lt;&lt;endl;
+				else
+					cout&lt;&lt;"2"&lt;&lt;endl;
+			}
+		}
+	}
+	return 0;
+}
+</Solution>
+        </ProblemArchive>
+    </ProblemList>
+</PaperSetter>
+

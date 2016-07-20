@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.provider_class">
+            org.hibernate.connection.ProxoolConnectionProvider
+        </property>
+        <property name="hibernate.proxool.pool_alias">dhuOJPool</property>
+        <property name="hibernate.proxool.xml">proxool.xml</property>
+        <property name="show_sql">false</property>
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+
+        <mapping resource="cn/edu/dhu/acm/oj/persistence/beans/Problem.hbm.xml"/>
+        <mapping resource="cn/edu/dhu/acm/oj/persistence/beans/Solution.hbm.xml"/>
+        <mapping resource="cn/edu/dhu/acm/oj/persistence/beans/Contest.hbm.xml"/>
+        <mapping resource="cn/edu/dhu/acm/oj/persistence/beans/User.hbm.xml"/>
+        <mapping resource="cn/edu/dhu/acm/oj/persistence/beans/ContestProblem.hbm.xml"/>
+        <mapping resource="cn/edu/dhu/acm/oj/persistence/beans/ContestReservation.hbm.xml"/>
+        <mapping resource="cn/edu/dhu/acm/oj/persistence/beans/SourceCode.hbm.xml"/>
+        <mapping resource="cn/edu/dhu/acm/oj/persistence/beans/Compileinfo.hbm.xml"/>
+        <mapping resource="cn/edu/dhu/acm/oj/persistence/beans/Message.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>
